@@ -1,0 +1,28 @@
+[
+    {   "image":"/C17Images/pencile.jpg",
+        "text":"What is your name? What is your age? What is this?"    },
+    {
+        "image":"/C17Images/girl.jpg",
+        "text":"Who is this? Who are you? "   
+        
+    } ,
+    {
+        "image":"/C17Images/school.jpg",
+        "text":" Where do you live? Where is your school?"
+     },
+
+    { 
+         "image":"/C17Images/birthDay.jpg",
+        "text":"When is your lunchbreak? When is your birthday?"
+    },
+
+    {
+        "image":"/C17Images/classRoom.jpg",
+        "text":"How many friends do you have? How many students are there in your class?"
+    } ,
+
+    {
+        "image":"/C17Images/banana.jpg",
+        "text":"How much water do you drink every day? How much is that banana?" 
+    }
+]
