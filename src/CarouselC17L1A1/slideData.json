@@ -1,0 +1,42 @@
+[
+    {
+        "text":"The fish swims in the ocean.",
+        "value":"FACT"
+    },
+    {
+        "text":"The fish swims fast",
+        "value":"OPINION"
+    } ,
+    {
+        "text":"Ice-cream is cold",
+        "value":"FACT"
+    },
+    {
+        "text":"Ice-cream is tasty",
+        "value":"OPINION"
+    },
+    {
+        "text":"The sun comes out in the day.",
+        "value":"FACT"
+    } ,
+    {
+        "text":"The sun comes out slowly.",
+        "value":"OPINION"
+    },
+    {
+        "text":"The whale lives in the ocean.",
+        "value":"FACT"
+    },
+    {
+        "text":"The whale loves the water.",
+        "value":"OPINION"
+    },
+    {
+        "text":"When we smile, our lips widen",
+        "value":"FACT"
+    },
+    {
+        "text":"When we smile, we are happy.",
+        "value":"OPINION"
+    }
+]
