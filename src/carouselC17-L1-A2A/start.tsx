@@ -1,3 +1,4 @@
+
 import StartBtn from '@/components/startBtn';
 import React from 'react'
 type myProps = {
@@ -6,8 +7,8 @@ type myProps = {
 const Strart = ({setIsFirstScreen}:myProps) => {
   return (
     <div className="min-h-screen flex justify-center items-center flex-col gap-10 bg-[#F8FAFC]">
-    <div className="min-h-[100px]  shadow-black  p-4 shadow-md rounded-lg flex text-center justify-center items-center w-[600px]">
-    <h2 className="text-2xl text-black">Let’s do an activity. From the following statements, can you tell me which ones are facts and which ones are opinions?</h2>
+    <div className="min-h-[100px] p-4 text-center shadow-black shadow-md rounded-lg flex justify-center items-center w-[600px]">
+    <h2 className="text-2xl text-black ">Lovely! Now let’s review what questions are for.</h2>
     </div>
   <StartBtn value='Start' setIsFirstScreen={setIsFirstScreen} screenVal="Qustions" />
   </div>
