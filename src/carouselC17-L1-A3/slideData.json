@@ -1,0 +1,98 @@
+[
+    {   "slide":[
+        {
+            "img":"/C17Images/schoolItems/pencil.jpg",
+            "text":"PENCIL"
+        },
+        {
+            "img":"/C17Images/schoolItems/pencil_sharpener_image.jpg",
+            "text":"PENCIL SHARPENER"
+        },
+         {
+            "img":"/C17Images/schoolItems/school_bag.jpg",
+            "text":"SCHOOL BAG"
+        },
+        {
+            "img":"/C17Images/schoolItems/notebook.jpg",
+            "text":"NOTEBOOK"
+        },   
+         {
+            "img":"/C17Images/schoolItems/pen.jpg",
+            "text":"PEN"
+        }
+    ]
+    },
+
+    {   "slide":[
+        {
+            "img":"/C17Images/animales/lion.jpg",
+            "text":"LION"
+        },
+        {
+            "img":"/C17Images/animales/tiger.jpg",
+            "text":"TIGER"
+        },
+         {
+            "img":"/C17Images/animales/elephant.jpg",
+            "text":"ELEPHANT"
+        },
+        {
+            "img":"/C17Images/animales/zebra.jpg",
+            "text":"ZEBRA"
+        },   
+         {
+            "img":"/C17Images/animales/jaguar.jpg",
+            "text":"JAGUAR"
+        }
+    ]
+    },
+
+    {   "slide":[
+        {
+            "img":"/C17Images/oceanAnimales/whale.jpg",
+            "text":"WHALE"
+        },
+        {
+            "img":"/C17Images/oceanAnimales/sealion.jpg",
+            "text":"SEALION"
+        },
+         {
+            "img":"/C17Images/oceanAnimales/seastar.jpg",
+            "text":"SEASTAR"
+        },
+        {
+            "img":"/C17Images/oceanAnimales/dolphin.jpg",
+            "text":"DOLPHIN"
+        },   
+         {
+            "img":"/C17Images/oceanAnimales/seal.jpg",
+            "text":"SEAL"
+        }
+    ]
+    } ,
+    {   "slide":[
+        {
+            "img":"/C17Images/houseHold/toothbrush.jpg",
+            "text":"TOOTHBRUSH"
+        },
+        {
+            "img":"/C17Images/houseHold/comb.jpg",
+            "text":"COMB"
+        },
+         {
+            "img":"/C17Images/houseHold/toothpaste.jpeg",
+            "text":"TOOTHPASTE"
+        },
+        {
+            "img":"/C17Images/houseHold/soap.jpeg",
+            "text":"SOAP"
+        },   
+         {
+            "img":"/C17Images/houseHold/shampoo.png",
+            "text":"SHAMPOO"
+        }
+    ]
+    }   
+
+  
+]
