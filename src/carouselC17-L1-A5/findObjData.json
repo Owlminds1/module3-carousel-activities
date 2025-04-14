@@ -1,0 +1,19 @@
+[
+    {
+        "image":"/C17Images/find_object.jpg",
+        "text":"Identify the number of apples",
+        "arry":["2"]
+    },
+
+    {
+        "image":"/C17Images/find_object.jpg",
+        "text":"Identify five things that can be used in the classroom",
+        "arry":["Book","notebook","schoolbag","pen","ball"]
+    } ,
+    
+    {
+        "image":"/C17Images/find_object.jpg",
+        "text":"Identify three things in the air",
+        "arry":["Ball","Butterflies","Kites"]
+    }
+]
