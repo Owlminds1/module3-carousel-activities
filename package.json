@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prod":"next build && next start",
+    "prod": "next build && next start",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,8 +12,10 @@
   "dependencies": {
     "next": "15.3.0",
     "react": "^19.0.0",
+    "react-confetti": "^6.4.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
+    "react-use": "^17.6.0",
     "swiper": "^11.2.6"
   },
   "devDependencies": {

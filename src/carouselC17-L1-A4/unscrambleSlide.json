@@ -1,0 +1,24 @@
+[
+    {
+        "image":"/C17Images/schoolItems/pen.jpg",
+        "unscrambleText":"ENP",
+        "text":"pen"
+    },
+
+    {
+        "image":"/C17Images/oceanAnimales/seal.jpg",
+        "unscrambleText":"LESA",
+        "text":"seal"
+    } ,
+    
+    {
+        "image":"/C17Images/oceanAnimales/whale.jpg",
+        "unscrambleText":"LEWHA",
+        "text":"whale"
+    },
+    {
+        "image":"/C17Images/houseHold/toothbrush.jpg",
+        "unscrambleText":"HURBSTHOOT",
+        "text":"toothbrush"
+    }
+]
