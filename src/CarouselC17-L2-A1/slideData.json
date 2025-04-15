@@ -1,0 +1,42 @@
+[
+    {
+        "text":"Apples and oranges are fruit.",
+        "value":"FACT"
+    },
+    {
+        "text":"The sun rises in the morning and sets at night.",
+        "value":"FACT"
+    } ,
+    {
+        "text":"The whale loves the water.",
+        "value":"OPINION"
+    },
+    {
+        "text":"The sun feels happy in the morning and calm at night .",
+        "value":"OPINION"
+    },
+    {
+        "text":"When we smile, our lips widen.",
+        "value":"FACT"
+    } ,
+    {
+        "text":"Guitar is a musical instrument.",
+        "value":"FACT"
+    },
+    {
+        "text":"Apples are better than oranges.",
+        "value":"OPINION"
+    },
+    {
+        "text":"Guitar has the best sound.",
+        "value":"OPINION"
+    },
+    {
+        "text":"The whale lives in the ocean.",
+        "value":"FACT"
+    },
+    {
+        "text":"When we smile, we are happy.",
+        "value":"OPINION"
+    }
+]
