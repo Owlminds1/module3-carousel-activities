@@ -21,7 +21,11 @@ export default function UnscrambleWords() {
   const [lastSlide, setLastSlide] = useState<number>(0);
   const [inputText, setInputText] = useState<string>("");
   const [confetti, setConfetti] = useState(false);
+  const [showBtn,setShowBtn]=useState(lastSlide === 0);
+  const [hintBtn,setHintBtn]=useState(false)
   const totalSlides = 1 + UnscrambleSlide.length + bonuseSlide.length;
+
+
 
   const handleNext = () => {
     swiperRef.current?.slideNext();
@@ -37,6 +41,8 @@ export default function UnscrambleWords() {
     //  setIsFirstScreen("result");
     setConfetti(false);
     setInputText("");
+    setHintBtn(false)
+    setShowBtn(swipe.activeIndex === 0); 
   };
 
   const handleCheck = (correctText: string) => {
@@ -45,8 +51,9 @@ export default function UnscrambleWords() {
     // console.log(upperText)
     if (correctText == upperLowerText) {
       setConfetti(true);
+      setShowBtn(true)
       setTimeout(() => {
-        swiperRef.current?.slideNext();
+        setConfetti(false);
       }, 8000);
     }
   };
@@ -73,21 +80,27 @@ export default function UnscrambleWords() {
           >
             {/* =================== example slide ================= */}
             <SwiperSlide>
+           
               <div className="flex flex-col w-full min-h-[400px]  justify-center items-center gap-10">
                 <h3 className="text-2xl text-black">For example</h3>
                 <h4 className="text-3xl text-black">LIPNEC: PENCIL</h4>
               </div>
+           
             </SwiperSlide>
 
             {UnscrambleSlide.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="grid grid-cols-12 place-items-center w-full">
-                  <div className="col-span-6 w-[400px] h-[400px] relative">
-                    <Image
+                  <div className="col-span-6 w-[400px] h-[400px] border border-white relative flex justify-center items-center">
+                  {
+                    hintBtn ? 
+                      <Image
                       src={item.image}
                     fill
                       alt="slide image"
-                    />
+                    />:
+                    <button onClick={()=>setHintBtn(true)} className="bg-violet-900 text-white px-8 py-2 rounded-lg cursor-pointer ">Hint</button>
+                  }
                   </div>
                   <div className="col-span-6 w-full flex justify-center items-center  gap-10 flex-col ">
                     <div className="flex justify-center items-center gap-2">
@@ -173,7 +186,7 @@ export default function UnscrambleWords() {
           </div>
 
           <div
-            className={` ${lastSlide < totalSlides - 1 ? "block":"hidden"} 
+            className={` ${lastSlide < totalSlides - 1 && showBtn ? "block":"hidden"} 
              border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400
                 
              hover:scale-90 

@@ -51,7 +51,7 @@ export default function SlideStart() {
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
       <div className="w-[600px]  ">
         <h1 className="text-center text-4xl font-bold py-4 text-black">
-          Memory Game
+        See and Remember
         </h1>
         <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[200px] ">
           <Swiper

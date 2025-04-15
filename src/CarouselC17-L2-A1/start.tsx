@@ -7,7 +7,7 @@ const Strart = ({setIsFirstScreen}:myProps) => {
   return (
     <div className="min-h-screen flex justify-center items-center flex-col gap-10 bg-[#F8FAFC]">
     <div className="min-h-[100px]  shadow-black  p-4 shadow-md rounded-lg flex text-center justify-center items-center w-[600px]">
-    <h2 className="text-2xl text-black"> Facts and Opinions</h2>
+    <h2 className="text-2xl text-black">Read each sentence and mark it as fact or opinion</h2>
     </div>
   <StartBtn value='Start' setIsFirstScreen={setIsFirstScreen} screenVal="Qustions" />
   </div>
