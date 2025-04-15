@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import SlideData from "@/carouselC17-L1-AA/slideData.json";
+import SlideData from "@/carouselC17-L2-AA/slideData.json";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import { Swiper as SwiperClass } from "swiper";
@@ -55,18 +55,7 @@ export default function SlideStart() {
                 </div>
               </SwiperSlide>
             ))}
-          
-            <SwiperSlide>
-              <div className=" text-center py-5 text-black text-xl ">
-                <ul className="">
-                  <li>
-                    Will any of these decisions affect people other than you?
-                  </li>
-                  <li>How would your parents feel?</li>
-                  <li>How would your friends feel?</li>
-                </ul>
-              </div>
-            </SwiperSlide>
+           
           </Swiper>
         </div>
         <div className="w-full flex justify-between items-center mt-5">
@@ -88,7 +77,7 @@ export default function SlideStart() {
 
           <div
             className={` ${
-              lastSlide < SlideData.length 
+              lastSlide < SlideData.length -1 
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90 
@@ -96,7 +85,7 @@ export default function SlideStart() {
           >
             <FaArrowRight
               className={`${
-                lastSlide < SlideData.length  ? "block" : "hidden"
+                lastSlide < SlideData.length- 1 ? "block" : "hidden"
               } text-[40px]  cursor-pointer text-black `}
               onClick={handleNext}
             />
