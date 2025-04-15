@@ -50,15 +50,17 @@ export default function SlideStart() {
           >
             {SlideData.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="   flex justify-center items-center flex-col">
-                  <div className="w-[300px] h-[250px] relative bg-white">
-                    <Image
-                      fill
-                      src={item.image}
-                      alt=""
-                      className="object-contain "
-                    />
-                  </div>
+                <div className=" flex justify-center items-center min-h-[300px] flex-col">
+                 {
+                  index === 0 || index === 1 ?  <div className="w-[300px] h-[250px] relative bg-white">
+                  <Image
+                    fill
+                    src={item.image}
+                    alt=""
+                    className="object-contain "
+                  />
+                </div>:""
+                 }
                   <div className=" text-center py-5 text-black text-2xl ">
                     {item.text}
                   </div>
@@ -66,30 +68,16 @@ export default function SlideStart() {
               </SwiperSlide>
             ))}
             <SwiperSlide>
-            <div className="   flex justify-center items-center flex-col">
-                  <div className="w-[300px] h-[250px] relative bg-white">
-                    <Image
-                      fill
-                     src="/C17Images/clock.png"
-                      alt="Slider image"
-                      className="object-contain "
-                    />
-                  </div>
+            <div className=" flex justify-center items-center min-h-[300px] flex-col">
+                
                   <div className=" text-center py-5 text-black text-2xl ">
                   Why are you happy? Why do you wake up at 6?
                   </div>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="flex justify-center items-center flex-col">
-                  <div className="w-[300px] h-[250px] relative bg-white">
-                    <Image
-                      fill
-                      src="/C17Images/school2.jpg"
-                      alt="Slider image"
-                      className="object-contain "
-                    />
-                  </div>
+            <div className=" flex justify-center items-center min-h-[300px] flex-col">
+              
                   <div className=" text-center py-5 text-black text-2xl ">
                   How are you? How do you feel? How do you go to school? How do you make tea?
                   </div>
