@@ -85,7 +85,7 @@ export default function FindObjectSlide() {
                   <div className="col-span-4 w-full ">
                     <div className="flex justify-center items-center gap-10 flex-col">
                       <h4 className="text-black text-2xl  text-center">
-                        {item.text}{" "}
+                        {item.text}
                       </h4>
                       <textarea
                         className="text-black text-2xl outline-none border-1 rounded-lg text-center min-h-[100px] border-black  placeholder:text-lg placeholder:capitalize  "

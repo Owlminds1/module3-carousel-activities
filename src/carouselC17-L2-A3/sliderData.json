@@ -1,0 +1,38 @@
+[
+    {
+        "image":"/C17Images/apple.png",
+        "text":"APPLE",
+        "definition":"A round, edible fruit having a red, green, or yellow skin"
+
+    } ,
+    {
+        "image":"/C17Images/guitar.png",
+        "text":"GUITAR",
+        "definition":"A musical instrument, usually made of wood, with six strings and a long neck, played with fingers or a pick (plectrum)"
+    },
+    {
+        "image":"/C17Images/whale.png",
+        "text":"WHALE",
+        "definition":"A very large sea mammal that breathes air through a hole at the top of its head"
+    },
+    {
+        "image":"/C17Images/ocean.png",
+        "text":"OCEAN",
+        "definition":"A large mass of salt water that covers most of the earth’s surface"
+    },
+    {
+        "image":"/C17Images/sun.png",
+        "text":"SUN",
+        "definition":"The star that provides light and heat for the earth and around which the earth moves."
+    },
+    {
+        "image":"/C17Images/water.png",
+        "text":"WATER",
+        "definition":"A clear liquid without colour or taste, that falls from the sky as rain and is necessary for animal and plant life."
+    },
+    {
+        "image":"/C17Images/happy.png",
+        "text":"HAPPY",
+        "definition":"Feeling, showing, or causing enjoyment"
+    }
+]
