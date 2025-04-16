@@ -13,6 +13,7 @@ const ImageSlider = () => {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
   const [timer, setTimer] = useState(0);
+  const [showSugetion, setShowSugetion] = useState(false);
 
   const handleNext = () => {
     if (lastSlide == SlideData.length - 1) {
@@ -30,7 +31,7 @@ const ImageSlider = () => {
     setLastSlide(swipe.activeIndex);
     if (lastSlide == SlideData.length - 1) return;
     //  setIsFirstScreen("result");
-    setTimer(60)
+    setTimer(60);
   };
 
   useEffect(() => {
@@ -39,7 +40,7 @@ const ImageSlider = () => {
       setTimer((prev) => {
         if (prev <= 1) {
           clearInterval(intervale);
-
+setShowSugetion(true)
           return 0;
         }
         return prev - 1;
@@ -52,9 +53,9 @@ const ImageSlider = () => {
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
       <div className="w-[800px]  ">
         <h1 className="text-center text-4xl font-bold py-4 text-black">
-        Define it!
+          Define it!
         </h1>
-      
+
         <Swiper
           className="border-2 p-2 bg-violet-100 rounded-lg min-h-[200px] "
           slidesPerView={1}
@@ -70,21 +71,32 @@ const ImageSlider = () => {
               <div className="grid grid-cols-12 gap-4 place-items-center w-full ">
                 <div className="col-span-7 w-full h-[400px] relative rounded-lg overflow-hidden ">
                   <Image src={item.image} fill alt="slide image" />
-                  <h3 className="text-xl text-center p-3 absolute bottom-0 text-white bg-[#000000a0] w-full">
+                  <h3
+                    className={`${
+                      showSugetion ? "block" : "hidden"
+                    } text-xl text-center p-3 absolute bottom-0 text-white bg-[#000000a0] w-full`}
+                  >
                     {item.definition}
                   </h3>
                 </div>
-                <div className="col-span-5 w-full flex justify-center items-center flex-col gap-2">
+                <div className="col-span-5 w-full flex justify-center items-center flex-col gap-10">
                   <h3 className="text-2xl text-center text-black">
                     {item.text}
                   </h3>
-                  
+
                   <h4
                     className={`
                      p-1 flex justify-center items-center text-black border-2 timer border-green-400 text-3xl w-[70px] h-[70px] rounded-full relative `}
                   >
                     <span className="text-black font-bold "> {timer}</span>
                   </h4>
+
+                  <button
+                    onClick={() => setShowSugetion(true)}
+                    className=" cursor-pointer px-8  py-2 bg-violet-900 text-white rounded-lg"
+                  >
+                    check
+                  </button>
                 </div>
               </div>
             </SwiperSlide>

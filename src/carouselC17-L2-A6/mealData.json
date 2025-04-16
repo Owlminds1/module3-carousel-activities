@@ -1,0 +1,43 @@
+[
+    {
+     "fruitsImg":"/C17Images/meal/chicken.jpg",
+     "name":"Chicken (28g)",
+     "value":75 
+    },
+    {
+        "fruitsImg":"/C17Images/meal/peas.jpg",
+        "name":"Peas (1/2 cup)" ,
+         "value":75   
+    }  ,
+    {
+        "fruitsImg":"/C17Images/meal/cheese.png",
+        "name":"Cheese (28g)" ,
+         "value":75   
+    } ,
+    {
+        "fruitsImg":"/C17Images/meal/tofu.jpg",
+        "name":"Tofu (1/2 cup)" ,
+         "value":75   
+    } ,
+    {
+        "fruitsImg":"/C17Images/meal/eggs.jpg",
+        "name":"Eggs (2)"   ,
+        "value":75  
+    } ,
+    {
+        "fruitsImg":"/C17Images/meal/kidney_bean.jpg",
+        "name":"Beans(1/2 cup)"  ,
+         "value":75  
+    } ,
+    {
+        "fruitsImg":"/C17Images/meal/meat.png",
+        "name":"Meat(28g)"  ,
+         "value":75  
+    } ,
+    {
+        "fruitsImg":"/C17Images/meal/fishMeal.jpg",
+        "name":"fish (28g)" , 
+        "value":75   
+    } 
+   
+]
