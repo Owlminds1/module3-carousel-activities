@@ -1,14 +1,33 @@
 [
     {
-        "text":"WHAT is for names/places/objects"    },
+        "text":"WHAT is for names/places/objects" ,
+        "image":"/C17Images/L1-2A/whatImage.png",
+        "text2":"WHAT"
+    },
     {
-        "text":"WHO is for people"    } ,
+        "text":"WHO is for people" ,
+        "image":"/C17Images/L1-2A/pepole.jpg",
+        "text2":"WHO"  
+    } ,
     {
-        "text":"WHERE is for places"    },
+        "text":"WHERE is for places",
+            "image":"/C17Images/L1-2A/place.jpg",
+            "text2":"WHERE"
+    },
     {
-        "text":"WHEN is for time."    },
+        "text":"WHEN is for time." ,
+            "image":"/C17Images/L1-2A/time.jpg",
+            "text2":"WHEN"
+    },
     {
-        "text":"HOW MANY is to count something"    } ,
+        "text":"HOW MANY is to count something",
+        "image":"/C17Images/L1-2A/counting.jpg" ,
+        "text2":"HOW MANY"      
+        } ,
     {
-        "text":"HOW MUCH is to measure something or to ask the cost of something."    }
+        "text":"HOW MUCH is to measure something or to ask the cost of something.",
+        "image":"/C17Images/L1-2A/howMuchImage.png",
+        "text2":"HOW MUCH"       
+
+    }
 ]

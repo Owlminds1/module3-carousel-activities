@@ -1,28 +1,35 @@
 [
-    {   "image":"/C17Images/pencile.jpg",
-        "text":"What is your name? What is your age? What is this?"    },
+    {  
+        "image":"/C17Images/L1-2A/whatImage.png",
+        "text":"What is your name? What is your age? What is this?",
+    "text2":"WHAT"    },
     {
-        "image":"/C17Images/girl.jpg",
-        "text":"Who is this? Who are you? "   
+        "image":"/C17Images/L1-2A/pepole.jpg",
+        "text":"Who is this? Who are you? ",
+        "text2":"WHO"   
         
     } ,
     {
-        "image":"/C17Images/school.jpg",
-        "text":" Where do you live? Where is your school?"
+        "image":"/C17Images/L1-2A/place.jpg",
+        "text":" Where do you live? Where is your school?",
+        "text2":"WHERE"
      },
 
     { 
-         "image":"/C17Images/birthDay.jpg",
-        "text":"When is your lunchbreak? When is your birthday?"
+        "image":"/C17Images/L1-2A/time.jpg",
+        "text":"When is your lunchbreak? When is your birthday?",
+        "text2":"WHEN"
     },
 
     {
-        "image":"/C17Images/classRoom.jpg",
-        "text":"How many friends do you have? How many students are there in your class?"
+        "image":"/C17Images/L1-2A/counting.jpg" ,
+        "text":"How many friends do you have? How many students are there in your class?",
+        "text2":"HOW MANY"
     } ,
 
     {
-        "image":"/C17Images/banana.jpg",
-        "text":"How much water do you drink every day? How much is that banana?" 
+        "image":"/C17Images/L1-2A/howMuchImage.png",
+        "text":"How much water do you drink every day? How much is that banana?",
+        "text2":"HOW MUCH" 
     }
 ]

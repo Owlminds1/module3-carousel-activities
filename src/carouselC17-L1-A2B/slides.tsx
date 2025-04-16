@@ -49,39 +49,83 @@ export default function SlideStart() {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {SlideData.map((item, index) => (
+            
               <SwiperSlide key={index}>
-                <div className=" flex justify-center items-center min-h-[300px] flex-col">
-                 {
-                  index === 0 || index === 1 ?  <div className="w-[300px] h-[250px] relative bg-white">
-                  <Image
-                    fill
-                    src={item.image}
-                    alt=""
-                    className="object-contain "
-                  />
-                </div>:""
-                 }
-                  <div className=" text-center py-5 text-black text-2xl ">
-                    {item.text}
-                  </div>
-                </div>
-              </SwiperSlide>
+                              <div className="flex justify-center items-center flex-col p-5 ">
+                                <div className=" text-center">
+                                  <div className=" text-center py-5 text-black text-2xl ">
+                                    {item.text}
+                                  </div>
+                                </div>
+                                <div className=" rounded-lg overflow-hidden relative w-full h-[300px]  bg-white">
+                                 
+                                  <Image
+                                    src={item.image}
+                                    fill
+                                    className="object-contain"
+                                    alt="dfs"
+                                  /> 
+                                </div>
+              
+                                <div className="text-center">
+                                  <div className="font-bold text-center py-5 text-black text-4xl ">
+                                    {item.text2}
+                                  </div>
+                                </div>
+                              </div>
+                            </SwiperSlide>
             ))}
             <SwiperSlide>
-            <div className=" flex justify-center items-center min-h-[300px] flex-col">
-                
-                  <div className=" text-center py-5 text-black text-2xl ">
-                  Why are you happy? Why do you wake up at 6?
-                  </div>
-                </div>
+
+            <div className="flex justify-center items-center flex-col p-5 ">
+                                <div className=" text-center">
+                                  <div className=" text-center py-5 text-black text-2xl ">
+                                  Why are you happy? Why do you wake up at 6?
+                                  </div>
+                                </div>
+                                <div className=" rounded-lg overflow-hidden relative w-full h-[300px]  bg-white">
+                                 
+                                  <Image
+                                  src="/C17Images/L1-2A/wayImage.png"
+                                  fill
+                                    className="object-contain"
+                                    alt="dfs"
+                                  /> 
+                                </div>
+              
+                                <div className="text-center">
+                                  <div className="font-bold text-center py-5 text-black text-4xl ">
+                                  WHY
+                                  </div>
+                                </div>
+                              </div>
+          
             </SwiperSlide>
             <SwiperSlide>
-            <div className=" flex justify-center items-center min-h-[300px] flex-col">
+
+            <div className="flex justify-center items-center flex-col p-5 ">
+                                <div className=" text-center">
+                                  <div className=" text-center py-5 text-black text-2xl ">
+                                  How are you? How do you feel? How do you go to school? How do you make tea?
+                                  </div>
+                                </div>
+                                <div className=" rounded-lg overflow-hidden relative w-full h-[300px]  bg-white">
+                                 
+                                  <Image
+                      src="/C17Images/L1-2A/howImage.png"
+                      fill
+                                    className="object-contain"
+                                    alt="dfs"
+                                  /> 
+                                </div>
               
-                  <div className=" text-center py-5 text-black text-2xl ">
-                  How are you? How do you feel? How do you go to school? How do you make tea?
-                  </div>
-                </div>
+                                <div className="text-center">
+                                  <div className="font-bold text-center py-5 text-black text-4xl ">
+                                  HOW
+                                  </div>
+                                </div>
+                              </div>
+           
             </SwiperSlide>
           </Swiper>
         </div>

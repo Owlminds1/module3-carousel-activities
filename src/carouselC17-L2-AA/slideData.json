@@ -1,12 +1,25 @@
 [
     {
-        "text":"What if you didn’t comb your hair every day?"    },
+        "text":"What if you didn’t comb your hair every day?" ,
+        "suggetion":"Combing keeps our hair neat. Not combing would create knots and make them look rough in appearance."
+    },
     {
-        "text":"What if you went to school at night?"    } ,
+        "text":"What if you went to school at night?",
+        "suggetion":"Going to school in the day helps use natural light for most tasks. Lunch is served and timings suit parents’ work. Going to school at night would mean that students would eat dinner instead of lunch. They would have to be awake at different hours of the day. Parents would have to change work timings. Lots of lights will have to be used, especially for the outdoors."
+        
+    } ,
     {
-        "text":"What if you didn’t listen to your parents?"    },
+        "text":"What if you didn’t listen to your parents?",
+        "suggetion":"Parents help make decisions based on their own experience. Not listening to parents would mean making decisions based on personal short-lived experience and may be not avoiding some situations that can otherwise be avoided with the help of parents."
+    },
+
     {
-        "text":"What if you didn’t speak English?"    },
+        "text":"What if you didn’t speak English?",
+        "suggetion":"English is the most commonly spoken language in the world. It helps us communicate, read, listen, and understand on a global level. Not speaking English would limit our interaction and reduce our participation in cultural exchange."
+    },
     {
-        "text":"What if you lived on a planet without sun?"    } 
+
+        "text":"What if you lived on a planet without sun?",
+        "suggetion":"Sun helps us create oxygen, nature, warmth, and food. A planet without sun may have its own way of doing such tasks, but if not, then it would be very difficult to live organically on such a planet. We will need other resources to live in a healthy way."
+    } 
 ]

@@ -11,7 +11,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 type SlideProps = {
   setIsFirstScreen: (value: string) => void;
 };
-export default function SlideStart({setIsFirstScreen}:SlideProps) {
+export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
   const [thumbsDownChek, setThumbsDownChek] = useState(false);
@@ -25,10 +25,11 @@ export default function SlideStart({setIsFirstScreen}:SlideProps) {
   const [correctAudio, setCorrectAudio] = useState<HTMLAudioElement | null>(
     null
   );
+  const [suffeleArry, setSuffeleArry] = useState(SlideData);
 
   const handleNext = () => {
     if (lastSlide == SlideData.length - 1) {
-        setIsFirstScreen("Result");
+      setIsFirstScreen("Result");
     }
     swiperRef.current?.slideNext();
   };
@@ -37,8 +38,15 @@ export default function SlideStart({setIsFirstScreen}:SlideProps) {
     if (lastSlide == 0) return;
     swiperRef.current?.slidePrev();
   };
+  const shuffel = () => {
+    // return arry.sort(() => Math.random() - 0.5);
+    const arryShuffle = [...SlideData].sort(() => Math.random() - 0.5);
+    setSuffeleArry(arryShuffle);
+  };
 
   useEffect(() => {
+    shuffel();
+    // setSuffeleArry(shuffel([...SlideData]));
     setWrongAudio(new Audio("/sound/wrong_buzzer.mp3"));
     setCorrectAudio(new Audio("/sound/correct.mp3"));
   }, []);
@@ -98,7 +106,7 @@ export default function SlideStart({setIsFirstScreen}:SlideProps) {
           onSlideChange={handleChange}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
-          {SlideData.map((item, index) => (
+          {suffeleArry.map((item, index) => (
             <SwiperSlide key={index}>
               <div className=" text-center py-5 text-black text-3xl ">
                 {item.text}
@@ -154,7 +162,7 @@ export default function SlideStart({setIsFirstScreen}:SlideProps) {
 
           <div
             className={` ${
-             showBtn
+              showBtn
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90 

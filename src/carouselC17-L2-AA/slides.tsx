@@ -14,6 +14,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 export default function SlideStart() {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
+  const [showSugge,setShowSugge]= useState(false)
 
   const handleNext = () => {
     if (lastSlide == SlideData.length - 1) {
@@ -30,6 +31,7 @@ export default function SlideStart() {
     setLastSlide(swipe.activeIndex);
     if (lastSlide == SlideData.length - 1) return;
     //  setIsFirstScreen("result");
+    setShowSugge(false)
   };
   return (
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
@@ -53,6 +55,15 @@ export default function SlideStart() {
                 <div className=" text-center py-5 text-black text-2xl ">
                   {item.text}
                 </div>
+                <div className="flex justify-center items-center flex-col gap-2 w-full">
+                  <textarea className="min-w-[400px] min-h-[100px] outline-none border-2 border-black rounded-lg text-center text-black text-xl" placeholder="write your answer"  />
+                <button onClick={()=>setShowSugge(true)}  className="text-white cursor-pointer bg-violet-800 rounded-lg px-5 py-2">check</button>
+                </div>
+               <div className={`${showSugge ? "block" :"hidden"} min-h-[200px] flex justify-center items-center`}>
+               <p className="text-lg text-center text-black">
+                  {item.suggetion}
+                </p>
+               </div>
               </SwiperSlide>
             ))}
            
@@ -77,7 +88,7 @@ export default function SlideStart() {
 
           <div
             className={` ${
-              lastSlide < SlideData.length -1 
+              lastSlide < SlideData.length -1 && showSugge 
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90 
@@ -85,7 +96,7 @@ export default function SlideStart() {
           >
             <FaArrowRight
               className={`${
-                lastSlide < SlideData.length- 1 ? "block" : "hidden"
+                lastSlide < SlideData.length -1 && showSugge  ? "block" : "hidden"
               } text-[40px]  cursor-pointer text-black `}
               onClick={handleNext}
             />

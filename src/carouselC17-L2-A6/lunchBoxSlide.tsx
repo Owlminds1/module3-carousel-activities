@@ -21,7 +21,7 @@ const LunchBoxSlide = ({
 }: myProps) => {
   const [selectedIFruite, setSelectedFruite] = useState<number[]>([]);
   const [selectedVegges, setSelectedVegges] = useState<number[]>([]);
-  const [selectedMeals, sesMelectedMeals] = useState<number[]>([]);
+  const [selectedMeals, setMelectedMeals] = useState<number[]>([]);
 
   const handleFruitsCalories = (calories: number, index: number) => {
     if (isNaN(calories)) return;
@@ -53,11 +53,11 @@ const LunchBoxSlide = ({
     if (!selectedMeals.includes(index)) {
       setMealCal((prev) => prev + calories);
       setCountCal((prev) => prev + calories);
-      sesMelectedMeals((prev) => [...prev, index]);
+      setMelectedMeals((prev) => [...prev, index]);
     } else {
       setMealCal((prev) => prev - calories);
       setCountCal((prev) => prev - calories);
-      sesMelectedMeals((prev) => prev.filter((item) => item !== index));
+      setMelectedMeals((prev) => prev.filter((item) => item !== index));
     }
   };
 
@@ -71,7 +71,7 @@ const LunchBoxSlide = ({
           {/* ====================fruits data ===================== */}
 
           <div>
-            <h4 className="text-lg text-center text-black py-2">Fruits</h4>
+            <h4 className="text-lg text-center text-black py-2 font-bold">Fruits</h4>
             <div className="border-2 grid grid-cols-12 p-2 gap-1 bg-violet-100 rounded-lg min-h-[200px]">
               {fruitsData.map((fitem, findex) => (
                 <div className={`col-span-3 ${
@@ -94,7 +94,7 @@ const LunchBoxSlide = ({
           </div>
           {/* ====================veggies data ===================== */}
           <div>
-            <h4 className="text-lg text-center text-black py-2">Veggies</h4>
+            <h4 className="text-lg text-center text-black py-2 font-bold">Veggies</h4>
             <div className="border-2 grid grid-cols-12 p-2 gap-1 bg-violet-100 rounded-lg min-h-[200px]">
               {veggiesData.map((fitem, Vindex) => (
                 <div  className={`col-span-3 ${
@@ -117,7 +117,7 @@ const LunchBoxSlide = ({
           </div>
           {/* ====================meals data ===================== */}
           <div>
-            <h4 className="text-lg text-center text-black py-2">Meals</h4>
+            <h4 className="text-lg text-center text-black py-2 font-bold">Meals</h4>
             <div className="border-2 grid grid-cols-12 p-2 gap-1 bg-violet-100 rounded-lg min-h-[200px]">
               {MealsData.map((fitem, Mindex) => (
                 <div
