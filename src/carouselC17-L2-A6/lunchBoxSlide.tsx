@@ -2,6 +2,7 @@ import Image from "next/image";
 import fruitsData from "@/carouselC17-L2-A6/fruits.json";
 import veggiesData from "@/carouselC17-L2-A6/vegies.json";
 import MealsData from "@/carouselC17-L2-A6/mealData.json";
+import { useState } from "react";
 type myProps = {
   setFruitsCal: React.Dispatch<React.SetStateAction<number>>;
   setVaggeisCal: React.Dispatch<React.SetStateAction<number>>;
@@ -18,20 +19,27 @@ const LunchBoxSlide = ({
   setFruitsCal,
   setCountCal,
 }: myProps) => {
-  const handleFruitsCalories = (calories: number) => {
+
+  const [selectedItem, setSelectedItem] = useState<number[]>([]);
+
+
+  const handleFruitsCalories = (calories: number,index:number) => {
     if (isNaN(calories)) return;
     setFruitsCal((prev) => prev + calories);
     setCountCal((prev) => prev + calories);
+    setSelectedItem((prev)=>[...prev,index])
   };
-  const handleVaggeisCalories = (calories: number) => {
+  const handleVaggeisCalories = (calories: number,index:number) => {
     if (isNaN(calories)) return;
     setVaggeisCal((prev) => prev + calories);
     setCountCal((prev) => prev + calories);
+    setSelectedItem((prev)=>[...prev,index])
   };
-  const handleMealCalories = (calories: number) => {
+  const handleMealCalories = (calories: number,index:number) => {
     if (isNaN(calories)) return;
     setMealCal((prev) => prev + calories);
     setCountCal((prev) => prev + calories);
+    setSelectedItem((prev)=>[...prev,index])
   };
 
   return (
@@ -51,8 +59,8 @@ const LunchBoxSlide = ({
             {fruitsData.map((fitem, findex) => (
               <div className="col-span-3" key={findex}>
                 <div
-                  className="w-[150px] h-[150px] bg-white relative rounded-lg overflow-hidden border cursor-pointer hover:border-2 hover:border-black "
-                  onClick={() => handleFruitsCalories(fitem.value)}
+                  className={ `${selectedItem.includes(findex) ? "border-2 border-black":""} w-[150px] h-[150px] bg-white relative rounded-lg overflow-hidden border cursor-pointer hover:border-2 hover:border-black`}
+                  onClick={() => handleFruitsCalories(fitem.value,findex)}
                 >
                   <Image src={fitem.fruitsImg} fill alt="fruits imgs" />
                 </div>
@@ -70,8 +78,8 @@ const LunchBoxSlide = ({
             {veggiesData.map((fitem, findex) => (
               <div className="col-span-3" key={findex}>
                 <div
-                  className="w-[150px] h-[150px] relative rounded-lg overflow-hidden border cursor-pointer hover:border-2 hover:border-black "
-                  onClick={() => handleVaggeisCalories(fitem.value)}
+                   className={ `${selectedItem.includes(findex) ? "border-2 border-black":""} w-[150px] h-[150px] bg-white relative rounded-lg overflow-hidden border cursor-pointer hover:border-2 hover:border-black`}
+                  onClick={() => handleVaggeisCalories(fitem.value,findex)}
                 >
                   <Image src={fitem.fruitsImg} fill alt="fruits imgs" />
                 </div>
@@ -89,8 +97,8 @@ const LunchBoxSlide = ({
             {MealsData.map((fitem, findex) => (
               <div className="col-span-3" key={findex}>
                 <div
-                  className="w-[150px] h-[150px] relative rounded-lg overflow-hidden border cursor-pointer hover:border-2 hover:border-black "
-                  onClick={() => handleMealCalories(fitem.value)}
+                 className={ `${selectedItem.includes(findex) ? "border-2 border-black":""} w-[150px] h-[150px] bg-white relative rounded-lg overflow-hidden border cursor-pointer hover:border-2 hover:border-black`}
+                  onClick={() => handleMealCalories(fitem.value,findex)}
                 >
                   <Image src={fitem.fruitsImg} fill alt="fruits imgs" />
                 </div>
@@ -113,8 +121,9 @@ const LunchBoxSlide = ({
           </h3>
 
           <button
-            onClick={() => setIsFirstScreen("table")}
-            className="bg-yellow-400 cursor-pointer text-black px-5 py-2 rounded-lg"
+            onClick={() => countCal >= 700? setIsFirstScreen("table"):""
+            }
+            className="bg-yellow-400 cursor-pointer text-black px-5 py-2 rounded-lg" 
           >
             Check Your Calories
           </button>
