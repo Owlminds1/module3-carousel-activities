@@ -1,0 +1,57 @@
+[
+    {
+        "text":"YOGHURT",
+        "value":"Healthy",
+        "imgs":"/C17Images/healthy_food/YOGHURT.jpg"
+    },
+    {
+        "text":"AVOCADO",
+        "value":"Healthy",
+        "imgs":"/C17Images/healthy_food/AVOCADO.jpg"
+    } ,
+    {
+        "text":"APPLE",
+        "value":"Healthy",
+        "imgs":"/C17Images/healthy_food/APPLE.jpg"
+    },
+    {
+        "text":"NUTS",
+        "value":"Healthy",
+        "imgs":"/C17Images/healthy_food/NUTS.jpg"
+    },
+    {
+        "text":"SALAD",
+        "value":"Healthy",
+        "imgs":"/C17Images/healthy_food/SALAD.jpg"
+    } ,
+    {
+        "text":"ORANGE JUICE",
+        "value":"Healthy",
+        "imgs":"/C17Images/healthy_food/ORANGE_JUICE.jpg"
+    },
+    {
+        "text":"PASTA",
+        "value":"Unhealthy",
+        "imgs":"/C17Images/unhealty_Food/PASTA.jpg"
+    },
+    {
+        "text":"FRIES",
+        "value":"Unhealthy",
+        "imgs":"/C17Images/unhealty_Food/FRIES.jpg"
+    },
+    {
+        "text":"HOT DOG",
+        "value":"Unhealthy",
+        "imgs":"/C17Images/unhealty_Food/HOT_DOG.jpg"
+    },
+    {
+        "text":"PIZZA",
+        "value":"Unhealthy",
+        "imgs":"/C17Images/unhealty_Food/PIZZA.jpg"
+    },
+    {
+        "text":"SWEET POPCORN",
+        "value":"Unhealthy",
+        "imgs":"/C17Images/unhealty_Food/SWEET_POPCORN.jpg"
+    }
+]

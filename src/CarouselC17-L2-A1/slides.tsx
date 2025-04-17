@@ -52,7 +52,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   }, []);
 
   const HandleYes = (val: string) => {
-    if (SlideData[lastSlide]?.value === val) {
+    if (suffeleArry[lastSlide]?.value === val) {
       setThumbsupChek(true);
       setShowbtn(true);
       correctAudio?.play();
@@ -67,7 +67,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   };
 
   const handleNo = (val: string) => {
-    if (SlideData[lastSlide]?.value === val) {
+    if (suffeleArry[lastSlide]?.value === val) {
       setThumbsDownChek(true);
       setShowbtn(true);
 
