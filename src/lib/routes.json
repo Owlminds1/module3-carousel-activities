@@ -46,5 +46,13 @@
     {
         "link":"C17-L2-A6",
         "activity":"Lunchbox planner"
+    },
+     {
+        "link":"C17-L3-A1",
+        "activity":"Ask AI"
+    },
+    {
+        "link":"C17-L3-A2",
+        "activity":"Read with understanding"
     }
 ]

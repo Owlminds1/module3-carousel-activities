@@ -31,6 +31,7 @@ const ImageSlider = () => {
     setLastSlide(swipe.activeIndex);
     if (lastSlide == SlideData.length - 1) return;
     //  setIsFirstScreen("result");
+    setShowSugetion(false)
     setTimer(60);
   };
 

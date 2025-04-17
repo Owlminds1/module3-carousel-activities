@@ -51,12 +51,12 @@ export default function SlideStart() {
             {SlideData.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="flex justify-center items-center flex-col p-5 ">
-                  <div className=" text-center">
+                  <div className=" text-center min-h-[50px]">
                     <div className=" text-center  text-black text-2xl ">
                       {item.text}
                     </div>
                   </div>
-                  <div className=" rounded-lg overflow-hidden relative w-full h-[300px] ">
+                  <div className=" bg-white rounded-lg overflow-hidden relative w-full h-[300px] ">
                     <Image
                       src={item.image}
                       fill
@@ -80,7 +80,7 @@ export default function SlideStart() {
                     WHY is for reason. We often use because for questions about
                     reasoning.                    </div>
                   </div>
-                  <div className=" rounded-lg overflow-hidden relative w-full h-[300px] ">
+                  <div className=" bg-white rounded-lg overflow-hidden relative w-full h-[300px] ">
                     <Image
                       src="/C17Images/L1-2A/wayImage.png"
                       fill
@@ -105,7 +105,7 @@ export default function SlideStart() {
                     HOW is to see how someone feels, how something is done, or for
                 modes of transportation                 </div>
                   </div>
-                  <div className=" rounded-lg overflow-hidden relative w-full h-[300px] ">
+                  <div className=" bg-white rounded-lg overflow-hidden relative w-full h-[300px] ">
                     <Image
                       src="/C17Images/L1-2A/howImage.png"
                       fill
