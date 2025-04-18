@@ -58,5 +58,9 @@
     {
         "link":"C18-L1-A4",
         "activity":"Green light, Red light"
+    },
+    {
+        "link":"C18-L1-A5",
+        "activity":"Meal plan"
     }
 ]
