@@ -1,0 +1,45 @@
+[
+    {
+        "text":"Homework",
+        "value":"important"
+    },
+    {
+        "text":"Playing Sports",
+        "value":"important"
+    },
+    {
+        "text":"Sleeping",
+        "value":"important"
+    },
+    {
+        "text":"Meeting Friends",
+        "value":"very important"
+    },
+    {
+        "text":"Watching TV",
+        "value":"somewhat important"
+    },
+    {
+        "text":"Helping with Grocery",
+        "value":"important"
+    },
+     {
+        "text":"Practicing Hobbies",
+        "value":"very important"
+    },
+    {
+        "text":"Tidying Up",
+        "value":"somewhat important"
+    },
+    {
+        "text":"Exercising",
+        "value":"very important"
+    },{
+        "text":"Eating",
+        "value":"extremely important"
+    },
+    {
+        "text":"Studying",
+        "value":"very important"
+    }
+]
