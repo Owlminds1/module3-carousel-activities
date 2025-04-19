@@ -1,7 +1,7 @@
 
 "use client"
 import React, { useState } from 'react'
-import Strart from './start';
+import Start from './start';
 import SortingPage from './sortingPage';
 
 const CarouselC18L1A1 = () => {
@@ -9,7 +9,7 @@ const CarouselC18L1A1 = () => {
   
     return (
       <>
-        {isFirstScreen == "start" && <Strart setIsFirstScreen={setIsFirstScreen} />}
+        {isFirstScreen == "start" && <Start setIsFirstScreen={setIsFirstScreen} />}
         {isFirstScreen == "SortingPage" && <SortingPage/>}
       
       </>

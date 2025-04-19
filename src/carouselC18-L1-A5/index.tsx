@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Strart from "./start";
+import Start from "./start";
 import Table from "./table";
 import ShopingCart from "./shopingCart";
 
@@ -15,7 +15,7 @@ const CarouselC18L1A5 = () => {
   return (
     <>
       {isFirstScreen == "start" && (
-        <Strart setIsFirstScreen={setIsFirstScreen} />
+        <Start setIsFirstScreen={setIsFirstScreen} />
       )}
       {isFirstScreen == "CartSlide" && (
         <ShopingCart

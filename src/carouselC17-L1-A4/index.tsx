@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import Strart from './start';
+import Start from './start';
 import UnscrambleWords from './unscrambleWords';
 
 
@@ -8,7 +8,7 @@ const CarouselC17L1A4 = () => {
   const [isFirstScreen,setIsFirstScreen] =useState("start")
   
     return <>
-    {isFirstScreen == "start" && <Strart setIsFirstScreen={setIsFirstScreen}/>}
+    {isFirstScreen == "start" && <Start setIsFirstScreen={setIsFirstScreen}/>}
     {isFirstScreen == "UnscrambleWords" && <UnscrambleWords />}
   
     

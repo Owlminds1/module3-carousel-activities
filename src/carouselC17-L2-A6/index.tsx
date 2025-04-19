@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import Strart from './start';
+import Start from './start';
 import LunchBoxSlide from './lunchBoxSlide';
 import Table from './table';
 
@@ -13,7 +13,7 @@ const CarouselC17L2A6 = () => {
   const [countCal, setCountCal] = useState(0);
  
    return <>
-   {isFirstScreen == "start" && <Strart setIsFirstScreen={setIsFirstScreen}/>}
+   {isFirstScreen == "start" && <Start setIsFirstScreen={setIsFirstScreen}/>}
    {isFirstScreen == "LunchBoxSlide" && < LunchBoxSlide setFruitsCal={setFruitsCal}  setVaggeisCal={setVaggeisCal} setMealCal={setMealCal} countCal={countCal} setCountCal={setCountCal}   setIsFirstScreen={setIsFirstScreen}/>}
    {isFirstScreen == "table" && < Table fruitsCal={fruitsCal} vaggeisCal={vaggeisCal} mealCal={mealCal} countCal={countCal}/>}
  

@@ -1,0 +1,43 @@
+[
+    {
+        "tasks":"Leisure",
+        "value":"Independent"
+    },
+    {
+        "tasks":"Commute",
+        "value":"Independent"
+    },
+    {
+        "tasks":"HW completion",
+        "value":"Independent"
+    },
+    {
+        "tasks":"Sleep",
+        "value":"Independent"
+    },
+     {
+        "tasks":"Getting Ready",
+        "value":"Independent"
+    },
+    {
+        "tasks":"Outdoors",
+        "value":"Independent"
+    },
+    {
+        "tasks":"TV",
+        "value":"Independent"
+    },
+    
+    {
+        "tasks":"Week Prep",
+        "value":"Independent"
+    },
+    {
+        "tasks":"Video Games",
+        "value":"Independent"
+    },
+    {
+        "tasks":"Personal Time",
+        "value":"Independent"
+    }
+]

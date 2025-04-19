@@ -39,7 +39,7 @@ const SortingPage = () => {
       <h4 className="text-black text-bold text-3xl">What to do on the weekend?</h4>
       <div className="relative flex justify-center items-center flex-col ">
         <Image
-          src="/C18images/tree.png"
+          src="/C18Images/tree.png"
           width={600}
           height={100}
           alt="tree image"

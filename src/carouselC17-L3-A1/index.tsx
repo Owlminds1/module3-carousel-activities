@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import Strart from './start'
+import Start from './start'
 import CategoryQuestions from './categoryQustions'
 import ReviseAnswer from './reviseAnswer'
 
@@ -16,7 +16,7 @@ const CarouselC17L3A1 = () => {
      });
    return (
      <>
-        {isFirstScreen == "start" && <Strart setIsFirstScreen={setIsFirstScreen}/>}
+        {isFirstScreen == "start" && <Start setIsFirstScreen={setIsFirstScreen}/>}
         {isFirstScreen == "CategoryQuestions" && <CategoryQuestions inputs={inputs} setInputs={setInputs}  setIsFirstScreen={setIsFirstScreen} />}
         {isFirstScreen == "reviseAnswer" && <ReviseAnswer inputs={inputs} />}
        

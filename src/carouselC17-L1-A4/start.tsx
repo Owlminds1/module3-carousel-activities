@@ -4,7 +4,7 @@ import React from 'react'
 type myProps = {
     setIsFirstScreen: (value: string) => void;
   };
-const Strart = ({setIsFirstScreen}:myProps) => {
+const Start = ({setIsFirstScreen}:myProps) => {
   return (
     <div className="min-h-screen flex justify-center items-center flex-col gap-10 bg-[#F8FAFC]">
     <div className="min-h-[100px] p-4 text-center shadow-black shadow-md rounded-lg flex justify-center items-center w-[600px]">
@@ -15,4 +15,4 @@ const Strart = ({setIsFirstScreen}:myProps) => {
   )
 }
 
-export default Strart
+export default Start
