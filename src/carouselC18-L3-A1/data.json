@@ -1,0 +1,49 @@
+
+[ 
+    { 
+        "id":"1",
+         "Name":"Group tasks that are independent or interdependent. "
+     },
+     { 
+        "id":"2", 
+        "Name":"Categorize tasks as weekly or weekend."
+
+     }, 
+
+     { 
+
+     "id":"3",
+      "Name":"Identify what can wait task/ can be skipped task."
+    }, 
+    
+
+     { 
+
+     "id":"4",
+      "Name":"Establish the pros and cons of doing or not doing each task that is in the category “can wait task” and “can be skipped”."
+  },
+
+        { 
+        "id":"5",
+         "Name":"Label each of those tasks as Less effort, high impact/High effort, low impact/ Low effort, low impact/High effort, high impact?"
+ 
+     },
+    
+     { 
+        "id":"6", 
+        "Name":"Apply the C.A.R.E framework."
+ 
+    },
+
+      { 
+        "id":"7",
+         "Name":"Establish a timeline for each task." 
+
+      } ,
+      { 
+        "id":"8",
+         "Name":"Reassess the timetable based on priority and timeline." 
+
+      }
+ 
+     ]

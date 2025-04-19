@@ -68,7 +68,7 @@ const Analogies = () => {
               <textarea
                 placeholder="problem-b) 
 "
-                className="w-[150px] h-[30px] outline-none text-center  border-b text-center placeholder:text-center"
+                className="w-[150px] h-[30px] outline-none text-center  border-b  placeholder:text-center"
               />
             </div>
 
