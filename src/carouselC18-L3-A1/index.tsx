@@ -6,7 +6,7 @@ import SecoundSlide from './secoundSlide';
 
 
 const CarouselC18L3A1 = () => {
-  const [isFirstScreen, setIsFirstScreen] = useState("secoundSlide");
+  const [isFirstScreen, setIsFirstScreen] = useState("start");
      
        return (
          <>
