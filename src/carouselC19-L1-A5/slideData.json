@@ -1,0 +1,37 @@
+[
+    {
+        "qustion":"When someone takes your water bottle without your permission.",
+        "value":"red",
+        "image":"/C19Images/water-bottle.png"
+    },
+     {
+        "qustion":"When someone tells you that you look nice today.",
+        "value":"yellow",
+        "image":"/C19Images/look-nice.png"
+    },
+     {
+        "qustion":"When the teacher gives you a test.",
+        "value":"blue",
+        "image":"/C19Images/class-test.png"
+    },
+    {
+        "qustion":"When your parents scold you for misbehaving.",
+        "value":"red",
+        "image":"/C19Images/parent-scolding.png"
+    },
+    {
+        "qustion":"When you see garbage on the floor.",
+        "value":"red",
+        "image":"/C19Images/garbage.png"
+    },
+     {
+        "qustion":"When your friend holds you after you tell them a secret.",
+        "value":"yellow",
+        "image":"/C19Images/sharing-secret.png"
+    } ,
+    {
+        "qustion":"When your friends are not around and you get bored.",
+        "value":"dull",
+        "image":"/C19Images/lonely.png"
+    }
+]

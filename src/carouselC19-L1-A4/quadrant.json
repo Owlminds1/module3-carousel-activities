@@ -1,0 +1,15 @@
+[
+    {
+        "QuadVal":"Low pleasantness",
+        "bg":"bg-red-300"
+    },{
+        "QuadVal":"High pleasantness",
+        "bg":"bg-yellow-300"
+    },{
+        "QuadVal":"Low energy",
+        "bg":"bg-blue-300"
+    },{
+        "QuadVal":"High energy",
+        "bg":"bg-green-300"
+    }
+]

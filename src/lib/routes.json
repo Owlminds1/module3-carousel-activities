@@ -80,7 +80,17 @@
         "link":"C18-L3-A1",
         "activity":"Sequencing"
     },
+
      {
+        "link":"C19-L1-A4",
+        "activity":"Emotion game"
+    },
+    {
+        "link":"C19-L1-A5",
+        "activity":"How do you feel"
+    },
+
+    {
         "link":"C19-L1-A6",
         "activity":"Nice things around me"
     }
