@@ -12,10 +12,10 @@ const Table = ({ mealCal, vaggeisCal, fruitsCal ,countCal}: myProps) => {
  <h4 className="text-3xl text-center font-bold text-black">Meal plan</h4>
         <div className="grid grid-cols-12 w-[800px] gap-3 gap-y-4 border border-black rounded-lg p-5 bg-violet-100 place-items-center ">
             <div className="col-span-4 w-full">
-                <h2 className="text-white py-2 rounded-lg bg-blue-500 text-center">ITEMS</h2>
+                <h2 className="text-white py-2 rounded-lg bg-blue-500 text-center">Time</h2>
             </div>
             <div className="col-span-8 w-full">
-            <h2 className="text-white py-2 rounded-lg bg-blue-500 text-center">{`Caloris (700)`}</h2>
+            <h2 className="text-white py-2 rounded-lg bg-blue-500 text-center">{`Bucks`}</h2>
 
             </div>
             <div className="col-span-4 w-full">

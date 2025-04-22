@@ -1,0 +1,42 @@
+[
+    {
+     "fruitsImg":"/C18Images/Breakfast/banana.jpg",
+     "name":"Banana"   ,
+     "value":5 
+    },
+    {
+        "fruitsImg":"/C18Images/Breakfast/strawberry.jpg",
+        "name":"Strawberry" ,
+         "value":5   
+    }  ,
+    {
+        "fruitsImg":"/C18Images/Breakfast/raspberry.jpg",
+        "name":"Raspberry" ,
+         "value":5   
+    } ,
+    {
+        "fruitsImg":"/C18Images/Breakfast/apple.jpg",
+        "name":"Apple"   ,
+        "value":5  
+    } ,
+    {
+        "fruitsImg":"/C18Images/Breakfast/pear.jpg",
+        "name":"Pear"  ,
+         "value":5  
+    } ,
+    {
+        "fruitsImg":"/C18Images/Breakfast/water_melon.jpg",
+        "name":"Water Melon"  ,
+         "value":5  
+    } ,
+    {
+        "fruitsImg":"/C18Images/Breakfast/orange.jpg",
+        "name":"Orange" , 
+        "value":5   
+    } ,
+    {
+        "fruitsImg":"/C18Images/Breakfast/peach.jpg",
+        "name":"Peach" ,
+        "value":5  
+    } 
+]

@@ -1,0 +1,21 @@
+"use client"
+import React, { useState } from 'react'
+import Start from './start';
+import FirstSlide from './firstSlide';
+import SecoundSlide from './secoundSlide';
+
+
+const CarouselC18L2A1 = () => {
+  const [isFirstScreen, setIsFirstScreen] = useState("start");
+     
+       return (
+         <>
+           {isFirstScreen == "start" && <Start setIsFirstScreen={setIsFirstScreen} />}
+           {isFirstScreen == "FirstSlide" && <FirstSlide setIsFirstScreen={setIsFirstScreen} />}
+           {isFirstScreen == "secoundSlide" && <SecoundSlide  />}
+         
+         </>
+       );
+}
+
+export default CarouselC18L2A1

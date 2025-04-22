@@ -1,7 +1,7 @@
 import Image from "next/image";
-import fruitsData from "@/carouselC18-L1-A5/fruits.json";
-import veggiesData from "@/carouselC18-L1-A5/vegies.json";
-import MealsData from "@/carouselC18-L1-A5/mealData.json";
+import fruitsData from "@/carouselC18-L1-A5/breackFast.json";
+import veggiesData from "@/carouselC18-L1-A5/lunchData.json";
+import MealsData from "@/carouselC18-L1-A5/dinnerData.json";
 import { useState } from "react";
 import { BsCartDashFill } from "react-icons/bs";
 
