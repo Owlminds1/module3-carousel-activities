@@ -54,11 +54,11 @@ export default function EmotionSlide() {
 
   return (
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
-      <div className="w-[1000px]  ">
+      <div className="w-full p-8  ">
         <h1 className="text-center text-4xl font-bold py-4 text-black">
           Emotion game
         </h1>
-        <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[200px] ">
+        <div className="border-2 h-full flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[200px] ">
           <Swiper
             slidesPerView={1}
             loop={false}
@@ -69,18 +69,17 @@ export default function EmotionSlide() {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             <SwiperSlide>
-              <div className="h-full mx-auto my-5 ">
+              <div className="h-[500px] w-full relative mx-auto my-5 ">
                 <Image
                   src="/C19Images/emotion_table.png"
-                  width={1000}
-                  height={400}
+                  fill
                   alt="emotion Table"
                 />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="grid grid-cols-12 gap-5  w-full place-items-center">
-                 <div className="col-span-6 w-full h-[400px] overflow-y-scroll flex justify-center items-center gap-1 min-w-full rounded-lg p-5 flex-wrap  bg-violet-400">
+                 <div className="col-span-4 w-full h-[400px] overflow-y-scroll flex justify-center items-center gap-1 min-w-full rounded-lg p-5 flex-wrap  bg-violet-400">
            
                 {filterData.map((item, index) => (
                     <h1 
@@ -94,19 +93,19 @@ export default function EmotionSlide() {
                 ))}
              
                  </div>
-               <div className="col-span-6 w-full ">
+               <div className="col-span-8 w-full ">
                <div className="grid grid-cols-12 place-items-center gap-1   w-full">
                   {QuadrantData.map((item, index) => (
                     <div
                       onDragOver={(e) => e.preventDefault()}
                       onDrop={(e) => handleDrop(e, index, item.QuadVal)}
                       key={index}
-                      className={`${item.bg} rounded-lg col-span-6 min-h-[250px] w-full flex justify-start gap-1 items-center flex-col`}
+                      className={`${item.bg}   rounded-lg col-span-6 overflow-y-scroll h-[250px] min-h-[250px] w-full flex justify-start gap-1 items-center flex-col`}
                     >
                       <h2 className="text-xl text-black font-bold">
                         {item.QuadVal}
                       </h2>
-                      <div   className=" w-full  flex justify-center  gap-1 items-center flex-wrap min-w-[100px] ">
+                      <div   className=" w-full  p-2  flex justify-center  gap-1 items-center flex-wrap min-w-[100px] ">
                       {dropItem[index]?.map((i, index) => (
                          <h2 key={index}
                          
