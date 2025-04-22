@@ -4,7 +4,7 @@ import Start from './start';
 import EmotionSlide from './emotionSlide';
 
 const CarouselC19L1A4 = () => {
-    const [isFirstScreen, setIsFirstScreen] = useState("start");
+    const [isFirstScreen, setIsFirstScreen] = useState("EmotionSlide");
     return (
         <>
           {isFirstScreen == "start" && <Start setIsFirstScreen={setIsFirstScreen} />}
