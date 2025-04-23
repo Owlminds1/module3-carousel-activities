@@ -1,0 +1,30 @@
+[
+    {
+        "positionY":"140px",
+        "positionX":"125px",
+        "text":"Do you remember what C.A.R.E stands for from our previous class?",
+        "rotate":230
+
+    },
+    {
+        "positionY":"125px",
+        "positionX":"320px",
+        "text":"What is more important: playing video games or going to basketball practice?",
+        "rotate":330
+
+    },
+    {
+        "positionY":"360px",
+        "positionX":"310px",
+        "text":"Give me an example of a high priority task/can wait task/ can be skipped tasks",
+        "rotate":400
+
+    },
+      {
+        "positionY":"350px",
+        "positionX":"130px",
+        "text":"N - According to you, is your diet healthy or unhealthy? What does it include?",
+        "rotate":460
+
+    }
+]
