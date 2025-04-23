@@ -5,7 +5,7 @@ import Result from "./result";
 import FoodSlide from "./slides";
 
 const CarouselC18L1A4 = () => {
-  const [isFirstScreen,setIsFirstScreen] =useState("FoodSlide")
+  const [isFirstScreen,setIsFirstScreen] =useState("start")
 
   return <>
   {isFirstScreen == "start" && <Start setIsFirstScreen={setIsFirstScreen}/>}

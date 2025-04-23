@@ -1,0 +1,44 @@
+[
+    {
+        "positionY":"140px",
+        "positionX":"240px",
+        "text":"S - Do you plan your day? How?",
+        "rotate":260
+
+    },
+    {
+        "positionY":"200px",
+        "positionX":"380px",
+        "text":" P - Do you help your parents with grocery shopping? What do you do?",
+        "rotate":330
+
+    },
+     {
+        "positionY":"380px",
+        "positionX":"380px",
+        "text":"I - Do you make to-do lists? How often?",
+        "rotate":400
+
+    },
+      {
+        "positionY":"430px",
+        "positionX":"250px",
+        "text":"N - According to you, is your diet healthy or unhealthy? What does it include?",
+        "rotate":450
+
+    },
+     {
+        "positionY":"380px",
+        "positionX":"120px",
+        "text":"M - Does your family help you plan your weekend? How?",
+        "rotate":500
+
+    },
+      {
+        "positionY":"170px",
+        "positionX":"110px",
+        "text":"E - Have you ever done your own shopping? How would you spend 30 bucks on breakfast?",
+        "rotate":600
+
+    }
+]
