@@ -11,7 +11,7 @@ type myProps = {
 };
 const ReviseAnswer = ({ inputs }: myProps) => {
   return (
-    <div className="min-h-screen flex justify-center items-center flex-col bg-[#F8FAFC]">
+    <div className="min-h-screen flex justify-center items-center flex-col p-5 bg-[#F8FAFC]">
             <h4 className="text-3xl text-black text-center font-bold p-5">Revise Answer</h4>
       <div className="bg-violet-200 p-5 rounded-lg w-[600px]">
         <div className=" min-h-[50px] p-2 rounded-lg border-2 border-white bg-violet-500 flex justify-center items-start flex-col gap-3 min-w-[500px] ">

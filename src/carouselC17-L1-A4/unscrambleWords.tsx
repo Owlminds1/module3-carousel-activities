@@ -50,6 +50,7 @@ export default function UnscrambleWords() {
     const upperLowerText = inputText.toLowerCase();
     // console.log(upperText)
     if (correctText == upperLowerText) {
+      setHintBtn(true)
       setConfetti(true);
       setShowBtn(true)
       setTimeout(() => {
@@ -129,13 +130,17 @@ export default function UnscrambleWords() {
             {/* =================== bonuseSlide ================= */}
             {bonuseSlide.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="grid grid-cols-12 place-items-center w-full">
-                <div className="col-span-6 w-[400px] h-[400px] relative">
-                    <Image
+               <div className="grid grid-cols-12 place-items-center w-full">
+                  <div className="col-span-6 w-[400px] h-[400px] border border-white relative flex justify-center items-center">
+                  {
+                    hintBtn ? 
+                      <Image
                       src={item.image}
-                      fill
+                    fill
                       alt="slide image"
-                    />
+                    />:
+                    <button onClick={()=>setHintBtn(true)} className="bg-violet-900 text-white px-8 py-2 rounded-lg cursor-pointer ">Hint</button>
+                  }
                   </div>
                   <div className="col-span-6 w-full flex justify-center items-center  gap-10 flex-col ">
                     <div className="flex justify-center items-center gap-2">
