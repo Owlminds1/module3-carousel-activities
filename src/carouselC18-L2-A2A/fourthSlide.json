@@ -1,0 +1,50 @@
+[
+    {
+        "text": "Leisure",
+        "val": "Weekend"
+    },
+    {
+        "text": "School",
+        "val": "Weekly"
+    },
+    {
+        "text": "Social Time",
+       "val": "Weekend"
+    },
+    {
+        "text": "HW completion",
+        "val": "Weekend"
+    },
+    {
+        "text": "Piano Practice",
+         "val": "Weekly"
+    },
+    {
+        "text": "Football Practice",
+        "val": "Weekly"
+    },
+    {
+        "text": "Outdoor",
+       "val": "Weekend"
+    },
+    {
+        "text": "Prep",
+      "val": "Weekly"
+    },
+    {
+        "text": "Tutoring",
+        "val": "Weekly"
+    },
+    {
+        "text": "TV",
+        "val": "Weekly"
+    },
+    {
+        "text": "Personal Time",
+          "val": "Weekly"
+    },
+    {
+        "text": "Meals",
+         "val": "Weekend"
+    }
+]

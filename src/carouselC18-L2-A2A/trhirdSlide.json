@@ -1,0 +1,70 @@
+[
+    {
+        "text": "Leisure",
+        "val": "Independent"
+    },
+    {
+        "text": "HW completion",
+        "val": "Independent"
+    },
+    {
+        "text": "Sleep",
+       "val": "Independent"
+    },
+    {
+        "text": "Getting Ready",
+        "val": "Independent"
+    },
+    {
+        "text": "Outdoors",
+         "val": "Independent"
+    },
+    {
+        "text": "TV",
+       "val": "Independent"
+    },
+    {
+        "text": "Week Prep",
+       "val": "Independent"
+    },
+    {
+        "text": "Video Games",
+      "val": "Independent"
+    },
+    {
+        "text": "Personal Time",
+        "val": "Independent"
+    },
+    {
+        "text": "School",
+        "val": "Interdependent"
+    },
+    {
+        "text": "Piano Practice",
+          "val": "Interdependent"
+    },
+    {
+        "text": "Tutoring",
+         "val": "Interdependent"
+    },
+    {
+        "text": "Football Practice",
+        "val": "Interdependent"
+    },
+    {
+        "text": "Swimming",
+         "val": "Interdependent"
+    },
+    {
+        "text": "Social Time",
+         "val": "Interdependent"
+    },
+     {
+        "text": "Meals",
+         "val": "Interdependent"
+    },
+    {
+        "text": "Commute",
+         "val": "Interdependent"
+    }
+]

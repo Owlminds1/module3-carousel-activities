@@ -1,0 +1,70 @@
+[
+    {
+        "text": "Social Time",
+        "val": "DEFER"
+    },
+    {
+        "text": "School",
+        "val": "DO"
+    },
+    {
+        "text": "Homework completion",
+        "val": "DECIDE"
+    },
+    {
+        "text": "Video games",
+        "val": "DELETE"
+    },
+    {
+        "text": "Swimming",
+        "val": "DECIDE"
+    },
+    {
+        "text": "Sleep",
+        "val": "DO"
+    },
+    {
+        "text": "Football Practice",
+        "val": "DECIDE"
+    },
+    {
+        "text": "Meals",
+        "val": "DO"
+    },
+    {
+        "text": "Outdoors",
+        "val": "DEFER"
+    },
+    {
+        "text": "TV",
+        "val": "DELETE"
+    },
+    {
+        "text": "Getting ready",
+        "val": "DO"
+    },
+    {
+        "text": "piano practise",
+        "val": "DECIDE"
+    },
+    {
+        "text": "Tutoring",
+        "val": "DO"
+    },
+    {
+        "text": "Commute",
+        "val": "DO"
+    },
+    {
+        "text": "Week prep",
+        "val": "DECIDE"
+    },
+    {
+        "text": "Personal time",
+        "val": "DECIDE"
+    },
+    {
+        "text": "Leisure",
+        "val": "DEFER"
+    }
+]

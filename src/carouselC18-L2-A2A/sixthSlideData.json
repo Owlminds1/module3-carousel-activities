@@ -1,0 +1,63 @@
+[
+    {
+        "text": "relaxation",
+        "val": "Can-wait-PROS"
+    },
+    {
+        "text": "procrastination",
+        "val": "Can-wait-CONS"
+    },
+    {
+        "text": "freedom",
+        "val": "Can-be-skipped-PROS"
+    },
+    {
+        "text": "procrastination",
+        "val": "Can-be-skipped-CONS"
+    },
+    
+    
+    {
+        "text": "breather",
+        "val": "Can-wait-PROS"
+    },
+    {
+        "text": "lethargy",
+        "val": "Can-wait-CONS"
+    },
+    {
+        "text": "empty mind",
+        "val": "Can-be-skipped-PROS"
+    },
+    {
+        "text": "screen time",
+        "val": "Can-be-skipped-CONS"
+    },
+
+
+    {
+        "text": "release",
+        "val": "Can-wait-PROS"
+    },
+    {
+        "text": "stress",
+        "val": "Can-wait-CONS"
+    },
+    {
+        "text": "engaging in hobbies",
+        "val": "Can-be-skipped-PROS"
+    },
+    {
+        "text": "not useful",
+        "val": "Can-be-skipped-CONS"
+    },
+    {
+        "text": "being active",
+        "val": "Can-wait-PROS"
+    },
+    {
+        "text": "fatigue",
+        "val": "Can-wait-CONS"
+    }
+    
+]

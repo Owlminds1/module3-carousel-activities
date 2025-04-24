@@ -1,0 +1,62 @@
+[
+    {
+        "text": "relaxation",
+        "val": "PROS-del"
+    },
+    {
+        "text": "breather",
+        "val": "PROS-del"
+    },
+    {
+        "text": "release",
+        "val": "PROS-del"
+    },
+    {
+        "text": "meeting people",
+        "val": "PROS-def"
+    },
+    {
+        "text": "procrastination",
+        "val": "CONS-del"
+    },
+    {
+        "text": "lethargy",
+        "val": "CONS-del"
+    },
+    {
+        "text": "stress",
+        "val": "CONS-del"
+    },
+    {
+        "text": "fatigue",
+      "val": "CONS-del"
+    },
+    {
+        "text": "freedom",
+        "val": "PROS-def"
+    },
+    {
+        "text": "TV",
+        "val": "PROS-def"
+    },
+    {
+        "text": "empty mind",
+        "val": "PROS-def"
+    },
+    {
+        "text": "engaging in hobbies",
+         "val": "PROS-def"
+    },
+    {
+        "text": "procrastination",
+        "val": "CONS-def"
+    },
+    {
+        "text": "screen time",
+        "val": "CONS-def"
+    },
+    {
+        "text": "not useful",
+         "val": "CONS-def"
+    }
+]

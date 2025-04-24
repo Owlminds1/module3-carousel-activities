@@ -1,14 +1,14 @@
 [
     {
-        "positionY":"140px",
-        "positionX":"125px",
+        "positionY":"160px",
+        "positionX":"130px",
         "text":"Do you remember what C.A.R.E stands for from our previous class?",
         "rotate":230
 
     },
     {
         "positionY":"125px",
-        "positionX":"320px",
+        "positionX":"310px",
         "text":"What is more important: playing video games or going to basketball practice?",
         "rotate":330
 
@@ -21,9 +21,9 @@
 
     },
       {
-        "positionY":"350px",
-        "positionX":"130px",
-        "text":"N - According to you, is your diet healthy or unhealthy? What does it include?",
+        "positionY":"340px",
+        "positionX":"120px",
+        "text":"Give me an example of tasks that Less effort, high impact/High effort, low impact/ Low effort, low impact/High effort, high impact",
         "rotate":460
 
     }

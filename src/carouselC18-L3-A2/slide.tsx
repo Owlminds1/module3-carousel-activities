@@ -5,10 +5,9 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import SecoundSlide from "./secoundSlide";
 import ThirdSlide from "./thirdSlide";
-import FourthSlide from "./fourthSlide";
-import FivethSlide from "./fivthSlide";
-import SixthSlide from "./sixthSlide";
+
 
 const Slide = () => {
   const swiperRef = useRef<SwiperClass | null>(null);
@@ -26,6 +25,8 @@ const Slide = () => {
   const handleChange = (swiper: SwiperClass) => {
     setLastSlide(swiper.activeIndex);
   };
+
+ 
 
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
@@ -45,40 +46,11 @@ const Slide = () => {
           >
             {/* ========================== SecoundSlide ================= */}
             <SwiperSlide>
-            <div className=" min-h-[450px]  p-5 flex justify-center items-center ">
-                <ul className="list-decimal text-black p-8 space-y-5">
-                  <li className="text-black text-2xl">
-                    Group tasks that are independent or interdependent.
-                  </li>
-                  <li className="text-black text-2xl">
-                    Categorize tasks as weekly or weekend.
-                  </li>
-                  <li className="text-black text-2xl">
-                    Identify tasks that can wait and tasks that can be skipped.
-                  </li>
-                  <li className="text-black text-2xl">
-                    Establish the pros and cons of doing or not doing each task
-                    that is in the category “can wait” and “can be skipped”
-                  </li>
-                </ul>
-              </div>
+           <SecoundSlide/>
             </SwiperSlide>
             {/* ========================== ThirdSlide ================= */}
-            <SwiperSlide>
-              <ThirdSlide />
-            </SwiperSlide>
-              {/* ========================== FourthSlide ================= */}
-            <SwiperSlide>
-              <FourthSlide />
-            </SwiperSlide> 
-            {/* ========================== FivethSlide ================= */}
-            <SwiperSlide>
-              <FivethSlide />
-            </SwiperSlide>
-            
-             {/* ========================== SixthSlide ================= */}
-            <SwiperSlide>
-              <SixthSlide />
+             <SwiperSlide>
+           <ThirdSlide/>
             </SwiperSlide>
           </Swiper>
         </div>
@@ -100,14 +72,14 @@ const Slide = () => {
 
           <div
             className={`${
-              lastSlide < 4
+              lastSlide < 2 
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90`}
           >
             <FaArrowRight
               className={`${
-                lastSlide < 4 ? "block" : "hidden"
+                lastSlide < 2 ? "block" : "hidden"
               } text-[40px] cursor-pointer text-black`}
               onClick={handleNext}
             />

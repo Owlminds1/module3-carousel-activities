@@ -1,0 +1,18 @@
+[
+    {
+        "qValue": "PROS-del",
+        "name":"Delete PROS"
+    },
+    {
+        "qValue": "CONS-del",
+        "name":"Delete CONS"
+    },
+    {
+        "qValue": "PROS-def",
+           "name":"Defer PROS"
+    },
+    {
+        "qValue": "CONS-def",
+           "name":"Defer CONS"
+    }
+]

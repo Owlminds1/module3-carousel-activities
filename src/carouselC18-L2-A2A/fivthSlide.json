@@ -1,0 +1,26 @@
+[
+    {
+        "text": "social time",
+        "val": "Can wait"
+    },
+    {
+        "text": "personal time",
+        "val": "Can be skipped"
+    },
+    {
+        "text": "TV",
+        "val": "Can be skipped"
+    },
+    {
+        "text": "outdoor",
+        "val": "Can wait"
+    },
+    {
+        "text": "video games",
+        "val": "Can wait"
+    },
+    {
+        "text": "leisure time",
+        "val": "Can be skipped"
+    }
+]

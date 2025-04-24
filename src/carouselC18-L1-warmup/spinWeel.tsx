@@ -3,27 +3,45 @@ import Image from "next/image";
 import spinData from "@/carouselC18-L1-warmup/spinData.json";
 import { BiSolidLeftArrow } from "react-icons/bi";
 import { useState } from "react";
+import Dailog from "@/components/dailog";
 
 const SpinWeel = () => {
   const [rotationAngle, setRotationAngle] = useState(0); // final angle
   const [isSpinning, setIsSpinning] = useState(false);
+  const [alrtMssg,setAlrtMssg]=useState("")
+  const [open,setOpen]=useState(false)
 
   const handleSpeenStart = () => {
-    if (isSpinning) return;
-
-    setIsSpinning(true);
-
-    const randomDeg = Math.floor(Math.random() * 360); // random angle (0-359)
-    const fullRotations = 2 * 360; // 5 full rounds
-    const newRotation = rotationAngle + fullRotations + randomDeg;
-
-
-    setRotationAngle(newRotation);
-
-    setTimeout(() => {
-      setIsSpinning(false);
-    }, 5000); // same as transition time
-  };
+     if (isSpinning) return;
+   
+     setIsSpinning(true);
+   
+     const randomDeg = Math.floor(Math.random() * 360);
+     const fullRotations = 5 * 360;
+     const newRotation = rotationAngle + fullRotations + randomDeg;
+   
+     setRotationAngle(newRotation);
+   
+     setTimeout(() => {
+       const segmentAngle = 360 / spinData.length;
+       const finalAngle = newRotation % 360;
+     
+       // Removed + segmentAngle/2
+       const correctedAngle = (360 - finalAngle + segmentAngle * 1.5) % 360;
+ 
+ 
+ 
+       const selectedIndex = Math.round(correctedAngle / segmentAngle) % spinData.length;
+ 
+       
+       const selectedText = spinData[selectedIndex].text;
+       setAlrtMssg(selectedText);
+       setOpen(true);
+       setIsSpinning(false);
+     }, 5000);
+     
+   };
+  
 
   return (
     <div className="min-h-screen p-5 bg-[#F8FAFC] overflow-hidden flex justify-center  items-center flex-col">
@@ -65,6 +83,7 @@ const SpinWeel = () => {
           ))}
         </div>
       </div>
+      <Dailog val={alrtMssg} open={open} setOpen={setOpen}/>
     </div>
   );
 };
