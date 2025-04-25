@@ -5,12 +5,13 @@ import Start from "./start";
 import Result from "./result";
 
 const CarouselC17L1A1 = () => {
+
   const [isFirstScreen,setIsFirstScreen] =useState("start")
 
   return <>
   {isFirstScreen == "start" && <Start setIsFirstScreen={setIsFirstScreen}/>}
   {isFirstScreen == "Qustions" && <SlideStart setIsFirstScreen={setIsFirstScreen}/>}
-  {isFirstScreen == "Result" && <Result />}
+  {isFirstScreen == "Result" && <Result  />}
 
 
   

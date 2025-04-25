@@ -1,27 +1,7 @@
-import React from 'react'
-// type slideProps ={
-//   setIsFirstScreen : (value:string)=>void
-// }
+import WellDoneScreen from "@/components/wellDoneScreen";
 
 const Result = () => {
-    return (
-      <div className="bg-white min-h-screen flex items-center justify-center flex-col gap-3">
-        <div className="min-w-[400px]   shadow shadow-black text-center p-5 rounded-lg">
-          <h1 className="text-center text-3xl py-4 text-black ">
-          Well Done
-          </h1>
+  return <WellDoneScreen />;
+};
 
-          {/* <h2 className='text-black text-lg'>End of the slideshow!</h2> */}
-         
-        </div>
-        {/* <div className="w-[400px] flex justify-center items-center  p-5 rounded-lg">
-          <div
-          onClick={()=>setIsFirstScreen("slide")}
-          className='border w-[50px] h-[50px] flex justify-center items-center text-2xl text-black border-black bg-yellow-400 shadow-inner shadow-black  rounded-full hover:scale-90 cursor-pointer'><IoHome/></div>
-        </div> */}
-      </div>
-    );
-
-}
-
-export default Result
+export default Result;
