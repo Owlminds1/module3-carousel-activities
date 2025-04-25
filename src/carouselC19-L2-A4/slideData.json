@@ -1,0 +1,30 @@
+[
+    {
+        "text":"Your best friend got better grades than you.",
+        "img":"/C19Images/friend-grades.png"
+    },
+    {
+        "text":"Your sibling got a bigger cake for their birthday",
+        "img":"/C19Images/sibling-birthday.png"
+    },
+    {
+        "text":"Your teammate was applauded for all the work you did.",
+        "img":"/C19Images/team-mate-applauded.png"
+    },
+    {
+        "text":"Your parents asked you to eat food that you do not like while dining with guests.",
+        "img":"/C19Images/parent-food.png"
+    },
+    {
+        "text":"Your acquaintances started teasing your sister at school.",
+        "img":"/C19Images/teasing-sister.png"
+    },
+    {
+        "text":"You notice your principal was disrespectful to your teacher in front of you.",
+        "img":"/C19Images/principal.png"
+    },
+     {
+        "text":"Your sibling took away your stuff without asking.",
+        "img":"/C19Images/sibling-take-away-stuff.png"
+    }
+]
