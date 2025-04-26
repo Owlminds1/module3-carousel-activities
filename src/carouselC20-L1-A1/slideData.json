@@ -1,0 +1,17 @@
+[
+    {
+        "qustion":"Throwing plastic straws and bottles in the sea does not harm the ocean.",
+        "value":"false",
+        "button":[{"btnName":"true"},{"btnName":"false"}]
+    },
+    {
+        "qustion":"Unplugging the switch saves more electricity than simply switching off the remote.",
+        "value":"true",
+        "button":[{"btnName":"true"},{"btnName":"false"}]
+    },
+     {
+        "qustion":"Playing video games instead of playing outside protects the environment.",
+        "value":"false",
+        "button":[{"btnName":"true"},{"btnName":"false"}]
+    }
+]
