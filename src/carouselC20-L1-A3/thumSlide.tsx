@@ -64,7 +64,7 @@ const ThumSlide = ({ setIsFirstScreen }: myProps) => {
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[800px]">
         <h1 className="text-center text-4xl font-bold py-4 text-black">
-        How well do we know best practice to save our environment?
+          How well do we know best practice to save our environment?
         </h1>
         <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[300px]">
           <Swiper
@@ -83,7 +83,12 @@ const ThumSlide = ({ setIsFirstScreen }: myProps) => {
                     <h1 className="text-black text-center text-xl ">
                       {item.qustion}
                     </h1>
-                    <textarea placeholder="what should be done instead to protect the environment" className={`${isAnswerCorrect == false ? "block":"hidden"}  min-w-[300px] p-2 outline-none border border-black rounded-lg text-center  placeholder:text-center `} />
+                    <textarea
+                      placeholder="what should be done instead to protect the environment"
+                      className={`${
+                        isAnswerCorrect == false ? "block" : "hidden"
+                      }  min-w-[300px] p-2 outline-none border border-black rounded-lg text-center  placeholder:text-center `}
+                    />
                   </div>
 
                   <div className="col-span-12 flex justify-center gap-25 w-full items-center">

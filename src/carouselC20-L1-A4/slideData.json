@@ -1,0 +1,25 @@
+[
+    {
+        "qustion":"We can throw plastic straws, bags and bottles in the sea.",
+        "value":"No"
+    },
+    {
+        "qustion":"We should put plastic in the recycling bin.",
+        "value":"Yes"
+    },
+    
+    {
+        "qustion":"We should use disposable plastic.",
+        "value":"No"
+    },
+    {
+        "qustion":"We can practice the 3Rs (reduce, reuse, and respect) to ensure a clean planet.",
+        "value":"No"
+    },
+
+
+    {
+        "qustion":"We can know more about how to keep the planet pollution-free with the help of scientists.",
+        "value":"Yes"
+    }
+]
