@@ -1,0 +1,76 @@
+[
+    {
+        "qustion":"Why is global warming happening?",
+        "value":"optionFirst",
+        "options":[
+            {
+                "option":"Because people are emitting billions of carbon dioxide and other greenhouse gases into the atmosphere.",
+                "correct":"optionFirst"
+            },
+            {
+                "option":"Because ultraviolet rays are hitting the earth",
+                "correct":"optionSec"
+            }
+        ]
+    },
+    {
+        "qustion":"How do GHGs [green house gases] affect the temperature?",
+        "value":"optionSec",
+        "options":[
+            {
+                "option":"Green houses generate more heat on earth than in space.",
+                "correct":"optionFirst"
+            },
+            {
+                "option":"Green houses cause extra heat to be trapped on earth,  instead of radiating back out to space.",
+                "correct":"optionSec"
+            }
+        ]
+    },
+    
+    {
+        "qustion":"What part of the earth is most affected by global warming?",
+        "value":"optionFirst",
+        "options":[
+            {
+                "option":"Ocean",
+                "correct":"optionFirst"
+            },
+            {
+                "option":"Mountain",
+                "correct":"optionSec"
+            }
+        ]
+    },
+    {
+        "qustion":"What absorbs more heat?",
+        "value":"optionSec",
+        "options":[
+            {
+                "option":"Atmosphere",
+                "correct":"optionFirst"
+            },
+            {
+                "option":"Ocean",
+                "correct":"optionSec"
+            }
+        ]
+    },
+
+
+    {
+        "qustion":"How much energy we used to produce?",
+        "value":"optionFirst",
+        "options":[
+            {
+                "option":"Burning of fossil fuels",
+                "correct":"optionFirst"
+            },
+            {
+                "option":"Crude oil from ocean",
+                "correct":"optionSec"
+            }
+        ]
+    }
+
+]
