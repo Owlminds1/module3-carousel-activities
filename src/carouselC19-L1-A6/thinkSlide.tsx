@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
-import Data from "@/carousleC19-L1-A6/data.json";
-import Data2 from "@/carousleC19-L1-A6/data2.json";
+import Data from "@/carouselC19-L1-A6/data.json";
+import Data2 from "@/carouselC19-L1-A6/data2.json";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "swiper/css/navigation";
 import "swiper/css";

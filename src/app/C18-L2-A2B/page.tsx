@@ -1,4 +1,5 @@
-import CarouselC18L2A2B from '@/carousleC18-L2-A2B'
+
+import CarouselC18L2A2B from '@/carouselC18-L2-A2B'
 import React from 'react'
 
 const Page = () => {
