@@ -1,0 +1,58 @@
+[
+    {
+        "qustion":"Use paper cups.",
+        "value":"thumbs up"
+    },
+    {
+        "qustion":"Carry a water  bottle.",
+        "value":"thumbs down"
+    },
+    
+    {
+        "qustion":"Carry Reusable cotton/ jute bag for shopping.",
+        "value":"thumbs up"
+    },
+    {
+        "qustion":"Buy plastic bags.",
+        "value":"thumbs down"
+    },
+
+
+    {
+        "qustion":"Print on one side only Use edible or reusable straw.",
+        "value":"thumbs up"
+    },
+    {
+        "qustion":"Drink from disposable straw.",
+        "value":"thumbs down"
+    },
+    
+    {
+        "qustion":"Ride a cycle to school.",
+        "value":"thumbs up"
+    },
+    {
+        "qustion":"Buy fresh school supplies.",
+        "value":"thumbs down"
+    },
+    {
+        "qustion":"uy a new box of crayons for the project. ",
+        "value":"thumbs down"
+    },
+    {
+        "qustion":"Print on both sides of paper.",
+        "value":"thumbs up"
+    },
+    {
+        "qustion":"Do not litter.",
+        "value":"thumbs up"
+    },
+    {
+        "qustion":"Plant more trees.",
+        "value":"thumbs up"
+    },
+    {
+        "qustion":"Plant more trees.",
+        "value":"thumbs down"
+    }
+]
