@@ -1,0 +1,40 @@
+[
+    {
+        "text":"Water bottle",
+        "value":"Prefer"
+    },
+    {
+        "text":"juice can",
+        "value":"Avoid"
+    },
+     {
+        "text":"steel fork",
+        "value":"Prefer"
+    },
+    {
+        "text":"aluminium foil",
+        "value":"Avoid"
+    } ,
+    
+    
+    {
+        "text":"cloth napkin",
+        "value":"Prefer"
+    },
+    {
+        "text":"paper napkin",
+        "value":"Avoid"
+    },
+     {
+        "text":"sandwich/salad in a lunch box",
+        "value":"Prefer"
+    },
+    {
+        "text":"plastic spoon",
+        "value":"Avoid"
+    },
+    {
+        "text":"fruit",
+        "value":"Prefer"
+    }
+]
