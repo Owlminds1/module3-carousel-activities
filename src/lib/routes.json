@@ -151,5 +151,9 @@
     {
         "link": "C20-L3-A1",
         "activity": "carbon footprint"
+    },
+     {
+        "link": "C20-L3-A2",
+        "activity": "Ecological footprint"
     }
 ]
