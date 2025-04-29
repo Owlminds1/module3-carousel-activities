@@ -1,0 +1,41 @@
+[
+    {
+        "qustion":"Sale",
+        "value":"seal"
+    },
+    {
+        "qustion":"Loin",
+        "value":"lion"
+    },
+    
+    {
+        "qustion":"Raptor",
+        "value":"parrot"
+    },
+    {
+        "qustion":"Flea",
+        "value":"leaf"
+    },
+
+
+    {
+        "qustion":"Heart",
+        "value":"earth"
+    },
+    {
+        "qustion":"Flow",
+        "value":"wolf"
+    },
+    {
+        "qustion":"Balm",
+        "value":"lamb"
+    },
+    {
+        "qustion":"Shore",
+        "value":"horse"
+    },
+    {
+        "qustion":"Nails",
+        "value":"snail"
+    }
+]
