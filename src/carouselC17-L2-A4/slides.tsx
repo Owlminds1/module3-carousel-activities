@@ -31,6 +31,7 @@ export default function SlideStart() {
 
   const handleChange = (swipe: SwiperClass) => {
     setLastSlide(swipe.activeIndex);
+    setInputVal("")
     if (lastSlide == SlideData.length - 1) return;
     //  setIsFirstScreen("result");
     setShowSugetion(false)
@@ -108,7 +109,7 @@ export default function SlideStart() {
 
           <div
             className={` ${
-              lastSlide < SlideData.length
+              lastSlide < SlideData.length -1
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90 
@@ -116,7 +117,7 @@ export default function SlideStart() {
           >
             <FaArrowRight
               className={`${
-                lastSlide < SlideData.length ? "block" : "hidden"
+                lastSlide < SlideData.length -1 ? "block" : "hidden"
               } text-[40px]  cursor-pointer text-black `}
               onClick={handleNext}
             />

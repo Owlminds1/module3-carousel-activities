@@ -91,22 +91,22 @@ const SecoundSlide = () => {
         </button>
       </div>
 
-      <p className={`text-xl ${isCorrect ? "text-green-600" : "text-red-600"}`}>
+      <p className={`text-lg ${isCorrect ? "text-green-600" : "text-red-600"}`}>
         {message}
       </p>
 
       {items.map((item, index) => (
-        <h1
+        <h5
           key={item.id}
           onClick={() => handleClick(index)}
           className={`${
             indexItem === index ? " border-2 border-black" : ""
           } ${
             isCorrect ? "bg-green-600" : "bg-violet-600"
-          }  text-lg   cursor-pointer min-h-[50px] w-[800px] relative text-center rounded py-1 shadow-sm shadow-black`}
+          }    text-xl  cursor-pointer min-h-[20px] w-[800px] relative text-center rounded py-1 shadow-sm shadow-black`}
         >
           {item.Name}
-        </h1>
+        </h5>
       ))}
       {isCorrect && <Confetti className="w-full" />}
     </div>

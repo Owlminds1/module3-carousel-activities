@@ -1,0 +1,35 @@
+
+[
+    {
+        "title":"We empty out our forests",
+        "top":"2",
+        "left":"",
+        "bottom":"",
+        "right":"",
+        "ans":["Trees convert CO2 into oxygen. Using too many trees for logs of wood or factories will reduce the level of oxygen in our environment.","Forests are also homes to living creatures and indigenous people. Clearing them out will take away their habitat."]
+    },
+    {
+        "title":"We use plastic on a daily basis",
+         "top":"",
+        "left":"",
+        "bottom":"2",
+        "right":"",
+        "ans":["Plastic is harmful and takes hundreds of years to decompose. If we use plastic regularly, it can end up in our drainage systems. ultimately it may get consumed by living beings on land and oceans thus killing them.","It can also end up in our soil and make it less fertile."]
+    },
+    {
+        "title":"We use private cars and never carpool or use public transport",
+         "top":"",
+        "left":"2",
+        "bottom":"",
+        "right":"",
+        "ans":["Cars are run on petrol and diesel. Both are non-renewable sources of energy that cause a lot of air pollution. If we use private cars, we increase the level of pollution.","That bad quality of air can cause respiratory problems in humans."]
+    },
+    {
+        "title":"We throw garbage in the ocean",
+         "top":"",
+        "left":"",
+        "bottom":"",
+        "right":"20",
+        "ans":["Oceans are habitats of many creatures that are important for our ecosystem. If we throw garbage in the ocean, it can be consumed by creatures and kill them.","It can also cause damage to coral reefs that help maintain the health of our oceans.","It is also problematic for pescatarians who eat fish and other sea creatures."]
+    }
+]
