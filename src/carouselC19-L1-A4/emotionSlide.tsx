@@ -69,7 +69,7 @@ export default function EmotionSlide() {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             <SwiperSlide>
-              <div className="h-[500px] w-full relative mx-auto my-5 ">
+              <div className="h-[400px] w-full relative mx-auto my-5 ">
                 <Image
                   src="/C19Images/emotion_table.png"
                   fill
@@ -82,14 +82,14 @@ export default function EmotionSlide() {
                  <div className="col-span-4 w-full h-[400px] overflow-y-scroll flex justify-center items-center gap-1 min-w-full rounded-lg p-5 flex-wrap  bg-violet-400">
            
                 {filterData.map((item, index) => (
-                    <h1 
+                    <h2 
                     key={index}
                       draggable
                       onDragStart={(e) => handleDrag(e, item)}
-                      className="cursor-pointer bg-violet-900 text-white rounded-lg px-5 py-2 "
+                      className="cursor-pointer bg-violet-900 text-white text-lg rounded-lg px-5 py-2 "
                     >
                       {item.text}
-                    </h1>
+                    </h2>
                 ))}
              
                  </div>
