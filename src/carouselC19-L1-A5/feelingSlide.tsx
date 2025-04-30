@@ -8,8 +8,10 @@ import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import slideData from "@/carouselC19-L1-A5/slideData.json";
-
-const FeelingSlide = () => {
+type myProps ={
+  setIsFirstScreen:(value:string)=>void
+}
+const FeelingSlide = ({setIsFirstScreen}:myProps) => {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
   const [userAnswers, setUserAnswers] = useState<string[]>(new Array(slideData.length).fill("")); // Track user answers
@@ -19,6 +21,9 @@ const FeelingSlide = () => {
   const handleNext = () => {
     if (isAnswerCorrect[lastSlide]) {
       swiperRef.current?.slideNext();
+    }
+    if(lastSlide >= slideData.length -1 ){
+      setIsFirstScreen("Result")
     }
   };
 
@@ -156,12 +161,12 @@ const FeelingSlide = () => {
 
           <div
             className={`${
-              lastSlide < slideData.length - 1 && isAnswerCorrect[lastSlide] ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400" : ""
+              lastSlide < slideData.length  && isAnswerCorrect[lastSlide] ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400" : ""
             } hover:scale-90`}
           >
             <FaArrowRight
               className={`${
-                lastSlide < slideData.length - 1 && isAnswerCorrect[lastSlide] ? "block" : "hidden"
+                lastSlide < slideData.length  && isAnswerCorrect[lastSlide] ? "block" : "hidden"
               } text-[40px] cursor-pointer text-black`}
               onClick={handleNext}
             />
