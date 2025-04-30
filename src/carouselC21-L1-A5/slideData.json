@@ -1,0 +1,14 @@
+[
+    {
+        "Qustion":"Your parents are asking you about your goals for next year.",
+        "Action":"What would you like your parents to understand about what you want to do next year?"
+    },
+     {
+        "Qustion":"Your peer is asking you to come over for a pajama party.",
+        "Action":"What would you like your parents to understand about what you want to do next year?"
+    },
+    {
+        "Qustion":"Your friend is asking you to join their team.",
+        "Action":"What would you like your friends to understand about what you want to do?"
+    }
+]
