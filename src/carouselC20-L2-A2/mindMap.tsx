@@ -51,13 +51,13 @@ const MindMap = () => {
           Check
         </button>
       ) : (
-        <div className="border border-black grid grid-cols-12 gap-1 flex-wrap p-2">
+        <div className="border-2 rounded-lg border-black grid grid-cols-12 gap-1 flex-wrap p-2">
           {filter.map((item, index) => (
             <span
               draggable
               onDragStart={(e) => handleDrag(e, item)}
               key={index}
-              className="col-span-4 bg-violet-900 text-center min-h-[40px]  text-white px-2 py-1 rounded-lg"
+              className="col-span-4 cursor-grab active:cursor-grabbing bg-violet-900 text-center min-h-[40px]  text-white px-2 py-1 rounded-lg"
             >
               {item.name}
             </span>
@@ -66,7 +66,7 @@ const MindMap = () => {
       )}
 
       <div className="min-h-screen w-full relative  flex justify-center items-center gap-5 flex-col">
-        <div className=" relative h-[450px] w-[450px] bg-red-400 my-[200px]">
+        <div className=" relative h-[450px] w-[450px]  my-[200px]">
           <Image src="/C20Images/cerculImg.jpg" fill alt="image" />
 
           <span className="absolute font-bold top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
@@ -93,7 +93,7 @@ const MindMap = () => {
             >
               {item.title}
             </h5>
-            <div className=" min-h-[200px] min-w-[300px] p-2 flex justify-start items-center gap-1 flex-col ">
+            <div className=" cursor-auto min-h-[200px] min-w-[300px] p-2 flex justify-start items-center gap-1 flex-col ">
               {dropItems[index]?.map((item, i) => {
                 const isCorrect = checkResult[index]?.[i];
 
