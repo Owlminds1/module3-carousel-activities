@@ -37,7 +37,7 @@ const srollRef =useRef<HTMLDivElement | null >(null)
             ? "Draw what you see"
             : ""}
         </h1>
-        <div ref={srollRef} className="w-full   border-2 p-2 overflow-y-scroll  bg-violet-100 rounded-lg h-[350px]">
+        <div ref={srollRef} className="w-full   border-2 p-2 overflow-y-scroll  bg-violet-100 rounded-lg h-[400px]">
           <Swiper
             slidesPerView={1}
             loop={false}
