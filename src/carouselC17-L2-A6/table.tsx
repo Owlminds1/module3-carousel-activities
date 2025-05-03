@@ -15,7 +15,7 @@ const Table = ({ mealCal, vaggeisCal, fruitsCal ,countCal}: myProps) => {
                 <h2 className="text-white py-2 rounded-lg bg-blue-500 text-center">ITEMS</h2>
             </div>
             <div className="col-span-8 w-full">
-            <h2 className="text-white py-2 rounded-lg bg-blue-500 text-center">{`Caloris (700)`}</h2>
+            <h2 className="text-white py-2 rounded-lg bg-blue-500 text-center">{`Caloris `}</h2>
 
             </div>
             <div className="col-span-4 w-full">
@@ -41,10 +41,10 @@ const Table = ({ mealCal, vaggeisCal, fruitsCal ,countCal}: myProps) => {
             </div>
             
             <div className="col-span-4 w-full">
-                <h2 className="text-white py-2 rounded-lg bg-black text-center">Total Calories </h2>
+                <h2 className="text-white py-2 rounded-lg bg-violet-900 text-center">Total Calories </h2>
             </div>
             <div className="col-span-8 w-full">
-            <h2 className="text-white py-2 rounded-lg bg-black text-center">{countCal}</h2>
+            <h2 className="text-white py-2 rounded-lg bg-violet-900  text-center">{countCal}</h2>
 
             </div>
         </div>

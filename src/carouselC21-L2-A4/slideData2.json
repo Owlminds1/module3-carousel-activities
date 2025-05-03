@@ -1,0 +1,30 @@
+[
+    {
+        "img":"/C21Images/gestures.jpg",
+        "text":"Use gestures to express meaning and feeling"
+    } ,
+    {
+        "img":"/C21Images/tone_of_voice.jpg",
+        "text":"Modulate your tone of voice and pitch to keep the listeners engaged"
+    },
+    {
+        "img":"/C21Images/eye_contact.jpg",
+        "text":"Maintain eye contact to show enthusiasm and connection"
+    },
+     {
+        "img":"/C21Images/expression.jpg",
+        "text":"Show emotional expressions as experienced to let the listener feel present with you"
+    },
+     {
+        "img":"/C21Images/humor.jpg",
+        "text":"Employ humor in your narrative!"
+    },
+    {
+        "img":"/C21Images/humor.jpg",
+        "text":"Apply the powerful words! Here is the list"
+    },
+     {
+        "img":"/C21Images/vocab.jpg",
+        "text":"Repeat vocabulary or statements/questions to insist on important details"
+    }
+]

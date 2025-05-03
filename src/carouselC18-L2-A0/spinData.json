@@ -7,24 +7,24 @@
 
     },
     {
-        "positionY":"185px",
+        "positionY":"150px",
         "positionX":"320px",
         "text":"What is more important: playing video games or going to basketball practice?",
         "rotate":330
 
     },
     {
-        "positionY":"380px",
+        "positionY":"360px",
         "positionX":"330px",
         "text":"Give me an example of a high priority task/can wait task/ can be skipped tasks",
         "rotate":400
 
     },
       {
-        "positionY":"400px",
-        "positionX":"140px",
+        "positionY":"340px",
+        "positionX":"120px",
         "text":"Give me an example of tasks that Less effort, high impact/High effort, low impact/ Low effort, low impact/High effort, high impact",
-        "rotate":480
+        "rotate":470
 
     }
 ]

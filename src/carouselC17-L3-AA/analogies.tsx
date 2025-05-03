@@ -3,15 +3,15 @@ const Analogies = () => {
   return (
     <div className="bg-white min-h-screen flex p-5 flex-col items-center justify-center gap-3">
       <div className="">
-        <h1 className="text-center text-4xl font-bold py-5 text-black">
+        <h1 className="text-center text-2xl font-bold py-5 text-black">
           {/* {lastSlide < SlideData.length  ? "What if?":"Bonus Questions"}  */}
-          Analogies
+          Come up with analogies related to the problems to complete the sentences below.
         </h1>
         <div className="p-5 bg-violet-100 min-w-[900px] rounded-lg min-h-[200px] flex justify-center items-center flex-col gap-8 ">
         <div className=" grid grid-cols-12 gap-4  place-items-center w-full ">
           <div className="col-span-4 w-full">
             <h4 className="text-white bg-violet-900 text-center p-1 rounded-lg ">
-              Problems
+            Climate change
             </h4>
           </div>
           <div className="col-span-8 w-full ">
@@ -61,12 +61,12 @@ const Analogies = () => {
               />
               as
               <textarea
-                placeholder="(solution-b"
+                placeholder="(solution-b)"
                 className="w-[150px] h-[30px] outline-none text-center  border-b placeholder:text-center  "
               />
               is to
               <textarea
-                placeholder="problem-b) 
+                placeholder="(problem-b) 
 "
                 className="w-[150px] h-[30px] outline-none text-center  border-b  placeholder:text-center"
               />

@@ -1,0 +1,33 @@
+[
+    {
+        "word":"Who?",
+        "text":"who are you describing?"
+    },
+    {
+        "word":"What",
+        "text":"what are you describing?"
+    },
+    
+    {
+        "word":"Where",
+        "text":"where is this description from?"
+    },
+    {
+        "word":"When",
+        "text":"when did this take place?"
+    },
+
+
+    {
+        "word":"How",
+        "text":" how did this occur?"
+    },
+      {
+        "word":"How many",
+        "text":"how many people are part of this description?"
+    },
+     {
+        "word":"Why",
+        "text":"why is this important to describe?"
+    }
+]

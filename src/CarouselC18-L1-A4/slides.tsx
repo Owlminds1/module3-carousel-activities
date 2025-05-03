@@ -89,11 +89,12 @@ export default function FoodSlide({ setIsFirstScreen }: SlideProps) {
   };
 
   return (
-    <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3 p-5">
-      <div className="w-[600px]  ">
-        <h1 className="text-center text-4xl font-bold py-4 text-black">
-          Green light, Red light{" "}
+    <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3 p-2">
+      <div className="w-[800px]  ">
+        <h1 className="text-center text-3xl  font-bold text-black">
+        healthy or unhealthy
         </h1>
+        <p className="text-2xl p-1 text-black text-center">Guess which of these food items are healthy or unhealthy.</p>
         <Swiper
           className="border-2 p-2 bg-violet-100 rounded-lg min-h-[300px] "
           slidesPerView={1}

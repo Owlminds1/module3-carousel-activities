@@ -28,7 +28,8 @@ const UnderStandSlide = () => {
     setLastSlide(swipe.activeIndex);
     if (lastSlide == SlideData.length - 1) return;
     //  setIsFirstScreen("result");
-    setTimer(30);
+    setShowSugge(false);
+    // setTimer(10);
   };
 
   useEffect(() => {
@@ -44,7 +45,7 @@ const UnderStandSlide = () => {
       });
     }, 1000);
     return () => clearInterval(intervale); // clear on unmount or slide change
-  }, [lastSlide]);
+  }, []);
 
   return (
     <div className="min-h-screen flex justify-center items-center p-5 bg-[#F8FAFC] flex-col">

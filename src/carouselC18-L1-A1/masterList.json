@@ -1,7 +1,7 @@
 [
     {
         "text":"Homework",
-        "value":"important"
+        "value":"very important"
     },
     {
         "text":"Playing Sports",
@@ -9,15 +9,11 @@
     },
     {
         "text":"Sleeping",
-        "value":"important"
+        "value":"extremely important"
     },
     {
         "text":"Meeting Friends",
-        "value":"very important"
-    },
-    {
-        "text":"Watching TV",
-        "value":"somewhat important"
+        "value":"important"
     },
     {
         "text":"Helping with Grocery",
@@ -25,11 +21,11 @@
     },
      {
         "text":"Practicing Hobbies",
-        "value":"very important"
+        "value":"important"
     },
     {
         "text":"Tidying Up",
-        "value":"somewhat important"
+        "value":"extremely important"
     },
     {
         "text":"Exercising",

@@ -36,7 +36,7 @@ const SortingPage = () => {
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex flex-col justify-center items-center p-5">
       {/* ====================== master list============ */}
-      <h4 className="text-black text-bold text-3xl">What to do on the weekend?</h4>
+      <h4 className="text-black text-bold text-3xl"> Order tasks based on importance</h4>
       <div className="relative flex justify-center items-center flex-col ">
         <Image
           src="/C18Images/tree.png"

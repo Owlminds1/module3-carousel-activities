@@ -10,9 +10,11 @@ const SpinWeel = () => {
   const [isSpinning, setIsSpinning] = useState(false);
   const [alrtMssg,setAlrtMssg]=useState("")
   const [open,setOpen]=useState(false)
+  const [textShow,setTextShow]=useState(false)
 
   const handleSpeenStart = () => {
     if (isSpinning) return;
+    setTextShow(false)
   
     setIsSpinning(true);
   
@@ -38,6 +40,7 @@ const SpinWeel = () => {
       setAlrtMssg(selectedText);
       setOpen(true);
       setIsSpinning(false);
+      setTextShow(true)
     }, 5000);
     
   };
@@ -76,9 +79,9 @@ const SpinWeel = () => {
                 transform: `rotate(${item.rotate}deg)`,
                 transformOrigin: "center",
               }}
-              className="text-black text-md font-bold  w-[180px] text-center text-ellipsis whitespace-nowrap overflow-hidden"
+              className="text-black text-md font-bold  w-[180px] text-center "
             >
-              {item.text}
+              {textShow ? item.text :""}
             </span>
           ))}
         </div>

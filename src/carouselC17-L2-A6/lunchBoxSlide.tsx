@@ -146,8 +146,7 @@ const LunchBoxSlide = ({
 
         <div className="col-span-6 sticky  h-[300px] flex items-center flex-col gap-10 justify-center top-[30%]   text-black  text-lg ">
           <h5 className="text-black text-xl py-2 text-center">
-            you’ve atleast one item from each and the total number of calories
-            shouldn’t exceed 700 calories.
+          Select atleast one item from each category to create a lunchbox that does NOT exceed 700 calories.
           </h5>
           <h3 className="bg-violet-800 px-10 py-2 rounded-lg text-white text-2xl">
             Total Calories : {countCal}

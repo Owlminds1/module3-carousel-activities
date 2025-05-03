@@ -129,8 +129,8 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
             </div>
             <div
               className={`border text-white border-black rounded-full p-3 w-[80px] h-[50px] flex items-center justify-center shadow shadow-[#000000b9] hover:scale-90 ${
-                thumbsupChek ? "bg-green-800 " : ""
-              } ${thumbsupWrong ? "bg-red-800" : ""}
+                thumbsupChek ? "bg-green-600 " : ""
+              } ${thumbsupWrong ? "bg-red-600" : ""}
               ${!thumbsupChek && !thumbsupWrong ? "bg-violet-800" : ""}
               `}
             >

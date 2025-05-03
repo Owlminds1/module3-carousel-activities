@@ -46,10 +46,13 @@
     {
         "text":"Frightened",
         "value":"High energy"
-    }, {
-        "text":"Anrgy",
+    },
+    
+    {
+        "text":"Angry",
         "value":"High energy"
     },
+    
     {
         "text":"Nervous",
         "value":"High energy"
