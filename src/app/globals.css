@@ -139,10 +139,7 @@
   width: 450px;
 }
 
-h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
+
 
 .mood-meter-container {
   display: flex;

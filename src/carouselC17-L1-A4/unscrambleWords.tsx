@@ -15,7 +15,10 @@ const Confetti = dynamic(() => import("react-confetti"), {
   ssr: false,
 });
 
-export default function UnscrambleWords() {
+type myProps = {
+  setIsFirstScreen: (value: string) => void;
+};
+export default function UnscrambleWords({setIsFirstScreen}:myProps) {
   const { width, height } = useWindowSize();
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
@@ -29,6 +32,9 @@ export default function UnscrambleWords() {
 
   const handleNext = () => {
     swiperRef.current?.slideNext();
+    if(lastSlide + 1 === totalSlides){
+setIsFirstScreen("resulte")
+    }
   };
 
   const handlePerv = () => {
@@ -130,19 +136,9 @@ export default function UnscrambleWords() {
             {/* =================== bonuseSlide ================= */}
             {bonuseSlide.map((item, index) => (
               <SwiperSlide key={index}>
-               <div className="grid grid-cols-12 place-items-center w-full">
-                  <div className="col-span-6 w-[400px] h-[400px] border border-white relative flex justify-center items-center">
-                  {
-                    hintBtn ? 
-                      <Image
-                      src={item.image}
-                    fill
-                      alt="slide image"
-                    />:
-                    <button onClick={()=>setHintBtn(true)} className="bg-violet-900 text-white px-8 py-2 rounded-lg cursor-pointer ">Hint</button>
-                  }
-                  </div>
-                  <div className="col-span-6 w-full flex justify-center items-center  gap-10 flex-col ">
+               <div className="flex justify-center items-center min-h-[400px] w-full">
+                
+                  <div className=" w-full flex justify-center items-center  gap-10 flex-col ">
                     <div className="flex justify-center items-center gap-2">
                       <h4 className="text-black text-2xl ">
                         {item.unscrambleText} :
@@ -191,7 +187,7 @@ export default function UnscrambleWords() {
           </div>
 
           <div
-            className={` ${lastSlide < totalSlides - 1 && showBtn ? "block":"hidden"} 
+            className={` ${lastSlide < totalSlides  && showBtn ? "block":"hidden"} 
              border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400
                 
              hover:scale-90 

@@ -6,7 +6,10 @@ type DragObj = {
   text: string;
   value: string;
 };
-const SchoolBeg = () => {
+type myProps = {
+  setIsFirstScreen: (value: string) => void;
+};
+const SchoolBeg = ({setIsFirstScreen}:myProps) => {
   const [dropItems, setDropItems] = useState<{ [key: number]: string[] }>({});
   const [filterData,setFilterData]=useState(DragData)
 
@@ -22,7 +25,16 @@ if(dropItem.value === value){
     [index]:prev[index]? [...prev[index],dropItem.text]:[dropItem.text]
   }))
   setFilterData((prev)=>prev.filter((item)=>item.text != dropItem.text))
+ 
+  if(filterData.length  == 1 ){
+    setTimeout(()=>{
+setIsFirstScreen("result")
+    },1000)
+  }
 }
+
+
+
   };
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">

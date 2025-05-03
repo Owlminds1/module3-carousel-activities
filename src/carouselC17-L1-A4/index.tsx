@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Start from './start';
 import UnscrambleWords from './unscrambleWords';
+import Resulte from './resulte';
 
 
 const CarouselC17L1A4 = () => {
@@ -9,7 +10,8 @@ const CarouselC17L1A4 = () => {
   
     return <>
     {isFirstScreen == "start" && <Start setIsFirstScreen={setIsFirstScreen}/>}
-    {isFirstScreen == "UnscrambleWords" && <UnscrambleWords />}
+    {isFirstScreen == "UnscrambleWords" && <UnscrambleWords setIsFirstScreen={setIsFirstScreen} />}
+    {isFirstScreen == "resulte" && <Resulte />}
   
     
     

@@ -11,8 +11,8 @@ import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import SLideData from "@/carouselC20-L1-A3/slideData.json";
-import BtnData from "@/carouselC20-L1-A3/btnData.json";
+import SLideData from "@/carouselC21-L3-A4/slideData.json";
+import BtnData from "@/carouselC21-L3-A4/btnData.json";
 type myProps = {
   setIsFirstScreen: (value: string) => void;
 };
@@ -64,7 +64,7 @@ const ThumSlide = ({ setIsFirstScreen }: myProps) => {
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[800px]">
         <h1 className="text-center text-4xl py-4 text-black">
-          How well do we know best practice to save our environment?
+        Sarcasm or No?
         </h1>
         <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[300px]">
           <Swiper
@@ -80,7 +80,7 @@ const ThumSlide = ({ setIsFirstScreen }: myProps) => {
               <SwiperSlide key={index}>
                 <div className="grid grid-cols-12 place-items-center gap-10 w-full">
                   <div className="col-span-12 flex justify-center items-center flex-col ">
-                    <span className="text-black text-center text-5xl ">
+                    <span className="text-black text-center text-3xl ">
                       {item.qustion}
                     </span>
                     <textarea

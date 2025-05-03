@@ -8,9 +8,9 @@ const Start = ({setIsFirstScreen}:myProps) => {
   return (
     <div className="min-h-screen flex justify-center items-center flex-col gap-10 bg-[#F8FAFC]">
     <div className="min-h-[100px] p-4 text-center shadow-black shadow-md rounded-lg flex justify-center items-center w-[600px]">
-    <h2 className="text-2xl text-black font-bold "> I Spy</h2>
+    <h2 className="text-2xl text-black ">Can you tell if these sentences are sarcastic?</h2>
     </div>
-  <StartBtn value='Start' setIsFirstScreen={setIsFirstScreen} screenVal="findObjectSlide" />
+  <StartBtn value='Start' setIsFirstScreen={setIsFirstScreen} screenVal="ThumSlide" />
   </div>
   )
 }

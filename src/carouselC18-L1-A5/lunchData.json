@@ -1,42 +1,42 @@
 [
     {
      "fruitsImg":"/C17Images/veggies/carrot.jpg",
-     "name":"Carrot (3)",
-     "value":5 
+     "name":"Carrot",
+     "value":3 
     },
     {
         "fruitsImg":"/C17Images/veggies/potatoes.jpg",
-        "name":"Potatoes (3)" ,
-         "value":5   
+        "name":"Potatoes" ,
+         "value":3   
     }  ,
     {
         "fruitsImg":"/C17Images/veggies/zucchini.jpg",
-        "name":"zucchini (2)" ,
-         "value":5   
+        "name":"zucchini" ,
+         "value":2   
     } ,
     {
         "fruitsImg":"/C17Images/veggies/beans.jpg",
-        "name":"Green Beans (2)"   ,
-        "value":5  
+        "name":"Green Beans"   ,
+        "value":2 
     } ,
     {
         "fruitsImg":"/C17Images/veggies/tomato.jpg",
-        "name":"Tomato (2)"  ,
-         "value":5  
+        "name":"Tomato"  ,
+         "value":2 
     } ,
     {
         "fruitsImg":"/C17Images/veggies/eggplant.png",
-        "name":"Eggplant (3)"  ,
-         "value":5  
+        "name":"Eggplant"  ,
+         "value":3 
     } ,
     {
         "fruitsImg":"/C17Images/veggies/leek.jpg",
-        "name":"Leek (2)" , 
-        "value":5   
+        "name":"Leek" , 
+        "value":2   
     } ,
     {
         "fruitsImg":"/C17Images/veggies/pepper.jpg",
-        "name":"Pepper (4)" ,
-        "value":5  
+        "name":"Pepper" ,
+        "value":4  
     } 
 ]

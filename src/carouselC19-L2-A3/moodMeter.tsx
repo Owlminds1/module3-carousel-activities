@@ -48,7 +48,8 @@ const MoodMeter = () => {
       document.removeEventListener("mouseup", endSlider);
     }
 
-    updateMoodFromPosition(0);
+    updateMoodFromPosition(moodMeter?.getBoundingClientRect().bottom || 0);
+
 
     if (sliderThumb) {
       sliderThumb.addEventListener("mousedown", (e: MouseEvent) => {
@@ -62,7 +63,7 @@ const MoodMeter = () => {
 
   return (
     <div className="container">
-      <h1>Mood Meter</h1>
+      <h1 className="text-2xl my-3">Rate your feelings on this sliding mood meter.</h1>
       <div className="mood-meter-container">
         <div id="mood-meter" className="mood-meter">
           <div id="mood-indicator" className="mood-indicator"></div>

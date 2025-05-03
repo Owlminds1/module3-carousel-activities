@@ -40,8 +40,8 @@ const Slide = () => {
           >
             <SwiperSlide>
               <div className="min-h-[250px] p-5 flex justify-center items-center flex-col gap-5">
-                <h4 className="text-black text-center text-3xl ">
-                  Recall when you were kind to someone
+                <h4 className="text-black text-center text-3xl font-bold ">
+                  Recall when you were kind to someone.
                 </h4>
 
                 <ul className="text-black list-disc p-5 space-y-4 ">
@@ -57,7 +57,7 @@ const Slide = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="min-h-[250px] p-5 flex justify-center items-center flex-col gap-5">
-                <h4 className="text-black text-center text-3xl ">
+                <h4 className="text-black text-center text-3xl font-bold ">
                 Recall when someone was kind to you.
                 </h4>
 

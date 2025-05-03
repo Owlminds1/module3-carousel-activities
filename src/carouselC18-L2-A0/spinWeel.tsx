@@ -76,7 +76,7 @@ const SpinWeel = () => {
                 transform: `rotate(${item.rotate}deg)`,
                 transformOrigin: "center",
               }}
-              className="text-black text-md font-bold  w-[180px] text-center"
+              className="text-black text-md font-bold  w-[180px] text-center text-ellipsis whitespace-nowrap overflow-hidden"
             >
               {item.text}
             </span>

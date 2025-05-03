@@ -1,30 +1,30 @@
 [
     {
-        "positionY":"160px",
+        "positionY":"180px",
         "positionX":"130px",
         "text":"Do you remember what C.A.R.E stands for from our previous class?",
         "rotate":230
 
     },
     {
-        "positionY":"125px",
-        "positionX":"310px",
+        "positionY":"185px",
+        "positionX":"320px",
         "text":"What is more important: playing video games or going to basketball practice?",
         "rotate":330
 
     },
     {
-        "positionY":"360px",
-        "positionX":"310px",
+        "positionY":"380px",
+        "positionX":"330px",
         "text":"Give me an example of a high priority task/can wait task/ can be skipped tasks",
         "rotate":400
 
     },
       {
-        "positionY":"340px",
-        "positionX":"120px",
+        "positionY":"400px",
+        "positionX":"140px",
         "text":"Give me an example of tasks that Less effort, high impact/High effort, low impact/ Low effort, low impact/High effort, high impact",
-        "rotate":460
+        "rotate":480
 
     }
 ]

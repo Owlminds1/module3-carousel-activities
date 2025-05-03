@@ -191,5 +191,13 @@
     {
         "link": "C21-L2-AA",
         "activity": "Decode Nonverbal communication"
+    },
+     {
+        "link": "C21-L3-A2",
+        "activity": "Decode the video"
+    },
+     {
+        "link": "C21-L3-A4",
+        "activity": "Sarcasm or no?"
     }
 ]

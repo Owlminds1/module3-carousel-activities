@@ -100,10 +100,10 @@ const SecoundSlide = () => {
           key={item.id}
           onClick={() => handleClick(index)}
           className={`${
-            indexItem === index ? " border-2 border-black" : ""
+            indexItem === index ? " border-3 border-black" : ""
           } ${
-            isCorrect ? "bg-green-600" : "bg-violet-600"
-          }    text-xl  cursor-pointer min-h-[20px] w-[800px] relative text-center rounded py-1 shadow-sm shadow-black`}
+            isCorrect ? "bg-green-600" : "border border-violet-900"
+          }    text-xl  cursor-pointer min-h-[20px] w-[800px] relative text-center rounded py-1 `}
         >
           {item.Name}
         </h5>

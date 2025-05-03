@@ -19,7 +19,10 @@
 
 
     {
-        "qustion":"Print on one side only Use edible or reusable straw.",
+        "qustion":"Print on one side only",
+        "value":"thumbs up"
+    }, {
+        "qustion":"Use edible or reusable straw.",
         "value":"thumbs up"
     },
     {
@@ -36,7 +39,7 @@
         "value":"thumbs down"
     },
     {
-        "qustion":"uy a new box of crayons for the project. ",
+        "qustion":"Buy a new box of crayons for the project.",
         "value":"thumbs down"
     },
     {
@@ -52,7 +55,7 @@
         "value":"thumbs up"
     },
     {
-        "qustion":"Plant more trees.",
+        "qustion":"Use paper napkins instead of cloth napkins.",
         "value":"thumbs down"
     }
 ]

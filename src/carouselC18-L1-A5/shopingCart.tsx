@@ -28,7 +28,7 @@ const ShopingCart = ({
 
   const handleFruitsCalories = (calories: number, index: number) => {
     if (isNaN(calories)) return;
-    if(countCal > 50) return;
+    if(countCal >= 50) return;
 
     if (!selectedIFruite.includes(index)) {
       setFruitsCal((prev) => prev + calories);
@@ -44,7 +44,7 @@ const ShopingCart = ({
   };
   const handleVaggeisCalories = (calories: number, index: number) => {
     if (isNaN(calories)) return;
-    if(countCal > 50) return;
+    if(countCal >= 50) return;
     if (!selectedVegges.includes(index)) {
       setVaggeisCal((prev) => prev + calories);
       setCountCal((prev) => prev + calories);
@@ -59,7 +59,7 @@ const ShopingCart = ({
   };
   const handleMealCalories = (calories: number, index: number) => {
     if (isNaN(calories)) return;
-    if(countCal > 50) return;
+    if(countCal >= 50) return;
     if (!selectedMeals.includes(index)) {
       setMealCal((prev) => prev + calories);
       setCountCal((prev) => prev + calories);

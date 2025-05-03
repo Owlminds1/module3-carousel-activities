@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Start from "./start";
 import SchoolBeg from "./schoolBeg";
+import Result from "./result";
 
 
 const CarouselC20L1A2 = () => {
@@ -10,7 +11,8 @@ const CarouselC20L1A2 = () => {
   return (
     <>
       {isFirstScreen == "start" && <Start setIsFirstScreen={setIsFirstScreen} />}
-      {isFirstScreen == "SchoolBeg" && <SchoolBeg  />}
+      {isFirstScreen == "SchoolBeg" && <SchoolBeg setIsFirstScreen={setIsFirstScreen}  />}
+      {isFirstScreen == "result" && <Result />}
      
     </>
   );

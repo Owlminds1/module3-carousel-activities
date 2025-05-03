@@ -2,12 +2,12 @@
     {
         "img":"/C19Images/recognise.png",
         "text":"I feel like smiling today!",
-        "val":"recognize"
+        "val":"Recognize"
     },
      {
         "img":"/C19Images/understand.png",
         "text":"I feel like smiling today because I had the best day today!",
-        "val":"understand"
+        "val":"Understand"
     },
     {
         "img":"/C19Images/label.png",
@@ -17,7 +17,7 @@
     {
         "img":"/C19Images/expressing.png",
         "text":"Since I feel happy, I will go buy ice-cream for my sister",
-        "val":"express"
+        "val":"Express"
     },
     {
         "img":"/C19Images/regulate.png",

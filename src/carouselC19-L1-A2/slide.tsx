@@ -90,13 +90,7 @@ export default function Slide({ setIsFirstScreen }: SlideProps) {
                     height={100}
                     alt="slide image"
                   />
-                  <h4
-                    className={`${
-                      showBtn ? "block" : "hidden"
-                    } bg-[#000000b3] text-xl min-h-[100px] w-[300px] text-white absolute bottom-0 text-center p-5`}
-                  >
-                    {item.text}
-                  </h4>
+                 
                 </div>
 
                 <div className="col-span-6 relative w-full flex justify-center items-center gap-2 flex-col ">
