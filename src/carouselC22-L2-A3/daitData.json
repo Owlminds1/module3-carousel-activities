@@ -1,0 +1,34 @@
+[
+    {
+        "text":"Leafy greens with sprouts",
+        "value":"healthy"
+    },
+    {
+        "text":"Burgers, sandwiches, and pizzas",
+        "value":"unhealthy"
+    },
+    
+    {
+        "text":"Fruits, milk, and yoghurt",
+        "value":"healthy"
+    },
+    
+    {
+        "text":"Soda, tea, coffee",
+        "value":"unhealthy"
+    },
+    
+    {
+        "text":"Lentils, Whole Grains",
+        "value":"healthy"
+    },
+    
+    {
+        "text":"Cupcake, biscuits, desserts",
+        "value":"unhealthy"
+    } ,
+    {
+        "text":"Rice, Whole Wheat, Salads",
+        "value":"healthy"
+    }
+]

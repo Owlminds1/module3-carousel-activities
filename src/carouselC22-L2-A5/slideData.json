@@ -1,0 +1,19 @@
+[
+    {
+        "text": "The library doesn’t offer book rentals during holidays",
+        "suggestedRes": "Instead of getting upset and annoyed, I’ll thank the librarians for the books throughout the year and find an alternative library for the holidays. I will also look for reading resources on the website or buy secondhand books."
+    },
+    {
+        "text": "The school principal has announced an extra class on the weekend to cover for a holiday.",
+        "suggestedRes": "Instead of complaining to all peers about how unfair it is, I’ll understand that coming for an extra class will only help clear exams. I’ll also organize some fun activities to have an excuse to play with peers!"
+    },
+    {
+        "text": "You’re a picky eater who’s going to a restaurant.",
+        "suggestedRes": "Instead of getting upset at the menu for not having specific items, I will try to expand my palate and be open to trying new, unfamiliar food."
+    },
+    
+    {
+        "text": "Your friend invited you last for the birthday party.",
+        "suggestedRes": "Instead of getting angry at my friend for inviting me last, I will thank them for inviting me at all. I will also make sure to give a sweet surprise hoping that I won’t be the last one to be invited from next time on!"
+    }
+]

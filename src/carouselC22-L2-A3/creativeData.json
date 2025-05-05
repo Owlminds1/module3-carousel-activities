@@ -1,0 +1,38 @@
+[
+    {
+        "text":"Creative arts",
+        "value":"creative"
+    },
+    {
+        "text":"Scientific experiments",
+        "value":"creative"
+    },
+    
+    {
+        "text":"Playing video game",
+        "value":"creative-Not"
+    },
+    
+    {
+        "text":"Visual Arts",
+        "value":"creative"
+    },
+    
+    {
+        "text":"Watching reels and shorts",
+        "value":"creative-Not"
+    },
+    
+    {
+        "text":"Sports",
+        "value":"creative"
+    } ,
+    {
+        "text":"Playing on mobile",
+        "value":"creative-Not"
+    },
+     {
+        "text":"Board games",
+        "value":"creative"
+    }
+]
