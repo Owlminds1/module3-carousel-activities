@@ -1,0 +1,22 @@
+[
+    {
+        "text": "These creatures are resilient against tough temperatures. They withstand darkness at depths of up to 700m below sea level. They do so thanks to bacteria around underwater sea surface openings, converting minerals to energy.",
+        "img": "/C22Images/yeti-crab.png",
+        "name":"Yeti Crab"
+    },
+    {
+        "text": "At high altitudes, these creatures find a way to thrive despite less oxygen, cold temperatures, and thin air. They do so with their thick skin, big lungs, tough muscles, and plenty of blood vessels. Who am I?",
+        "img": "/C22Images/yak.jpg",
+        "name":"Yak"
+    },
+    {
+        "text": "These creatures thrive in clusters by creating water-repellent life boats that can float on the surface for a long time. Their collective intelligence makes them great problem-solvers. Together they are capable of finding the closest food source, crafting intricate tunnel systems and even putting rafts together to survive tough climatic conditions.",
+        "img": "/C22Images/fire-ant.png",
+        "name":"Fire Ants"
+    },
+    {
+        "text": "This ecosystem can survive high temperatures by keeping aquatic plants [algae] that are heat-resistant and heat-tolerant, thus being able to produce food and sustain its environment.",
+        "img": "/C22Images/coral-reef.jpg",
+        "name":"Coral Reefs"
+    }
+]
