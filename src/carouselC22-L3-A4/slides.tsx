@@ -15,6 +15,7 @@ type MyProps = {
 const SlideStart = ({ setIsFirstScreen }: MyProps) => {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
+  const [show,setShow]=useState(false)
 
   const handleNext = () => {
     if (lastSlide < SlideData.length - 1) {
@@ -32,6 +33,7 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
 
   const handleChange = (swiper: SwiperClass) => {
     setLastSlide(swiper.activeIndex);
+  setShow(false)
   };
 
   return (
@@ -52,7 +54,18 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
           >
             {SlideData.map((item, index) => (
               <SwiperSlide key={index}>
+                <div className="flex justify-center items-center flex-col gap-8"> 
                 <h4 className="text-2xl text-center text-black">{item.text}</h4>
+                <h4 className="text-2xl text-center text-black">Instead of <span className="font-bold">{item.heading}</span>, I will</h4>
+                <textarea placeholder="write here..." className="min-w-[400px] min-h-[80px] text-center rounded-lg border border-black outline-none" />
+
+                {
+                  !show ? 
+                  <button onClick={()=>setShow(true)} className="text-white bg-violet-900 cursor-pointer   px-5 py-2 rounded-lg">Show Suggested </button>
+                  :
+                <p className="text-center text-xl">{item.suggestedRes}</p>
+                }
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
