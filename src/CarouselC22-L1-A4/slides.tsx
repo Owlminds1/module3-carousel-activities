@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import SlideData from "@/CarouselC22-L1-A4/SlideData.json";
+import SlideData from "@/CarouselC22-L1-A4/slideData.json";
 import BtnData from "@/CarouselC22-L1-A4/btnData.json";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
