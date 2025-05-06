@@ -40,9 +40,11 @@ export default function Slide({ setIsFirstScreen }: myProps) {
   return (
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3 p-5">
       <div className="w-[980px]  ">
-        <h1 className="text-center text-4xl font-bold py-4 text-black">
+        <h1 className="text-center text-4xl font-bold  text-black">
           Pause and tone
         </h1>
+        <h5 className="text-xl font-medium text-center py-4 text-black">Make sure that each chunk gives out a certain aspect of the entire information – who/what/why/where/when/how. Some of these chunks can be combined if the information is related.</h5>
+        
         <div className="w-full  border-2 p-2  bg-violet-100 rounded-lg min-h-[300px]">
           <Swiper
             slidesPerView={1}
@@ -56,6 +58,7 @@ export default function Slide({ setIsFirstScreen }: myProps) {
             {QustionData.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="  min-h-[300px] flex justify-center items-center flex-col gap-5">
+              
                   <label className="text-xl font-bold" htmlFor="input">
                     Q{index + 1}
                   </label>

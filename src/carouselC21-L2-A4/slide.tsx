@@ -78,12 +78,13 @@ slideData2.map((item,index)=>(
 
             <SwiperSlide key={index}>
               <div className="grid grid-cols-12 w-full place-items-center">
+              <div className="col-span-6">
+                  <h4 className="text-2xl text-center text-black ">{item.text}</h4>
+                </div>
                 <div className="col-span-6 w-full h-[300px] relative ">
                   <Image src={item.img} fill alt="slider image" className="object-contain"/>
                 </div>
-                <div className="col-span-6">
-                  <h4 className="text-2xl text-center text-black ">{item.text}</h4>
-                </div>
+               
               </div>
             </SwiperSlide>
 ))
