@@ -1,0 +1,47 @@
+[
+    {
+        "name":"I will speak first",
+        "val":"Courage"
+    },
+    
+    {
+        "name":"I will make eye contact when I introduce myself",
+        "val":"Effective"
+    },
+    
+    {
+        "name":"I will be kind if someone talks on the side when I speak",
+        "val":"Courage"
+    },
+
+    {
+        "name":"I will smile when others are speaking to show interest",
+        "val":"Effective"
+    },
+    {
+        "name":"I will ask questions to get to know others more",
+        "val":"Courage"
+    },
+    {
+        "name":"I will be a good listener",
+        "val":"Effective"
+    },
+    {
+        "name":"I will continue to speak politely even if someone interrupts me",
+        "val":"Courage"
+    },
+
+    {
+        "name":"I will share my qualities and interests to make friends",
+        "val":"Effective"
+    },
+
+    {
+        "name":"I will sit beside a peer I don’t know at all",
+        "val":"Courage"
+    },
+    {
+        "name":"I will appreciate the qualities and actions of others",
+        "val":"Effective"
+    }
+]
