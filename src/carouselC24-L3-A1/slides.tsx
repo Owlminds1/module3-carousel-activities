@@ -192,52 +192,56 @@ const SlideStart = () => {
             <SwiperSlide>
               <div className="h-full overflow-y-auto p-5 flex flex-col gap-9">
                 <h2 className="text-center text-2xl text-black">
-                Apply a framework to take decision
+                  Apply a framework to take decision
                 </h2>
-<div className="flex justify-start items-center flex-col gap-7">
-  <Image src="/C24Images/decision_making_tool.png" width={600} height={100} alt="slie image"/>
+                <div className="flex justify-start items-center flex-col gap-7">
+                  <Image
+                    src="/C24Images/decision_making_tool.png"
+                    width={600}
+                    height={100}
+                    alt="slie image"
+                  />
 
-   <ul className="list-disc space-y-3 ml-6">
-                          <li className="text-black text-xl text-left">
-                          {`Row A describes the decision you are considering and
+                  <ul className="list-disc space-y-3 ml-6">
+                    <li className="text-black text-xl text-left">
+                      {`Row A describes the decision you are considering and
 evaluating i.e. what activities should I choose for earth week?`}
-
-                          </li>
-                          <li className="text-black text-xl text-left">
-                          {`Column B lists all the "factors important to this decision" i.e.. number of number of participants/Weather/Budget/Implementation/Accessibility `}
-                          </li>
-                          <li className="text-black text-xl text-left">
-                         {` Column C ranks each of these factors from 0 to 3. Rank: 0 = somewhat important, 1= pretty important, 2 = very important, 3 = most important / must have`}
-                          </li>
-                          <li className="text-black text-xl text-left">
-                         {` Row D lists the options you are considering, i.e., your choices or possible solutions. 3Rs/Composting/Planting Trees/Purifying water areas/Presentation of community projects  are the different options to choose from.`}
-                          </li>
-                          <li className="text-black text-xl text-left">
-                          {`Column E for each activity requires you to score the factors (from 0 to 3).
+                    </li>
+                    <li className="text-black text-xl text-left">
+                      {`Column B lists all the "factors important to this decision" i.e.. number of number of participants/Weather/Budget/Implementation/Accessibility `}
+                    </li>
+                    <li className="text-black text-xl text-left">
+                      {` Column C ranks each of these factors from 0 to 3. Rank: 0 = somewhat important, 1= pretty important, 2 = very important, 3 = most important / must have`}
+                    </li>
+                    <li className="text-black text-xl text-left">
+                      {` Row D lists the options you are considering, i.e., your choices or possible solutions. 3Rs/Composting/Planting Trees/Purifying water areas/Presentation of community projects  are the different options to choose from.`}
+                    </li>
+                    <li className="text-black text-xl text-left">
+                      {`Column E for each activity requires you to score the factors (from 0 to 3).
 score: 0 = does not meet needs, 1 = somewhat meets needs
 (I can deal with it, but it's not ideal), 2 = close to ideal, 3 = ideal`}
-
-                          </li>
-                        </ul>
-</div>
-             
-                
+                    </li>
+                  </ul>
+                </div>
               </div>
             </SwiperSlide>
 
-
-             {/* Slide 4 */}
-             <SwiperSlide>
+            {/* Slide 4 */}
+            <SwiperSlide>
               <div className="h-full overflow-y-auto p-5 flex justify-center flex-col gap-9">
                 <h2 className="text-center text-2xl text-black">
-                Let’s use the Pugh Matrix tool                </h2>
+                  Let’s use the Pugh Matrix tool{" "}
+                </h2>
 
-<div className="w-full text-center">
-<Link className="text-lg text-white bg-violet-900 px-8 py-2 rounded-lg" href="https://wdh7gv.csb.app/"> Pugh Matrix</Link>
-
-</div>
-              
-               
+                <div className="w-full text-center">
+                  <Link
+                    className="text-lg text-white bg-violet-900 px-8 py-2 rounded-lg"
+                    href="https://wdh7gv.csb.app/"
+                  >
+                    {" "}
+                    Pugh Matrix
+                  </Link>
+                </div>
               </div>
             </SwiperSlide>
           </Swiper>
