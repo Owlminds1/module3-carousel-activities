@@ -24,7 +24,7 @@ const CarouselC18L1A5 = () => {
           setMealCal={setMealCal}
           countCal={countCal}
           setCountCal={setCountCal}
-          setIsFirstScreen={setIsFirstScreen}
+         
         />
       )}
       {isFirstScreen == "table" && (

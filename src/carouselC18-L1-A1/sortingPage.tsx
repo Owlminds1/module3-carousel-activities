@@ -7,9 +7,13 @@ type master = {
   text: string;
   value: string;
 };
-const SortingPage = () => {
+
+type myProps = {
+  setIsFirstScreen:(value:string)=>void
+}
+const SortingPage = ({setIsFirstScreen}:myProps) => {
   const [dropArry, setDropArry] = useState<{ [key: number]: string[] }>({});
-  const [filterMaster,setFilterMaster]= useState(MasterListData)
+  const [filterMaster, setFilterMaster] = useState(MasterListData);
   const handleDrag = (e: React.DragEvent, dragItem: master) => {
     console.log(dragItem);
     e.dataTransfer.setData("dragItem", JSON.stringify(dragItem));
@@ -20,6 +24,9 @@ const SortingPage = () => {
     const dropData = JSON.parse(e.dataTransfer.getData("dragItem"));
     // console.log( dropData.value);
     if (boxValue == dropData.value) {
+      const updatefilter = filterMaster.filter(
+        (task) => task.text !== dropData.text
+      );
       setDropArry((prev) => ({
         ...prev,
         [index]: prev[index]
@@ -27,16 +34,24 @@ const SortingPage = () => {
           : [dropData.text],
       }));
 
-      setFilterMaster((prev)=> prev.filter((task)=> task.text !== dropData.text ) )
+      setFilterMaster(updatefilter);
+      if(updatefilter.length == 0 ){
+       setTimeout(()=>{
+        setIsFirstScreen("Result")
+       },300)
+      }
     } else {
-    //   alert("ssdfsdfs");
+      //   alert("ssdfsdfs");
     }
   };
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex flex-col justify-center items-center p-5">
       {/* ====================== master list============ */}
-      <h4 className="text-black text-bold text-3xl"> Order tasks based on importance</h4>
+      <h4 className="text-black text-bold text-3xl">
+        {" "}
+        Order tasks based on importance
+      </h4>
       <div className="relative flex justify-center items-center flex-col ">
         <Image
           src="/C18Images/tree.png"
@@ -65,7 +80,9 @@ const SortingPage = () => {
               onDrop={(e) => handleDrop(e, dItem.task, dIndex)}
               className="flex justify-start flex-col items-center min-h-[200px] bg-[#8d4d1f48] rounded-lg backdrop-blur-[2px] border border-black min-w-[200px] overflow-hidden"
             >
-              <h4 className="text-white w-full text-center bg-black text-lg border-b-2 border-white">{dItem.task}</h4>
+              <h4 className="text-white w-full text-center bg-black text-lg border-b-2 border-white">
+                {dItem.task}
+              </h4>
 
               {dropArry[dIndex]?.map((i, ind) => (
                 <span

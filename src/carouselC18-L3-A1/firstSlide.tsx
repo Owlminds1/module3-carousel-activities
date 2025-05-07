@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 
@@ -8,9 +9,15 @@ type myProps ={
 const FirstSlide = ({setIsFirstScreen}:myProps) => {
   return (
     <div className="min-h-screen flex justify-center items-center flex-col gap-10 bg-[#F8FAFC]">
-    <div className="min-h-[100px] p-5 text-center shadow-black shadow-md rounded-lg flex justify-center items-center w-[700px] flex-col gap-2">
-    <p className="text-2xl text-black text-left "> Your friend Remy has a very busy schedule, but he loves playing basketball! He really wants to make time for it, but that seems to be challenging!</p>
-    <p className="text-2xl text-black text-left "> Based on what you know, what would you do? How much time does he need for basketball practice? </p>
+    <div className="min-h-[100px] grid grid-cols-12 place-items-center shadow-black shadow-md rounded-lg w-[700px] gap-2">
+      <div className="col-span-6 w-full">
+        <Image src="/C18Images/REMY-BASKETBALL.png" width={300} height={100} alt='REMY-BASKETBALL'/>
+
+      </div>
+   <div className='col-span-6 flex justify-center items-center flex-col gap-3'>
+   <p className="text-xl text-black text-left "> Your friend Remy has a very busy schedule, but he loves playing basketball! He really wants to make time for it, but that seems to be challenging!</p>
+   <p className="text-xl text-black text-left "> Based on what you know, what would you do? How much time does he need for basketball practice? </p>
+   </div>
     </div>
 
       <div

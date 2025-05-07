@@ -10,12 +10,11 @@ type myProps = {
   setVaggeisCal: React.Dispatch<React.SetStateAction<number>>;
   setMealCal: React.Dispatch<React.SetStateAction<number>>;
   setCountCal: React.Dispatch<React.SetStateAction<number>>;
-  setIsFirstScreen: (value: string) => void;
+  
   countCal: number;
 };
 const ShopingCart = ({
   countCal,
-  setIsFirstScreen,
   setMealCal,
   setVaggeisCal,
   setFruitsCal,
@@ -172,7 +171,7 @@ const ShopingCart = ({
           <h4  className="text-white text-2xl relative"><BsCartDashFill/> <span className="absolute top-[-22px] right-[-15px] text-[15px] px-2 py-1 bg-black rounded-full">{count}</span></h4>
           </div>
 
-          <button
+          {/* <button
             onClick={() => (countCal >= 50 ? setIsFirstScreen("table") : "")}
             className={`${
               countCal >= 50
@@ -181,7 +180,7 @@ const ShopingCart = ({
             }   text-black px-5 py-2 rounded-lg`}
           >
             Check Your Calories
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
