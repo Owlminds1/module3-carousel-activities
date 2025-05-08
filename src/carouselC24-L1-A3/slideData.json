@@ -1,0 +1,47 @@
+[
+    {
+        "text": "Please switch off the lights before leaving the class",
+        "val":"R",
+        "btnBgFirst":"black",
+        "btnBgSec":"red"
+       
+    },
+    {
+        "text": "I will keep reminding you until you finally throw trash in the garbage can",
+        "val":"R",
+        "btnBgFirst":"black",
+        "btnBgSec":"red"
+
+    },
+    {
+        "text": "I appreciate you asking to play, but no I am busy with earth day.",
+        "val":"A",
+        "btnBgFirst":"red",
+        "btnBgSec":"green"
+
+    } 
+    
+    ,{
+        "text": "I understand that you can be forgetful, but please throw paper and cans in the correct bins.",
+        "val":"R",
+        "btnBgFirst":"black",
+        "btnBgSec":"red"
+
+    },
+
+    {
+        "text": "Thanks for offering, but I like my trash-free lunch.",
+        "val":"A",
+        "btnBgFirst":"red",
+        "btnBgSec":"green"
+
+    },
+    
+    {
+        "text": "Yes, I understand it’s faster but I prefer walking to cars",
+        "val":"A",
+        "btnBgFirst":"red",
+        "btnBgSec":"green"
+
+    }
+]

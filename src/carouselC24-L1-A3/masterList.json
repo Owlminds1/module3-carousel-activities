@@ -1,0 +1,61 @@
+[
+    {
+        "text":"Earth day is celebrated by most people in the world.",
+        "val":"KNOW"
+    },
+    
+    {
+        "text":"Let’s recycle plastic!",
+        "val":"DO"
+    },
+    
+    {
+        "text":"Plastic takes 450 years to disappear from the planet",
+        "val":"KNOW"
+    },
+    
+    {
+        "text":"If we don’t conserve water, we won’t have any clean water to drink!",
+        "val":"FEEL"
+    },
+    
+    {
+        "text":"Earth day is celebrated on April 22nd.",
+        "val":"KNOW"
+    },
+    
+    {
+        "text":"Turn off your tap while brushing your teeth and take shorter showers!",
+        "val":"DO"
+    },
+    
+    {
+        "text":"Water makes up up to 75% of our bodies.",
+        "val":"KNOW"
+    },
+    
+    {
+        "text":"Turn off the lights when you leave the space!",
+        "val":"DO"
+    },
+     {
+        "text":"Throwing garbage in the ocean hurts the fish and other sea creatures! ",
+        "val":"FEEL"
+    },
+    
+    {
+        "text":"Air pollution makes it difficult for us to breathe!",
+        "val":"FEEL"
+    },
+    
+    
+    {
+        "text":"Planting trees gives us clean air to breathe",
+        "val":"DO"
+    },
+    
+    {
+        "text":"You can be a planet hero by giving your time to protect the planet!",
+        "val":"FEEL"
+    }
+]
