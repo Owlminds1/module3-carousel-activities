@@ -1,0 +1,100 @@
+[
+    {
+        "text":"Dominating",
+        "val":false
+    } ,
+    
+    {
+        "text":"Kind",
+        "val":true
+    },
+    
+    {
+        "text":"Thoughtful",
+        "val":true
+    },
+    
+    {
+        "text":"Charming",
+        "val":true
+    } ,
+    
+    {
+        "text":"Angry",
+        "val":false
+    },
+    
+    {
+        "text":"Hurtful",
+        "val":false
+    },
+    
+    {
+        "text":"Polite",
+        "val":true
+    },
+    {
+        "text":"Loving",
+        "val":true
+    },
+    
+    {
+        "text":"Understanding",
+        "val":true
+    },
+    
+    {
+        "text":"Fearful",
+        "val":false
+    },
+    
+    {
+        "text":"Challenging",
+        "val":true
+    },
+    
+    {
+        "text":"Loud",
+        "val":false
+    },
+    
+    {
+        "text":"Soft",
+        "val":false
+    } ,
+    
+    {
+        "text":"Strong",
+        "val":true
+    },
+    
+    {
+        "text":"Giving",
+        "val":true
+    },
+    {
+        "text":"Respectful",
+        "val":true
+    },
+    
+    {
+        "text":"Helpful",
+        "val":true
+    } ,
+    
+    
+    {
+        "text":"Pitiful",
+        "val":false
+    },
+    
+    {
+        "text":"Arrogant",
+        "val":false
+    },
+
+    {
+        "text":"Firm",
+        "val":true
+    } 
+]
