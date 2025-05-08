@@ -1,0 +1,36 @@
+[
+    {
+        "titel":"Assertive of the AREFIT.",
+        "text":"I’m not sure what I want from this discussion. You can go ahead and decide.",
+        "sugge":"I think this discussion will be fruitful if we determine the pros and cons, and take a decision accordingly."
+    },
+     {
+        "titel":" Rapport Building of the AREFIT.",
+        "text":"What I want to do on this office trip is to visit all the beautiful places.",
+        "sugge":"What would you like to do on this office trip? We can make a list of things that we can do together."
+    },
+    
+    {
+        "titel":"Empathy of the AREFIT.",
+        "text":"I think you don’t understand what you want.",
+        "sugge":"I can understand what you’re going through, but it’s important to give it time to determine what you really want."
+    },
+    
+    {
+        "titel":"Flexibility of the AREFIT.",
+        "text":"I want to do things my way.",
+        "sugge":"This is how I think we should go about doing things, but I’m open to suggestions."
+    },
+    
+    {
+        "titel":"Intuition of the AREFIT.",
+        "text":"Please tell me what to do.",
+        "sugge":"I’m open to others’ suggestions, but only I know the best way forward."
+    },
+    
+    {
+        "titel":"Trus of the AREFIT.",
+        "text":"I highly doubt that this is going to work out.",
+        "sugge":"This is what feels like the best way forward and I trust the outcome. "
+    }
+]
