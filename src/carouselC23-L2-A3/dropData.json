@@ -1,0 +1,25 @@
+[
+    {
+        "name":"Passive",
+        "bg":"#F7CFD8"
+    } ,
+    
+    {
+        "name":"Aggressive",
+        "bg":"#FFE893"
+    } ,
+    
+    {
+        "name":"Passive-aggressive",
+        "bg":"#ADB2D4"
+    },
+
+    {
+        "name":"Manipulative",
+        "bg":"#A8F1FF"
+    },
+    {
+        "name":"Assertive",
+        "bg":"#FFC785"
+    }
+]
