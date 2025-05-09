@@ -1,5 +1,5 @@
 "use client";
-import React, {  useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SlideData from "@/CarouselC23-L2-A2/slideData.json";
@@ -19,7 +19,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   const [showBtn, setShowbtn] = useState(true);
 
   const handleNext = () => {
-    if (lastSlide == SlideData.length ) {
+    if (lastSlide == SlideData.length) {
       setIsFirstScreen("Result");
     }
     swiperRef.current?.slideNext();
@@ -31,12 +31,11 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   };
 
   const handleChange = (swipe: SwiperClass) => {
-    
-  if (swipe.activeIndex === 0) {
-    setShowbtn(true); // index 0 pe true rakhna hai
-  } else {
-    setShowbtn(false);
-  }
+    if (swipe.activeIndex === 0) {
+      setShowbtn(true); // index 0 pe true rakhna hai
+    } else {
+      setShowbtn(false);
+    }
     setLastSlide(swipe.activeIndex);
     if (lastSlide == SlideData.length - 1) return;
     //  setIsFirstScreen("result");
@@ -49,9 +48,9 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
           How to say no
         </h1>
 
-        <div className="grid grid-cols-12 gap-5 w-full place-items-center  border-2 p-2 bg-violet-100 rounded-lg min-h-[200px] ">
-          <div className="col-span-6 w-full  bg-violet-200 px-4 rounded-lg ">
-            <div className="">
+        <div className="grid grid-cols-12 gap-5 w-full   border-2 p-2 bg-violet-100 rounded-lg min-h-[200px] ">
+          <div className="col-span-6 w-full  ">
+            <div className="bg-violet-200 px-4 rounded-lg ">
               <ul className="list-decimal p-5">
                 <li className="text-xl text-black">
                   Acknowledge the person’s request by repeating what they said.
@@ -101,9 +100,16 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
               {SlideData.map((item, index) => (
                 <SwiperSlide key={index}>
                   <div className="flex justify-center items-center min-h-[400px] flex-col gap-2">
+                    <Image src={item.img} width={500} height={100} alt="slide img"/>
                     <h4 className=" text-center py-5  text-black text-3xl ">
                       {item.text}
                     </h4>
+
+                    <textarea
+                      placeholder="write here...."
+                      className="text-lg rounded-lg text-black text-center border border-gray-400 outline-black min-h-[80px] w-full"
+                    />
+
                     {!showBtn ? (
                       <button
                         onClick={() => setShowbtn(true)}
@@ -142,7 +148,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
 
           <div
             className={` ${
-              lastSlide < SlideData.length +1 &&showBtn 
+              lastSlide < SlideData.length + 1 && showBtn
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90 
@@ -150,7 +156,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
           >
             <FaArrowRight
               className={`${
-               lastSlide < SlideData.length +1 &&showBtn  ? "block" : "hidden"
+                lastSlide < SlideData.length + 1 && showBtn ? "block" : "hidden"
               } text-[40px]  cursor-pointer text-black `}
               onClick={handleNext}
             />

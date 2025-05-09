@@ -1,26 +1,30 @@
 [
     {
         "text":"Darius has asked you to come play football on the weekends.",
-        "sugges":"Thank you, but no, I won’t be able to join you on the weekends since I’ve other commitments. We can do Wednesday evenings if that suits you."
+        "sugges":"Thank you, but no, I won’t be able to join you on the weekends since I’ve other commitments. We can do Wednesday evenings if that suits you.",
+        "img":"/C23Images/football.png"
        
         
     },
       {
         "text":"Samantha has requested you to join the choir.",
-        "sugges":"I’d love to, but at the moment, no. Thank you for asking though! It’s just that I’ve a lot of assignments to complete."
+        "sugges":"I’d love to, but at the moment, no. Thank you for asking though! It’s just that I’ve a lot of assignments to complete.",
+        "img":"/C23Images/choir.png"
        
         
     },
      {
         "text":"Raymond insists on joining his squad to bully another student.",
-        "sugges":"No, thank you. I don’t want to be a part of such actions."
+        "sugges":"No, thank you. I don’t want to be a part of such actions.",
+       "img":"/C23Images/bully.png"
        
         
     },
     
     {
         "text":"The teacher has asked you to join the Math olympiad.",
-        "sugges":"Thank you for thinking of me, but not now. At the moment, I have to prepare for my exams. I’d be happy to participate next year."
+        "sugges":"Thank you for thinking of me, but not now. At the moment, I have to prepare for my exams. I’d be happy to participate next year.",
+        "img":"/C23Images/teacher.png"
        
         
     }

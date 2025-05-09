@@ -1,0 +1,194 @@
+[
+    {
+        "img": "/C23Images/shouting-voice.png",
+        "text": "Loud voice.",
+        "value": "Aggressive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/staring-eyes.png",
+        "text": "Staring eyes at the other person.",
+        "value": "Aggressive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/clenched-fist.png",
+        "text": "Clenched/squeezing fists",
+        "value": "Aggressive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/relaxed-posture.png",
+        "text": "Relaxed posture.",
+        "value": "Assertive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/soft-voice.png",
+        "text": "Soft voice.",
+        "value": "Passive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/pointed-finger.png",
+        "text": "Pointed fingers.",
+        "value": "Aggressive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/404.jpg",
+        "text": "Too many head nods.",
+        "value": "Passive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/clenched-teeth.png",
+        "text": "Clenched/rigid teeth.",
+        "value": "Aggressive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/lack-of-eye-contact.png",
+        "text": "Lack of eye contact.",
+        "value": "Passive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/staring-floor.png",
+        "text": "Staring at the floor.",
+        "value": "Passive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/eye-contact.png",
+        "text": "Attentive eye contact.",
+        "value": "Assertive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/listening-without-itnerruption.png",
+        "text": "Listens without interrupting.",
+        "value": "Assertive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    }
+]

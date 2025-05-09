@@ -1,0 +1,173 @@
+[
+    {
+        "img": "",
+        "text": "I’m not sure what I want from this discussion. You can go ahead and decide.",
+        "value": "Passive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            },
+            {
+                "opt1": "Manipulative"
+            }
+        ]
+    },
+    {
+        "img": "",
+        "text": "I think you don’t understand what you want.",
+        "value": "Aggressive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            },
+            {
+                "opt1": "Manipulative"
+            }
+        ]
+    },
+    {
+        "img": "",
+        "text": "I want to do things my way.",
+        "value": "Aggressive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            },
+            {
+                "opt1": "Manipulative"
+            }
+        ]
+    },
+    {
+        "img": "",
+        "text": "Please tell me what to do.",
+        "value": "Passive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            },
+            {
+                "opt1": "Manipulative"
+            }
+        ]
+    },
+    {
+        "img": "",
+        "text": "I highly doubt that this is going to work out.",
+        "value": "Aggressive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            },
+            {
+                "opt1": "Manipulative"
+            }
+        ]
+    },
+    {
+        "img": "",
+        "text": "Do it this way now and then you can see how to go about it later.",
+        "value": "Manipulative",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            },
+            {
+                "opt1": "Manipulative"
+            }
+        ]
+    },
+    {
+        "img": "",
+        "text": "Let me present this project as mine this time, and I will do all your homework.",
+        "value": "Manipulative",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            },
+            {
+                "opt1": "Manipulative"
+            }
+        ]
+    },
+    {
+        "img": "",
+        "text": "I think you need to make a pros and cons list to determine the best way forward.",
+        "value": "Assertive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            },
+            {
+                "opt1": "Manipulative"
+            }
+        ]
+    },
+    {
+        "img": "",
+        "text": "I believe that you would have chosen otherwise, but I may be wrong about it.",
+        "value": "Assertive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            },
+            {
+                "opt1": "Manipulative"
+            }
+        ]
+    }
+]
