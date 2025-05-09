@@ -1,0 +1,48 @@
+[
+    {
+        "text":"I think your speaking skills are better, so you go ahead and speak.",
+        "val":"Assertive"
+    },
+    
+    {
+        "text":"Yeah, that’s true, but I want to improve on my skills!",
+        "val":"Assertive"
+    },
+    
+    {
+        "text":"I can understand that. But we are partners on this project.",
+        "val":"Rapport-building"
+    },
+    
+    {
+        "text":"What are some skills you enjoy? What do you want to get out of this project?",
+        "val":"Rapport-building"
+    },
+    
+    {
+        "text":"Sure, yes. I can totally relate to that.",
+        "val":"Empathy"
+    } ,
+    {
+        "text":"I can even help you with the presentation.",
+        "val":"Empathy"
+    },
+    
+    {
+        "text":"Since I presented the last project, you can present this one.",
+        "val":"Flexibility"
+    },
+    
+    {
+        "text":"I think we should help each other out.",
+        "val":"Intuition"
+    },
+    {
+        "text":"I can see that being the speaker means a lot to you. Go ahead.",
+        "val":"Intuition"
+    },
+    {
+        "text":"We have to believe in each other. Then only we can make a good team!",
+        "val":"Trust"
+    }
+]

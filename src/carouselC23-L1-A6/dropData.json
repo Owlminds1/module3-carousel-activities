@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Assertive",
+        "bg":"#F7CFD8"
+    } ,
+    
+    {
+        "name":"Rapport-building",
+        "bg":"#FFE893"
+    } ,
+    
+    {
+        "name":"Empathy",
+        "bg":"#ADB2D4"
+    },
+
+    {
+        "name":"Flexibility",
+        "bg":"#A8F1FF"
+    },
+    {
+        "name":"Intuition",
+        "bg":"#FFC785"
+    },
+    
+    {
+        "name":"Trust",
+        "bg":"#F7CFD8"
+    }
+]
