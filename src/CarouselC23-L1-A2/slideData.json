@@ -1,0 +1,107 @@
+[
+    {
+        "text":"I think we are equal, so we should try to get an equal number of candies.",
+        "value":"Assertive",
+        "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    },
+    {
+        "text":"Since I’ve more money and a bigger car, you don’t get to be the class captain.",
+        "value":"Aggressive",
+         "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    } ,
+    {
+        "text":"Whatever you say, I’m happy with anything.",
+        "value":"Passive",
+         "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    },
+    {
+        "text":"I understand your point, but I disagree. I don’t think girls are less intelligent than boys.",
+        "value":"Assertive",
+         "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    },
+    {
+        "text":"I don’t know. See what’s best for all the students. Personally, I’m not sure.",
+        "value":"Passive",
+         "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    } ,
+    {
+        "text":"You don’t get to hang out with me or my friends because your mother is a cleaning lady.",
+        "value":"Aggressive",
+         "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    },
+    {
+        "text":"My friend is just trying to do his homework. I suggest that you please don’t disturb him.",
+        "value":"Assertive",
+         "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    }
+]

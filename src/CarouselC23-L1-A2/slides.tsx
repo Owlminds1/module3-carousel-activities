@@ -1,0 +1,173 @@
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import SlideData from "@/CarouselC23-L1-A2/slideData.json";
+import { Navigation } from "swiper/modules";
+import "swiper/css/navigation";
+import { Swiper as SwiperClass } from "swiper";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
+
+type SlideProps = {
+  setIsFirstScreen: (value: string) => void;
+};
+export default function SlideStart({ setIsFirstScreen }: SlideProps) {
+  const swiperRef = useRef<SwiperClass | null>(null);
+  const [lastSlide, setLastSlide] = useState<number>(0);
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [activeIndex, setActiveIndex] = useState<number | null>();
+
+  const [showBtn, setShowbtn] = useState(false);
+
+  const [wrongAudio, setWrongAudio] = useState<HTMLAudioElement | null>(null);
+  const [correctAudio, setCorrectAudio] = useState<HTMLAudioElement | null>(
+    null
+  );
+  const [suffeleArry, setSuffeleArry] = useState(SlideData);
+
+  const handleNext = () => {
+    if (lastSlide == SlideData.length - 1) {
+      setIsFirstScreen("Result");
+    }
+    swiperRef.current?.slideNext();
+  };
+
+  const handlePerv = () => {
+    if (lastSlide == 0) return;
+    swiperRef.current?.slidePrev();
+  };
+
+
+    const arryShuffle = [...SlideData].sort(() => Math.random() - 0.5);
+    
+
+
+  useEffect(() => {
+
+  
+    setWrongAudio(new Audio("/sound/wrong_buzzer.mp3"));
+    setCorrectAudio(new Audio("/sound/correct.mp3"));
+  }, []);
+
+  const handleChange = (swipe: SwiperClass) => {
+    setShowbtn(false);
+     setSuffeleArry(arryShuffle);
+    setActiveIndex(null);
+    setLastSlide(swipe.activeIndex);
+    if (lastSlide == SlideData.length - 1) return;
+    //  setIsFirstScreen("result");
+  };
+
+  const handleCheck = (value: string, index: number) => {
+    setActiveIndex(index);
+    if (value === suffeleArry[lastSlide].value) {
+      setIsCorrect(true);
+      setShowbtn(true);
+      correctAudio?.play()
+    } else {
+      setIsCorrect(false);
+      wrongAudio?.play();
+    }
+   
+  };
+  return (
+    <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
+      <div className="w-[900px]  ">
+        <h1 className="text-center text-4xl font-bold py-4 text-black">
+          Read each sentence below and state if it shows assertive behavior or
+          passive or aggressive behavior.
+        </h1>
+
+        <div className="grid grid-cols-12 gap-5 w-full place-items-center  border-2 p-2 bg-violet-100 rounded-lg min-h-[200px] ">
+          <div className="col-span-4 w-full ">
+            <Image
+              src="/C23Images/Assertive.png"
+              width={300}
+              height={100}
+              alt="image Slider"
+            />
+          </div>
+          <div className="col-span-8 w-full h-full flex justify-center items-center ">
+            <Swiper
+              slidesPerView={1}
+              loop={false}
+              autoplay={false}
+              allowTouchMove={false}
+              modules={[Navigation]}
+              onSlideChange={handleChange}
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
+            >
+              {suffeleArry.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <div className="flex justify-center items-center flex-col gap-5">
+                    <h4 className=" text-center py-5 text-black text-3xl ">
+                      {" "}
+                      {item.text}
+                    </h4>
+                    <div className="flex justify-center items-center gap-6">
+                      {item.ans.map(
+                        (option, index) => (
+                          <button
+                            onClick={() => handleCheck(option.opt1, index)}
+                            key={index}
+                            className={`
+                            ${
+                              activeIndex == index
+                                ? isCorrect == true
+                                  ? "bg-green-700"
+                                  : "bg-red-500"
+                                : "bg-violet-900"
+                            }
+                            
+                             px-10 py-3  rounded-lg text-white cursor-pointer active:scale-90 active:shadow-md active:shadow-black transition-all duration-200`}
+                          >
+                            {option.opt1}
+                          </button>
+                        )
+                      )}
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+
+        <div className="w-full flex justify-between items-center mt-5">
+          <div
+            className={` ${
+              lastSlide > 0
+                ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
+                : ""
+            } hover:scale-90 
+               `}
+          >
+            <FaArrowLeft
+              className={`${
+                lastSlide > 0 ? "block" : "hidden"
+              } text-[40px]  cursor-pointer  text-black`}
+              onClick={handlePerv}
+            />
+          </div>
+
+          <div
+            className={` ${
+              showBtn
+                ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
+                : ""
+            } hover:scale-90 
+               `}
+          >
+            <FaArrowRight
+              className={`${
+                showBtn ? "block" : "hidden"
+              } text-[40px]  cursor-pointer text-black `}
+              onClick={handleNext}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
