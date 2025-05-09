@@ -1,0 +1,95 @@
+[
+    {
+        "text":"I’m busy. Please go away.",
+        "sugge":"I appreciate you coming by, but I’m busy right now. Can we please meet later?",
+        "value":"Aggressive",
+        "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            }, {
+                "opt1":"Passive-aggressive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    },
+
+     {
+        "text":"I don’t want to talk to you.",
+        "sugge":"I would love to speak now, but I just don’t feel up to it at the moment. Maybe another time.",
+        "value":"Aggressive",
+        "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            }, {
+                "opt1":"Passive-aggressive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    },
+     {
+        "text":"I am not upset.",
+        "sugge":"I’m upset because I don’t appreciate how we interacted. I need some time to feel alright.",
+        "value":"Passive",
+        "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            }, {
+                "opt1":"Passive-aggressive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    },
+
+     {
+        "text":"Do whatever you want.",
+        "sugge":"We are a team. I’d appreciate it if you ask me first before making important decisions.",
+        "value":"Passive-aggressive",
+        "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            }, {
+                "opt1":"Passive-aggressive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    },
+    
+    {
+        "text":"Yes, something is wrong, and I want to talk about it with you.",
+        "sugge":"",
+        "value":"Assertive",
+        "ans":[
+            {
+                "opt1":"Assertive"
+            },
+             {
+                "opt1":"Passive"
+            }, {
+                "opt1":"Passive-aggressive"
+            },
+            {
+                "opt1":"Aggressive"
+            }
+        ]
+    }
+]
