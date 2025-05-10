@@ -30,7 +30,7 @@ const SlideStart = () => {
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[800px]">
         <h1 className="text-center text-4xl py-4 text-black">
-          Gratitude journal
+        Personalised video
         </h1>
 
         <div className="w-full border-2 flex min-h-[400px] justify-center items-center p-2 bg-violet-100 rounded-lg">

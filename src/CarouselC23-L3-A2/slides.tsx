@@ -38,10 +38,10 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     swiperRef.current?.slidePrev();
   };
 
-  const arryShuffle = [...SlideData].sort(() => Math.random() - 0.5);
-
+  
   useEffect(() => {
-      setSuffeleArry(arryShuffle);
+    const arryShuffle = [...SlideData].sort(() => Math.random() - 0.5);
+    setSuffeleArry(arryShuffle);
     setWrongAudio(new Audio("/sound/wrong_buzzer.mp3"));
     setCorrectAudio(new Audio("/sound/correct.mp3"));
   },[]);

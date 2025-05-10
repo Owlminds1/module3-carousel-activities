@@ -1,0 +1,38 @@
+[
+    {
+        "qustion": "Your friend brought the incorrect set of Pokemon cards to school to play during lunch break.",
+        "Reaction": [
+            {
+                "text": "Damn it! I asked you to bring the ones for action heroes! You’re so stupid!",
+                "val": "AGGRESSIVE"
+            },
+            {
+                "text": " It’s fine. I really don’t mind. We can play with these cards today.Hey! It’s alright! I think you must have been really busy at home !",
+                "val": "PASSIVE"
+            },
+            
+            {
+                "text": "Let’s play these ones today and you can bring the correct ones next time! Do you want me to remind you if that’s helpful?",
+                "val": "ASSERTIVE"
+            }
+        ]
+    },
+     {
+        "qustion": "You placed milk in the incorrect drawer.",
+        "Reaction": [
+            {
+                "text": "What is wrong with you?! How many times do I have to tell you where to put the milk?!",
+                "val": "AGGRESSIVE"
+            },
+            {
+                "text": "Huh.",
+                "val": "PASSIVE"
+            },
+            
+            {
+                "text": "It’s alright. Here’s the drawer. I will remind you until you remember. And when you do, you get a comic book of your choice, okay?",
+                "val": "ASSERTIVE"
+            }
+        ]
+    }
+]
