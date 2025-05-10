@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import SlideData from "@/CarouselC23-L3-A2/slideData.json";
+import SlideData from "@/CarouselC23-L2-A5/slideData.json";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import { Swiper as SwiperClass } from "swiper";
@@ -24,10 +24,9 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   const [correctAudio, setCorrectAudio] = useState<HTMLAudioElement | null>(
     null
   );
-  const [suffeleArry, setSuffeleArry] = useState(SlideData);
 
   const handleNext = () => {
-    if (lastSlide == SlideData.length) {
+    if (lastSlide == SlideData.length - 1) {
       setIsFirstScreen("Result");
     }
     swiperRef.current?.slideNext();
@@ -38,13 +37,10 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     swiperRef.current?.slidePrev();
   };
 
-  const arryShuffle = [...SlideData].sort(() => Math.random() - 0.5);
-
   useEffect(() => {
-      setSuffeleArry(arryShuffle);
     setWrongAudio(new Audio("/sound/wrong_buzzer.mp3"));
     setCorrectAudio(new Audio("/sound/correct.mp3"));
-  },[]);
+  }, []);
 
   const handleChange = (swipe: SwiperClass) => {
     if (swipe.activeIndex == 0) {
@@ -52,7 +48,6 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     } else {
       setShowbtn(false);
     }
-  
     setActiveIndex(null);
     setLastSlide(swipe.activeIndex);
     if (lastSlide == SlideData.length - 1) return;
@@ -62,7 +57,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   const handleCheck = (value: string, index: number) => {
     setActiveIndex(index);
     const currentIndex = swiperRef.current?.activeIndex ?? 0;
-    if (value === suffeleArry[currentIndex - 1].value) {
+    if (value === SlideData[currentIndex].value) {
       setIsCorrect(true);
       setShowbtn(true);
       correctAudio?.play();
@@ -75,13 +70,11 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
       <div className="w-[900px]  ">
         <h1 className="text-center text-2xl font-bold py-4 text-black">
-          {lastSlide == 0
-            ? "Types of Behaviour "
-            : "Differentiate between assertive behavior and those that show passive, manipulative or  aggressive  behaviour."}
+          Note the non-verbal communication and state if it shows assertive
+          behavior or passive or aggressive behavior.
         </h1>
         <div className=" border-2 p-2 bg-violet-100 rounded-lg min-h-[200px] ">
           <Swiper
-
             slidesPerView={1}
             loop={false}
             autoplay={false}
@@ -90,32 +83,30 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
             onSlideChange={handleChange}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            <SwiperSlide>
-              <div className="flex justify-center items-center min-h-[300px] w-full">
-                <Image
-                  src="/C23Images/5-communication.png"
-                  width={950}
-                  height={100}
-                  alt="slide img"
-                />
-              </div>
-            </SwiperSlide>
-            {suffeleArry.map((item, index) => (
+            {SlideData.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="grid grid-cols-12 ">
-                  <div className="col-span-6 flex justify-center items-center  w-full">
-                  
+                <div className="grid grid-cols-12 w-full place-items-center gap-2">
+                  <div className="col-span-6 flex justify-center items-center flex-col gap-2">
+                    <div className="w-[350px] h-[350px] relative rounded-lg over">
                       <Image
-                      src={item.img}
-                      width={400}
-                      height={100}
-                      alt="slide img"
+                        src={item.img}
+                        fill
+                        alt="slide img"
+                        className=" object-contain"
+                      />
+                    </div>
+                    <textarea
+                      className="text-center text-lg border border-gray-500 outline-black rounded-lg min-h-[80px] w-full"
+                      placeholder="write here... "
                     />
-                   
                   </div>
 
-                  <div className="col-span-6  min-h-[400px] flex justify-center items-center flex-col gap-6 ">
-                       {item.ans.map((option, index) => (
+                  <div className="col-span-6  min-h-[300px] flex justify-center items-center flex-col ">
+                    <h4 className=" text-center py-5 text-black text-4xl ">
+                      {item.text}
+                    </h4>
+                    <div className="flex justify-center items-center flex-col gap-6">
+                      {item.ans.map((option, index) => (
                         <button
                           onClick={() => handleCheck(option.opt1, index)}
                           key={index}
@@ -128,12 +119,12 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
                                            : "bg-violet-900"
                                        }
                                        
-                                        min-w-[200px] px-10 py-3  rounded-lg text-white cursor-pointer active:scale-90 active:shadow-md active:shadow-black transition-all duration-200`}
+                                        min-w-[180px] px-10 py-3  rounded-lg text-white cursor-pointer active:scale-90 active:shadow-md active:shadow-black transition-all duration-200`}
                         >
                           {option.opt1}
                         </button>
                       ))}
-                    
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -161,7 +152,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
 
           <div
             className={` ${
-              lastSlide < SlideData.length + 1 && showBtn
+              lastSlide < SlideData.length && showBtn
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90 
@@ -169,7 +160,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
           >
             <FaArrowRight
               className={`${
-                lastSlide < SlideData.length + 1 && showBtn ? "block" : "hidden"
+                lastSlide < SlideData.length && showBtn ? "block" : "hidden"
               } text-[40px]  cursor-pointer text-black `}
               onClick={handleNext}
             />

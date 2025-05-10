@@ -1,0 +1,25 @@
+[
+   {
+    "name":"I feel",
+    "sugge":"[your feelings about a situation]",
+    "bg":"#fff1cf"
+   },
+   
+   {
+    "name":"When",
+    "sugge":"A blame free description of the behaviour that is a problem for me.",
+     "bg":"#ebd1dc"
+   } ,
+   
+   {
+    "name":"Because",
+    "sugge":"The effect the behaviour has on me.",
+     "bg":"#cfe2f3"
+   },
+   
+   {
+    "name":"My needs",
+    "sugge":"What I want the other person to understand.",
+     "bg":"#b6d7a8"
+   }
+]

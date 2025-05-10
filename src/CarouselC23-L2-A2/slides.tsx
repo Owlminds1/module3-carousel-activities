@@ -78,7 +78,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
               </ul>
             </div>
           </div>
-          <div className="col-span-6 w-full h-full flex justify-center items-center ">
+          <div className="col-span-6 w-full  flex justify-center items-center ">
             <Swiper
               slidesPerView={1}
               loop={false}
@@ -91,7 +91,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
               <SwiperSlide>
                 <Image
                   src="/C23Images/say-no.png"
-                  width={450}
+                  width={460}
                   height={100}
                   alt="image Slider"
                   className="rounded-lg"
@@ -99,8 +99,10 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
               </SwiperSlide>
               {SlideData.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <div className="flex justify-center items-center min-h-[400px] flex-col gap-2">
-                    <Image src={item.img} width={500} height={100} alt="slide img"/>
+                  <div className="flex justify-center items-center  flex-col gap-2">
+                   <div className="h-[250px] w-[400px] relative">
+                     <Image src={item.img} fill alt="slide img" className="object-contain"/>
+                   </div>
                     <h4 className=" text-center py-5  text-black text-3xl ">
                       {item.text}
                     </h4>

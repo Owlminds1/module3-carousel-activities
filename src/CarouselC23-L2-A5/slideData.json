@@ -1,26 +1,7 @@
 [
     {
-        "img": "/C23Images/1.not-sure.png",
-        "text": "I’m not sure what I want from this discussion. You can go ahead and decide.",
-        "value": "Passive",
-        "ans": [
-            {
-                "opt1": "Assertive"
-            },
-            {
-                "opt1": "Passive"
-            },
-            {
-                "opt1": "Aggressive"
-            },
-            {
-                "opt1": "Manipulative"
-            }
-        ]
-    },
-    {
-        "img": "/C23Images/2-you-donot-understand.png",
-        "text": "I think you don’t understand what you want.",
+        "img": "/C23Images/shouting-voice.png",
+        "text": "Loud voice.",
         "value": "Aggressive",
         "ans": [
             {
@@ -31,15 +12,12 @@
             },
             {
                 "opt1": "Aggressive"
-            },
-            {
-                "opt1": "Manipulative"
             }
         ]
     },
     {
-       "img": "/C23Images/3-want-things.png",
-        "text": "I want to do things my way.",
+        "img": "/C23Images/staring-eyes.png",
+        "text": "Staring eyes at the other person.",
         "value": "Aggressive",
         "ans": [
             {
@@ -50,34 +28,12 @@
             },
             {
                 "opt1": "Aggressive"
-            },
-            {
-                "opt1": "Manipulative"
             }
         ]
     },
     {
-         "img": "/C23Images/4-tell-me-what.png",
-        "text": "Please tell me what to do.",
-        "value": "Passive",
-        "ans": [
-            {
-                "opt1": "Assertive"
-            },
-            {
-                "opt1": "Passive"
-            },
-            {
-                "opt1": "Aggressive"
-            },
-            {
-                "opt1": "Manipulative"
-            }
-        ]
-    },
-    {
-        "img": "/C23Images/5-highly-doubt.png",
-        "text": "I highly doubt that this is going to work out.",
+        "img": "/C23Images/clenched-fist.png",
+        "text": "Clenched/squeezing fists",
         "value": "Aggressive",
         "ans": [
             {
@@ -88,53 +44,12 @@
             },
             {
                 "opt1": "Aggressive"
-            },
-            {
-                "opt1": "Manipulative"
             }
         ]
     },
     {
-        "img": "/C23Images/6-do-it-this-way.png",
-        "text": "Do it this way now and then you can see how to go about it later.",
-        "value": "Manipulative",
-        "ans": [
-            {
-                "opt1": "Assertive"
-            },
-            {
-                "opt1": "Passive"
-            },
-            {
-                "opt1": "Aggressive"
-            },
-            {
-                "opt1": "Manipulative"
-            }
-        ]
-    },
-    {
-          "img": "/C23Images/7.homework.png",
-        "text": "Let me present this project as mine this time, and I will do all your homework.",
-        "value": "Manipulative",
-        "ans": [
-            {
-                "opt1": "Assertive"
-            },
-            {
-                "opt1": "Passive"
-            },
-            {
-                "opt1": "Aggressive"
-            },
-            {
-                "opt1": "Manipulative"
-            }
-        ]
-    },
-    {
-         "img": "/C23Images/8.pros-cons.png",
-        "text": "I think you need to make a pros and cons list to determine the best way forward.",
+        "img": "/C23Images/relaxed-posture.png",
+        "text": "Relaxed posture.",
         "value": "Assertive",
         "ans": [
             {
@@ -145,15 +60,108 @@
             },
             {
                 "opt1": "Aggressive"
-            },
-            {
-                "opt1": "Manipulative"
             }
         ]
     },
     {
-        "img": "/C23Images/9.chosen-wisely.png",
-        "text": "I believe that you would have chosen otherwise, but I may be wrong about it.",
+        "img": "/C23Images/soft-voice.png",
+        "text": "Soft voice.",
+        "value": "Passive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/pointed-finger.png",
+        "text": "Pointed fingers.",
+        "value": "Aggressive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/404.jpg",
+        "text": "Too many head nods.",
+        "value": "Passive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/clenched-teeth.png",
+        "text": "Clenched/rigid teeth.",
+        "value": "Aggressive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/lack-of-eye-contact.png",
+        "text": "Lack of eye contact.",
+        "value": "Passive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/staring-floor.png",
+        "text": "Staring at the floor.",
+        "value": "Passive",
+        "ans": [
+            {
+                "opt1": "Assertive"
+            },
+            {
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/eye-contact.png",
+        "text": "Attentive eye contact.",
         "value": "Assertive",
         "ans": [
             {
@@ -164,9 +172,22 @@
             },
             {
                 "opt1": "Aggressive"
+            }
+        ]
+    },
+    {
+        "img": "/C23Images/listening-without-itnerruption.png",
+        "text": "Listens without interrupting.",
+        "value": "Assertive",
+        "ans": [
+            {
+                "opt1": "Assertive"
             },
             {
-                "opt1": "Manipulative"
+                "opt1": "Passive"
+            },
+            {
+                "opt1": "Aggressive"
             }
         ]
     }
