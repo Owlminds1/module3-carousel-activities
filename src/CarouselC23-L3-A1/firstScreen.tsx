@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Data from "@/CarouselC23-L1-A1/screenTreeData.json";
+import Data from "@/CarouselC23-L3-A1/firstScreenData.json";
 
 const FirstScreen = () => {
   const [activeIndex, setActiveIndex] = useState<number>();

@@ -1,25 +1,25 @@
 [
     {
-        "qustion":"A parent says to the kid at a playground, “try to play with a kid whose parent isn’t too chatty.",
+        "qustion":"A parent says to the kid at a playground, “Try to play with a kid whose parent isn’t too chatty.",
         "value":"thumbs up"
     },
     {
-        "qustion":"Yesterday Elon Musk lost 16 billion dollars. To put that in perspective, that's more than what some people make in a year.  (Colbert late show)",
+        "qustion":"“Yesterday Elon Musk lost 16 billion dollars. To put that in perspective, that's more than what some people make in a year. “ (Colbert late show)",
         "value":"thumbs up"
     },
     
     {
-        "qustion":"Woman: money aside, what do you all need right now? Another woman: the money you put aside (Caroline Sampson)",
+        "qustion":"Woman: “Money aside, what do you all need right now?” Another woman: “The money you put aside” (Caroline Sampson)",
         "value":"thumbs down"
     },
     {
-        "qustion":"When I’m good, I’m very good, but when I’m bad, I’m better (Mae West)",
+        "qustion":"“When I’m good, I’m very good, but when I’m bad, I’m better”(Mae West)",
         "value":"thumbs up"
     },
 
 
     {
-        "qustion":"I am significant, screamed the dust speck. (Calvin and Hobbes)",
+        "qustion":"“I am significant!”, screamed the dust speck. (Calvin and Hobbes)",
         "value":"thumbs up"
     }
 ]

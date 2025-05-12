@@ -20,6 +20,9 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
       null
     );
 
+    const [selectOption,setSelectOption]=useState("")
+    const [isCorrect,setIsCorrect]=useState<boolean | null>(null)
+
      useEffect(() => {
       
         setCorrectAudio(new Audio("/sound/correct.mp3"));
@@ -42,12 +45,19 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
   const handleChange = (swiper: SwiperClass) => {
     setLastSlide(swiper.activeIndex);
     setShow(false);
+    setIsCorrect(null)
+  setSelectOption("")
   };
 
   const handleCheck = (val: string, index: number) => {
+    setSelectOption(val)
     if (val === SlideData[index].val) {
+      setIsCorrect(true)
       setShow(true);
       correctAudio?.play()
+    }else{
+      setShow(false)
+      setIsCorrect(false)
     }
   };
   return (
@@ -101,22 +111,16 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
                   <div className="flex justify-center items-center gap-8">
                     <button
                       onClick={() => handleCheck("R", index)}
-                      style={{
-                        color: item.btnBgFirst,
-                        border: `2px solid ${item.btnBgFirst}`,
-                      }}
-                      className=" cursor-pointer  px-5 py-2 rounded-lg text-lg   focus:scale-110 focus:shadow-md focus:shadow-black"
+                      
+                      className={`${selectOption == "R"? isCorrect ? "bg-green-800 border-3 border-green-950":"  bg-red-400 border-3 border-red-800 ":"bg-violet-900"}  text-white  cursor-pointer  px-5 py-2 rounded-lg text-lg   active:scale-95 active:shadow-md  active:shadow-black transition-all duration-200`}
                     >
                       Resilience
                     </button>
 
                     <button
                       onClick={() => handleCheck("A", index)}
-                      style={{
-                        color: item.btnBgSec,
-                        border: `2px solid ${item.btnBgSec}`,
-                      }}
-                      className="border cursor-pointer  px-5 py-2 rounded-lg text-lg  focus:scale-110 focus:shadow-md focus:shadow-black "
+                      
+                      className={`${selectOption == "A"? isCorrect ? "bg-green-800 border-3 border-green-950":"  bg-red-400 border-3 border-red-800 ":"bg-violet-900"}  text-white  cursor-pointer  px-5 py-2 rounded-lg text-lg  active:scale-95 active:shadow -md active:shadow-black  transition-all duration-200`}
                     >
                       Assertive
                     </button>

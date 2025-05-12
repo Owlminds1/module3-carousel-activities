@@ -79,12 +79,12 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
             {SlideData.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="grid grid-cols-12 w-full">
-                  <div className="col-span-6 w-full">
+                  <div className="col-span-6 w-full h-[400px] relative">
                     <Image
                       src={item.img}
-                      width={400}
-                      height={100}
-                      alt="slide image"
+                    fill
+                    className="object-contain"
+                    alt="slide image"
                     />
                   </div>
                   <div className="col-span-6 w-full flex justify-center items-center gap-3 flex-col">

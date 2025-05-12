@@ -98,7 +98,7 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
                 ) : (
                   <div className="text-2xl text-black  text-center bg-violet-100 p-4 rounded-lg">
                     Raphael <u>fell</u> during football. When his parents
-                    suggested that he <u>rests</u> he did, but <u>continued</u>{" "}
+                    suggested that he <u>rest</u> he did, but <u>continued</u>{" "}
                     to play football the next day.
                   </div>
                 )}
@@ -153,15 +153,15 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
                     placeholder="write here.."
                     type="text"
                     className="text-center w-[100px] outline-none border-b border-black"
-                  /> <span className="font-bold">(talking/silent)</span> when Ringo  <input
+                  /> <span className="font-bold">(talking/silent)</span>when Ringo <input
                   placeholder="write here.."
                   type="text"
                   className="text-center w-[100px] outline-none border-b border-black"
-                /> <span className="font-bold">(shouted) </span>at him for taking his pencil without asking, and quietly  <input
+                /> <span className="font-bold">(cried/shouted) </span>t him for taking his pencil without asking, and quietly <input
                 placeholder="write here.."
                 type="text"
                 className="text-center w-[100px] outline-none border-b border-black"
-              /> <span className="font-bold">(apologized) </span> that he wouldn’t do it again.
+              /> <span className="font-bold">(gossiped/apologized) </span> that he wouldn’t do it again.
                 </div>
 
                 {!showSol ? (

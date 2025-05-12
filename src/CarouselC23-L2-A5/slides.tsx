@@ -18,7 +18,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   const [isCorrect, setIsCorrect] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number | null>();
 
-  const [showBtn, setShowbtn] = useState(true);
+  const [showBtn, setShowbtn] = useState(false);
 
   const [wrongAudio, setWrongAudio] = useState<HTMLAudioElement | null>(null);
   const [correctAudio, setCorrectAudio] = useState<HTMLAudioElement | null>(
@@ -43,11 +43,9 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   }, []);
 
   const handleChange = (swipe: SwiperClass) => {
-    if (swipe.activeIndex == 0) {
-      setShowbtn(true);
-    } else {
+
       setShowbtn(false);
-    }
+
     setActiveIndex(null);
     setLastSlide(swipe.activeIndex);
     if (lastSlide == SlideData.length - 1) return;
@@ -95,10 +93,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
                         className=" object-contain"
                       />
                     </div>
-                    <textarea
-                      className="text-center text-lg border border-gray-500 outline-black rounded-lg min-h-[80px] w-full"
-                      placeholder="write here... "
-                    />
+                   
                   </div>
 
                   <div className="col-span-6  min-h-[300px] flex justify-center items-center flex-col ">

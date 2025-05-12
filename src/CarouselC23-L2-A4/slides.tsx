@@ -69,8 +69,8 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   return (
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
       <div className="w-[900px]  ">
-        <h1 className="text-center text-4xl font-bold py-4 text-black">
-         Practise assertive statements
+        <h1 className="text-center text-3xl font-bold py-4 text-black">
+       identify if it is assertive, passive or aggressive or passive aggressive.
         </h1>
 
         <Swiper
@@ -120,7 +120,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
                                 : "bg-violet-900"
                             }
                             
-                            px-10 py-3  min-w-[180px] rounded-lg text-white cursor-pointer active:scale-90 active:shadow-md active:shadow-black transition-all duration-200`}
+                            px-10 py-3  min-w-[220px] rounded-lg text-white cursor-pointer active:scale-90 active:shadow-md active:shadow-black transition-all duration-200`}
                       >
                         {option.opt1}
                       </button>

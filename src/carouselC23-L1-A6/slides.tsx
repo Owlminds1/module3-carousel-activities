@@ -24,8 +24,12 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
   const [dropItems, setDropItems] = useState<{ [key: number]: string[] }>([]);
   const [shuffle, setShuffle] = useState(masterList);
   const [filter, setFilter] = useState(shuffle);
+  const [show,setShow]=useState(true)
 
   const handleNext = () => {
+    if (lastSlide == 1) {
+      setIsFirstScreen("resulte");
+    }
     swiperRef.current?.slideNext();
   };
 
@@ -36,6 +40,8 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
   };
 
   const handleChange = (swiper: SwiperClass) => {
+     
+    setShow(false)
     setLastSlide(swiper.activeIndex);
   };
 
@@ -61,7 +67,7 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
       setFilter(updateFilter);
       if (updateFilter.length == 0) {
         setTimeout(() => {
-         setIsFirstScreen("resulte")
+     setShow(true)
         }, 300);
       }
     }
@@ -165,14 +171,14 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
 
           <div
             className={`${
-              lastSlide < 1
+              lastSlide < 2  && show
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90`}
           >
             <FaArrowRight
               className={`${
-                lastSlide < 1 ? "block" : "hidden"
+                lastSlide < 2 && show ? "block" : "hidden"
               } text-[40px] cursor-pointer text-black`}
               onClick={handleNext}
             />

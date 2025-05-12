@@ -37,12 +37,11 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[800px]">
-        <h1 className="text-center text-4xl py-4 text-black">Story of Resilience</h1>
+        <h1 className="text-center text-4xl py-4 text-black">
+          Story of Resilience
+        </h1>
 
-        <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg">
-        <iframe width="710" height="315" src="https://www.youtube.com/embed/wj0-IjcLDEw?si=-d1qWF27MEpnAu4F" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>        </div>
-
-        <div className="mt-4 bg-violet-200 p-4 rounded-lg min-h-[100px]">
+        <div className="mt-4 bg-violet-200 p-4 rounded-lg min-h-[400px]">
           <Swiper
             slidesPerView={1}
             loop={false}
@@ -54,7 +53,11 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
           >
             {SlideData.map((item, index) => (
               <SwiperSlide key={index}>
-                <h4 className="text-2xl text-center text-black">{item.text}</h4>
+                <div className="flex justify-center items-center min-h-[300px]">
+                  <h4 className="text-3xl text-center text-black">
+                    {item.text}
+                  </h4>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>

@@ -27,12 +27,17 @@ export default function Slide() {
 
   const handleChange = (swipe: SwiperClass) => {
     setLastSlide(swipe.activeIndex);
-    setShow(false)
+    if(swipe.activeIndex === 0){
+      setShow(true)
+    }else{
+
+      setShow(false)
+    }
   };
 
   return (
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
-      <div className="w-[900px]  ">
+      <div className="w-[980px]  ">
         <h1 className="text-center text-4xl font-bold py-4 text-black">
           {lastSlide == 0
             ? "Let’s learn how we can be assertive"

@@ -1,22 +1,47 @@
 [
-    {  
-        "text":"What is Kiara’s usual answer for when things get too hard?"
-},
     {
-        "text":"How does her friend Whitney encourage her to believe otherwise?"        
-    } ,
+        "icon":"/C23Images/Kindness.png",
+        "name":"Kindness"
+    },
     {
-        "text":"What is the magic word for trying again?"},
-
-    { 
-        "text":"How does Whitney suggest handling the grumpies?"    },
-
+        "icon":"/C23Images/EQ.png",
+        "name":"Emotional intelligence"
+    },
     {
-        "text":"What is the secret to winning according to Whitney?"    },
-        {"text":"What did Kiara learn from Whitney’s advice?"    } , 
-        {"text":"How does she ensure to rise above it all?"    } , 
-        {"text":"What kind of challenges did Kiara face?"    } , 
-        {"text":"What did she do to overcome those challenges?"    } , 
-        {"text":"What are Kiara’s qualities of resilience?"    } , 
-        {"text":"If you were in Kiara's place, what would you do? If you were Whitney, what advice would you give?"    }  
-    ]
+        "icon":"/C23Images/Unlocked_mind.png",
+        "name":"Unlocked mind"
+    },
+    
+    {
+        "icon":"/C23Images/Curious.png",
+        "name":"Curious"
+    },
+    
+    {
+        "icon":"/C23Images/Critical-thinking.png",
+        "name":"Critical thinking"
+    },
+    {
+        "icon":"/C23Images/Learning_mindset.png",
+        "name":"Learning mindset"
+    },
+    
+    {
+        "icon":"/C23Images/Logical-thinking.png",
+        "name":"Analytic thinking"
+    },
+     {
+        "icon":"/C23Images/Quick-Thinking.png",
+        "name":"Quick thinking"
+    },
+    
+    {
+        "icon":"/C23Images/Open-minded.png",
+        "name":"Open minded"
+    },
+    
+    {
+        "icon":"/C23Images/Responsibility_and_caring.png",
+        "name":"Responsibility and caring"
+    }
+]

@@ -6,7 +6,7 @@ import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import SlideData from "@/carouselC22-L3-A1/slideData.json";
+import SlideData from "@/carouselC23-L1-A5/slideData.json";
 import Image from "next/image";
 
 type MyProps = {
@@ -23,6 +23,7 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
     } else {
       setIsFirstScreen("result");
     }
+    window.scrollTo(0,0)
   };
 
   const handlePrev = () => {
@@ -37,7 +38,7 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
 
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
-      <div className="w-[800px]">
+      <div className="w-[900px]">
         <h1 className="text-center text-4xl py-4 text-black">Be positive</h1>
 
 
@@ -55,19 +56,46 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
               <SwiperSlide>
                 <div className="flex justify-center items-center flex-col  gap-4">
                   <h3 className="text-3xl text-center text-black font-bold">What I like about myself?</h3>
-                  <Image src="/C23Images/404.jpg" width={400} height={100} alt="slider image"/>
+                <div className="grid grid-cols-12 w-full place-items-center">
+                  <div className="col-span-6 w-full">
+                      <Image src="/C23Images/MIRROR.png" className="rounded-lg" width={400} height={100} alt="slider image"/>
+                  </div>
+                  <div className="col-span-6 w-full">
+                    <p className="text-center text-2xl "><span className="font-bold">Inside the mirror</span>, draw positive things about yourself. Make sure to draw as many positive things as possible! </p>
+                  </div>
+                </div>
+                </div>
+              </SwiperSlide>
+
+               <SwiperSlide>
+                <div className="flex justify-center items-center flex-col  gap-4">
+                  <h3 className="text-3xl text-center text-black font-bold">Here are the icons you can draw inside the mirror.</h3>
+                  <div className="grid grid-cols-12 w-full place-items-center gap-4">
+                  {
+                    SlideData.map((item,index)=>(
+
+                  <div key={index} className="col-span-3 w-full ">
+                     <div className="w-[150px] h-[150px] relative">
+                       <Image src={item.icon} className="rounded-lg" fill alt="slider image"/>
+                     </div>
+                      <h4 className="text-2xl font-bold w-[150px] text-center  min-h-[50px]">{item.name}</h4>
+                  </div>
+                    ))
+                 
+                   }
+                </div>
                 </div>
               </SwiperSlide>
 
               <SwiperSlide>
                 <div className="flex justify-center items-center flex-col min-h-[400px] ">
                   <h3 className="text-3xl text-center text-black font-bold">Complete these sentences</h3>
-<ul className="list-disc p-5 ">
-  <li className="text-3xl text-black">I am happy that</li>
-  <li className="text-3xl text-black">I love that I am </li>
-  <li className="text-3xl text-black">I love myself for </li>
-  <li className="text-3xl text-black">I like that I am</li>
-  <li className="text-3xl text-black">I love being</li>
+<ul className="list-disc p-5 space-y-5 ">
+  <li className="text-3xl text-black">I am happy that_________</li>
+  <li className="text-3xl text-black">I love that I am_________ </li>
+  <li className="text-3xl text-black">I love myself for_________ </li>
+  <li className="text-3xl text-black">I like that I am_________</li>
+  <li className="text-3xl text-black">I love being_________</li>
 </ul>
                 </div>
               </SwiperSlide>

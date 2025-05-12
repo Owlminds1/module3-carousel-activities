@@ -68,7 +68,7 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
                   onClick={handleShow}
                   className="text-white bg-violet-900 px-8 py-2 cursor-pointer hover:bg-violet-950 rounded-lg text-lg"
                 >
-                  Show Creatures
+                  Show Creature
                 </button>
                  </div>
                   :

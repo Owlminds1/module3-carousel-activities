@@ -121,7 +121,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
                       </button>
                     ) : (
                       <p className=" text-center  text-violet-800  text-2xl ">
-                        {item.text}
+                        {item.sugges}
                       </p>
                     )}
                   </div>

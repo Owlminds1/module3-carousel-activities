@@ -15,7 +15,7 @@ const SecoundScreen = ({item,show,setShow}:myProps) => {
             <div className="grid grid-cols-12 gap-1 w-full place-items-center"  >
                 {
                     data.map((item,index)=>(
-                        <div key={index} className='col-span-6 min-h-[200px] w-full border border-black'>
+                        <div key={index} className='col-span-6 min-h-[200px] w-full border border-black rounded-lg'>
                             <h3 className='text-lg text-black text-center  font-bold'>{item.text}</h3>
                             <p className='text-lg text-black text-center '>{item.suggeg}</p>
                         </div>  

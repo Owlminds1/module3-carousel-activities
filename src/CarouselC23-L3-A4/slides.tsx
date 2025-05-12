@@ -15,7 +15,7 @@ type SlideProps = {
 export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
-  const [showBtn, setShowbtn] = useState<boolean[]>([]);
+  const [showBtn, setShowbtn] = useState<boolean>(false);
   const perent = useRef<HTMLDivElement>(null);
 
   const handleNext = () => {
@@ -42,11 +42,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     //  setIsFirstScreen("result");
   };
 
-  const handleShowSugge = (index: number) => {
-    const newShowBtn = [...showBtn];
-    newShowBtn[index] = true;
-    setShowbtn(newShowBtn);
-  };
+ 
   return (
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
       <div className="w-[900px]  ">
@@ -56,7 +52,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
 
         <div
           ref={perent}
-          className="border-2 p-2 bg-violet-100 rounded-lg h-[450px] overflow-y-auto"
+          className="border-2 p-2 bg-violet-100 rounded-lg "
         >
           <Swiper
             slidesPerView={1}
@@ -69,7 +65,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
           >
             <SwiperSlide>
               <div className="gap-5 w-full   ">
-                <div className="flex justify-center items-center min-h-[400px] gap-10 flex-col">
+                <div className="flex justify-center items-center min-h-[500px] gap-10 flex-col">
                   <h5 className="text-center text-2xl  ">
                     Read the following situations. Select any one to frame an
                     assertive response.
@@ -153,23 +149,27 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
                           className="text-center text-lg text-black min-h-[80px] border border-gray-500 outline-black rounded-lg w-full"
                           placeholder="Write your answer here"
                         />
-                        {!showBtn[index] ? (
+                      
+                      <p className="text-center text-md font-medium">{item.sugge}</p>
+                      </div>
+
+                    ))}
+                  </div>
+                  
+                </div>
+                {
+                  !showBtn ? 
                           <button
-                            onClick={() => handleShowSugge(index)}
-                            className="text-white bg-violet-900 px-4 py-1 text-md text-center cursor-pointer rounded-lg"
+                            onClick={()=>setShowbtn(true)}
+                            className= "col-span-12 text-white bg-violet-900 px-4 py-1 text-xl text-center cursor-pointer rounded-lg"
                           >
                             Check
                           </button>
-                        ) : (
-                          <p className="text-center text-lg text-violet-800">
-                            {item.sugge}
-                          </p>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                          :
+
                 <div className="col-span-12 w-full p-3 flex justify-center items-center flex-col gap-5 ">
+                   
+                          
                   <h5 className="text-center text-4xl  ">Example</h5>
                   <div>
                     <span className="text-xl font-bold bg-[#f8ae88] p-1">
@@ -189,6 +189,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
                     </span>
                   </div>
                 </div>
+                }
               </div>
             </SwiperSlide>
           </Swiper>

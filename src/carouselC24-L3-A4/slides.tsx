@@ -99,7 +99,7 @@ const SlideStart = () => {
                   </label>
                   <textarea
                     id="letter"
-                    className="min-h-[150px] w-full border border-black rounded-lg text-black text-lg p"
+                    className="min-h-[150px] p-2 w-full border border-black rounded-lg text-black text-lg p"
                   />
                 </div>
               </div>

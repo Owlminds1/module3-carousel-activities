@@ -18,6 +18,7 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
   const [lastSlide, setLastSlide] = useState<number>(0);
   const [answers, setAnswers] = useState<Record<number, boolean | null>>({});
   const [showSol, setShowSol] = useState(false);
+  const [activeIndex,setActiveIndex]=useState<number>()
   
 
   const handleNext = () => {
@@ -39,6 +40,7 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
     setShowSol(false);
   };
   const handleCheck = (value: string, ans: string, index: number) => {
+setActiveIndex(index)
     const correct = value === ans;
     setAnswers((prev) => ({ ...prev, [index]: correct }));
   };
@@ -82,11 +84,14 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
                         <ul className="list-disc ">
                           <li
                             className={`${
+                              showSol ==true ?
                               answers[index] === true
                                 ? "text-green-600"
                                 : answers[index] === false
                                 ? "text-red-600"
                                 : ""
+                                : ""
+
                             } text-left text-xl min-w-[300px]`}
                           >
                             {item.text}
@@ -98,7 +103,11 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
                           onClick={() =>
                             handleCheck("healthy", item.value, index)
                           }
-                          className="text-white cursor-pointer bg-violet-900 rounded-lg px-5 py-2"
+                          className={`${
+                            
+                            activeIndex == index ?
+                            
+                            "border-2 border-black":""}  text-white cursor-pointer bg-violet-900 rounded-lg px-5 py-2`}
                         >
                           Healthy
                         </button>

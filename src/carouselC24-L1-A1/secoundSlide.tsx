@@ -2,42 +2,41 @@ import React, { useState } from "react";
 import dragData from "@/carouselC24-L1-A1/dragData.json";
 import dropData from "@/carouselC24-L1-A1/dropData.json";
 type dragDataType = {
-name:string,
-val:string
-}
+  name: string;
+  val: string;
+};
 
 type myProps = {
-    setShow:(value : boolean)=>void
-}
+  setShow: (value: boolean) => void;
+};
 
-const SecoundSlide = ({setShow}:myProps) => {
+const SecoundSlide = ({ setShow }: myProps) => {
   const [dropItems, setDropItems] = useState<{ [key: number]: string[] }>([]);
-  const [filter,setFilter]=useState(dragData)
+  const [shuffle, setShuffle] = useState(dragData);
+  const [filter, setFilter] = useState(shuffle);
 
-const handleDragStart = (e:React.DragEvent,item:dragDataType)=>{
- e.dataTransfer.setData("drag",JSON.stringify(item))
-}
-const handleDrop = (
-    e: React.DragEvent,
-    dropVal: string,
-    index: number
-  ) => {
+  const handleDragStart = (e: React.DragEvent, item: dragDataType) => {
+    e.dataTransfer.setData("drag", JSON.stringify(item));
+  };
+  const handleDrop = (e: React.DragEvent, dropVal: string, index: number) => {
     const dropItem = JSON.parse(e.dataTransfer.getData("drag"));
-  
+
     if (dropVal === dropItem.val) {
-      const updatedFilter = filter.filter(
+      const Shuffled = [...filter].sort(() => Math.random() - 0.5);
+      setShuffle(Shuffled);
+      const updatedFilter = Shuffled.filter(
         (item) => item.name !== dropItem.name
       );
-  
+
       setDropItems((prev) => ({
         ...prev,
         [index]: prev[index]
           ? [...prev[index], dropItem.name]
           : [dropItem.name],
       }));
-  
+
       setFilter(updatedFilter);
-  
+
       // ✅ Correct way to check after update
       if (updatedFilter.length === 0) {
         setTimeout(() => {
@@ -46,7 +45,6 @@ const handleDrop = (
       }
     }
   };
-  
 
   return (
     <div className="grid grid-cols-12 w-full place-items-center gap-2 px-5">
@@ -54,7 +52,7 @@ const handleDrop = (
         <div className="flex flex-col items-center gap-2 p-5">
           {filter.map((item, index) => (
             <span
-            onDragStart={(e)=>handleDragStart(e,item)}
+              onDragStart={(e) => handleDragStart(e, item)}
               key={index}
               draggable
               className="min-w-[250px] text-black text-lg border border-black p-2 rounded-lg w-full text-center"
@@ -71,10 +69,11 @@ const handleDrop = (
               <h2 className="text-lg bg-violet-900 text-white p-2 rounded-lg text-center">
                 {item.name}
               </h2>
-              <div 
-              onDragOver={(e)=>e.preventDefault()}
-              onDrop={(e)=>handleDrop(e,item.value,index)}
-              className="min-h-[300px] border-t-0 rounded-lg border border-black flex justify-start p-1 gap-1 items-center flex-col">
+              <div
+                onDragOver={(e) => e.preventDefault()}
+                onDrop={(e) => handleDrop(e, item.value, index)}
+                className="min-h-[300px] border-t-0 rounded-lg border border-black flex justify-start p-1 gap-1 items-center flex-col"
+              >
                 {dropItems[index]?.map((item, index) => (
                   <span
                     key={index}

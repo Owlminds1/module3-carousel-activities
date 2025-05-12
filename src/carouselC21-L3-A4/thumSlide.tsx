@@ -63,10 +63,8 @@ const ThumSlide = ({ setIsFirstScreen }: myProps) => {
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[800px]">
-        <h1 className="text-center text-4xl py-4 text-black">
-        Sarcasm or No?
-        </h1>
-        <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[300px]">
+        <h1 className="text-center text-4xl py-4 text-black">Sarcasm or No?</h1>
+        <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[400px]">
           <Swiper
             slidesPerView={1}
             loop={false}
@@ -112,11 +110,17 @@ const ThumSlide = ({ setIsFirstScreen }: myProps) => {
                       </button>
                     ))}
                   </div>
+
+             
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
+         <p className="text-center">
+                      Source: These sentences are taken from popular comic or
+                      area quotes of celebrities
+                    </p>
         <div className="w-full flex justify-between items-center mt-5">
           <div
             className={`${

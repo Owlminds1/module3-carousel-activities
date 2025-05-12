@@ -31,6 +31,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
       setIsFirstScreen("Result");
     }
     swiperRef.current?.slideNext();
+    window.scrollTo(0,0)
   };
 
   const handlePerv = () => {
@@ -38,13 +39,12 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     swiperRef.current?.slidePrev();
   };
 
-  
   useEffect(() => {
     const arryShuffle = [...SlideData].sort(() => Math.random() - 0.5);
     setSuffeleArry(arryShuffle);
     setWrongAudio(new Audio("/sound/wrong_buzzer.mp3"));
     setCorrectAudio(new Audio("/sound/correct.mp3"));
-  },[]);
+  }, []);
 
   const handleChange = (swipe: SwiperClass) => {
     if (swipe.activeIndex == 0) {
@@ -52,7 +52,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     } else {
       setShowbtn(false);
     }
-  
+
     setActiveIndex(null);
     setLastSlide(swipe.activeIndex);
     if (lastSlide == SlideData.length - 1) return;
@@ -72,16 +72,15 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     }
   };
   return (
-    <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
-      <div className="w-[900px]  ">
+    <div className="bg-white w-full p-5 relative min-h-screen flex  flex-col items-center justify-center gap-3">
+      <div className="w-[950px] ">
         <h1 className="text-center text-2xl font-bold py-4 text-black">
           {lastSlide == 0
             ? "Types of Behaviour "
             : "Differentiate between assertive behavior and those that show passive, manipulative or  aggressive  behaviour."}
         </h1>
-        <div className=" border-2 p-2 bg-violet-100 rounded-lg min-h-[200px] ">
+       
           <Swiper
-
             slidesPerView={1}
             loop={false}
             autoplay={false}
@@ -91,10 +90,16 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             <SwiperSlide>
-              <div className="flex justify-center items-center min-h-[300px] w-full">
+              <div className="flex justify-center bg-violet-100 p-2 rounded-lg min-h-[200px]  items-center flex-col gap-2 w-full">
                 <Image
                   src="/C23Images/5-communication.png"
                   width={950}
+                  height={100}
+                  alt="slide img"
+                />
+                <Image
+                  src="/C23Images/quadchart.jpg"
+                  width={500}
                   height={100}
                   alt="slide img"
                 />
@@ -102,24 +107,22 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
             </SwiperSlide>
             {suffeleArry.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="grid grid-cols-12 ">
-                  <div className="col-span-6 flex justify-center items-center  w-full">
-                  
-                      <Image
+                <div className="grid grid-cols-12 w-full bg-violet-100 rounded-lg min-h-[200px]    place-items-center">
+                  <div className="col-span-6 flex justify-center items-center   w-full">
+                    <Image
                       src={item.img}
                       width={400}
                       height={100}
                       alt="slide img"
                     />
-                   
                   </div>
 
                   <div className="col-span-6  min-h-[400px] flex justify-center items-center flex-col gap-6 ">
-                       {item.ans.map((option, index) => (
-                        <button
-                          onClick={() => handleCheck(option.opt1, index)}
-                          key={index}
-                          className={`
+                    {item.ans.map((option, index) => (
+                      <button
+                        onClick={() => handleCheck(option.opt1, index)}
+                        key={index}
+                        className={`
                                        ${
                                          activeIndex == index
                                            ? isCorrect == true
@@ -129,24 +132,24 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
                                        }
                                        
                                         min-w-[200px] px-10 py-3  rounded-lg text-white cursor-pointer active:scale-90 active:shadow-md active:shadow-black transition-all duration-200`}
-                        >
-                          {option.opt1}
-                        </button>
-                      ))}
-                    
+                      >
+                        {option.opt1}
+                      </button>
+                    ))}
                   </div>
                 </div>
               </SwiperSlide>
             ))}
             <div className=" py-5 flex items-center justify-center gap-35  text-black"></div>
           </Swiper>
-        </div>
 
-        <div className="w-full flex justify-between items-center mt-5">
+
+      </div>
+        <div className="w-full  absolute top-[50%]  px-30 flex justify-between items-center mt-5">
           <div
             className={` ${
               lastSlide > 0
-                ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
+                ? "border  border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90 
                `}
@@ -175,7 +178,6 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
             />
           </div>
         </div>
-      </div>
     </div>
   );
 }

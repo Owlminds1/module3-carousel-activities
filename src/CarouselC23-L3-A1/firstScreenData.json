@@ -1,29 +1,29 @@
 [
     {
-        "text":"Assertive",
-        "suggeg":"when we are able to express needs confidently and respectfully"
+        "text":"Assertiveness",
+        "suggeg":"The Ability to express your needs in a confident and respectful manner"
     },
     {
-        "text":"Rapport building",
-        "suggeg":"when we are curious about others and value connection."
+        "text":"Rapport Building",
+        "suggeg":"To be curious about others and enjoying connecting."
     },
     
     {
         "text":"Empathy",
-        "suggeg":"when we are able to understand what others’ need through compassion."
+        "suggeg":"Understanding the needs of others"
     },
     
     {
         "text":"Flexibility",
-        "suggeg":"When we are open-minded about what is possible and are willing to adapt to allow contentment for all."
+        "suggeg":"Be open-minded about possibilities. Be willing to adapt."
     },
     
     {
         "text":"Intuition",
-        "suggeg":"When we feel that our heart knows the best way forward and listen to that feeling."
+        "suggeg":"Do what feels right. Listen to your heart."
     },
      {
         "text":"Trust",
-        "suggeg":"When we believe in ourselves and others for something to succeed."
+        "suggeg":"Believe in yourself and others for something to work out."
     }
 ]

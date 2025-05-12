@@ -45,6 +45,7 @@ const Slide = ({setIsFirstScreen}:myProps) => {
   };
 
   const handleAdd = () => {
+    setInputVal("")
     setList((prev) => [...prev, inputVal]);
   };
 
@@ -71,7 +72,12 @@ const Slide = ({setIsFirstScreen}:myProps) => {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             <SwiperSlide>
-              <div className="flex  items-center justify-center flex-col w-full min-h-[300px] gap-8">
+              <div className="grid grid-cols-12 w-full place-items-center gap-2">
+                <div className="col-span-6 w-full border border-gray-500 h-full rounded-lg  flex justify-center items-center p-2">
+                   <h2 className="text-xl text-black text-center">Here’s a grid. Each square on the grid has an element of a sentence such as a noun or pronoun, a verb, an adjective or adverb. Make as many sentences as you can using these elements differently.</h2>
+                </div>
+                <div className="col-span-6 w-full">
+                    <div className="flex  items-center justify-center flex-col w-full min-h-[300px] gap-8">
                 <div className="w-full">
                   <div className="grid grid-cols-12 place-items-center py-1 gap-2 w-full">
                     <div className="col-span-4 w-full">
@@ -143,6 +149,9 @@ const Slide = ({setIsFirstScreen}:myProps) => {
                   </ul>
                 </div>
               </div>
+                </div>
+              </div>
+            
             </SwiperSlide>
 
             {/* secound slide ============== */}
@@ -185,7 +194,7 @@ const Slide = ({setIsFirstScreen}:myProps) => {
                     </div>
                   </div>
                   <div className="pt-5  flex justify-around items-center gap-10">
-                    <div>
+                    <div className="flex flex-col gap-2">
                       <input
                         type="text"
                         className="text-center text-black min-h-[100px] min-w-[300px] text-xl outline-none border-b px-1 border-black"
@@ -193,12 +202,15 @@ const Slide = ({setIsFirstScreen}:myProps) => {
                         value={inputVal}
                         onChange={(e) => setInputVal(e.target.value)}
                       />
-                      <button
-                        className="text-lg px-8 ml-2 py-1 rounded-lg bg-violet-900 text-white"
+                     <div className="w-full text-center">
+                       <button
+                       disabled={inputVal.length == 0 }
+                        className="text-lg cursor-pointer px-8 ml-2 py-1 rounded-lg bg-violet-900 text-white"
                         onClick={handleAdd}
                       >
-                        add
+                       {list.length > 0 ? "add more":"add"}
                       </button>
+                     </div>
                     </div>
                     <div className="bg-violet-200  rounded-lg overflow-y-scroll h-[200px] min-w-[400px]  ">
                       <ul className="p-1 space-y-1">
@@ -267,7 +279,8 @@ const Slide = ({setIsFirstScreen}:myProps) => {
 
             {/* third slide ============== */}
             <SwiperSlide>
-              <div className="flex justify-center items-center min-h-[300px]  ">
+              <div className="flex justify-center items-center flex-col gap-10 min-h-[300px]  ">
+                <h4 className="text-center text-3xl font-bold">Example</h4>
                 <ul className="list-disc space-y-8">
                   <li className="text-2xl text-black ">
                     Tom and Jerry/play/all the time{" "}
