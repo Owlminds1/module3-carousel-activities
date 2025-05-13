@@ -1,0 +1,31 @@
+[
+    {
+
+        "bg":"#fa9b03",
+        "name":"Climate Change",
+        "val":0,
+        "data":[{"text":"Plastic bottles make up more than one fourth of trash after every party"},{"text":"Power has been turned off due to excessive use of AC"},{"text":"School is out for days due to excessive heat."}]
+    },
+    {
+
+        "bg":"#04ffff",
+        "name":"Illiteracy",
+        "val":1,
+        "data":[{"text":"Farmers were cheated in contracts with storage house keepers."},{"text":"Wrong medicines were taken because prescription and labels could not be read."},{"text":"Unskilled workers have access to fewer job opportunities, and those available offer lower pay."}]
+    },
+    
+    {
+
+        "bg":"#aabfa1",
+        "name":"Gender Inequality",
+        "val":2,
+        "data":[{"text":"Girls are married off at an early age"},{"text":"Workforce participation is limited and mostly at low skill jobs that offer low pay"},{"text":"Cultural expectations restrict personal freedom and limit choices for both women and men."}]
+    },
+    {
+
+        "bg":"#d9d3e8",
+        "name":"Intolerance",
+        "val":3,
+        "data":[{"text":"High rates of crime, riots against particular groups."},{"text":"Communities become divided making it hard to live together"},{"text":"Discrimination based on race, religion, beliefs or culture"}]
+    }
+]
