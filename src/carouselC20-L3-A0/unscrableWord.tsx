@@ -54,7 +54,7 @@ const Unscramble = ({ setIsFirstScreen }: myProps) => {
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[800px]">
         <h4 className="text-center text-4xl font-bold py-4 text-black">
-          Unscramble
+          Find another word related to nature (plants/animals)
         </h4>
         <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[300px]">
           <Swiper

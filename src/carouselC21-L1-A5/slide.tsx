@@ -50,15 +50,15 @@ export default function Slide() {
                 </h4>
                 <ul className="list-disc space-y-4 p-5 w-[600px] ">
                   <li className="text-black  text-xl ">
-                    keep asking follow-up questions. It helps to make the
+                    Keep asking follow-up questions. It helps to make the
                     conversation interesting and engaging. It also allows the
                     listener to feel heard.
                   </li>
                   <li className="text-black  text-xl ">
-                    pause before speaking!
+                    Pause before speaking!
                   </li>
                   <li className="text-black  text-xl ">
-                    add polite responses like oh great! Lovely! Wonderful!
+                    Add polite responses like oh great! Lovely! Wonderful!
                   </li>{" "}
                   <li className="text-black  text-xl ">
                     Smile and be attentive!
@@ -82,16 +82,16 @@ export default function Slide() {
             </ul>
                </div>
                <div className="col-span-6 flex  flex-col gap-3 p-5 min-h-[350px]">
-                <h4 className="w-full text-center font-bold text-2xl text-violet-950">Students </h4>
+                <h4 className="w-full text-center font-bold text-2xl text-violet-800">Students </h4>
                 <ul className="list-disc space-y-3 pl-10 ">
 
                   
-            <li className="text-xl text-violet-950  ">My favorite is _____. What about you?</li>
-            <li className="text-xl text-violet-950   "> I like __________. And you?</li>
-            <li className="text-xl text-violet-950 ">How lovely. Who’s your favorite character? </li>
-            <li className="text-xl text-violet-950   ">I like ____________.  Why do you prefer this one?</li>
-            <li className="text-xl text-violet-950   ">I like _______because________.</li>
-            <li className="text-xl text-violet-950  ">Sure!</li>
+            <li className="text-xl text-violet-800  ">My favorite is _____. What about you?</li>
+            <li className="text-xl text-violet-800   "> I like __________. And you?</li>
+            <li className="text-xl text-violet-800 ">How lovely. Who’s your favorite character? </li>
+            <li className="text-xl text-violet-800   ">I like ____________.  Why do you prefer this one?</li>
+            <li className="text-xl text-violet-800   ">I like _______because________.</li>
+            <li className="text-xl text-violet-800  ">Sure!</li>
                 </ul>
                </div>
                 

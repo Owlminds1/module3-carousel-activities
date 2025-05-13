@@ -60,26 +60,26 @@ const Footprint = ({ setIsFirstScreen }: myProps) => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="grid grid-cols-12 place-items-center gap-2 w-full h-full">
-                <div className="col-span-6 w-full rounded-lg  flex justify-center items-center flex-col ">
-                  <Image
-                    src="/C20Images/Activity_2B.JPG"
-                    width={400}
-                    height={100}
-                    alt="footprint image"
-                  />
-                </div>
-                <div className="col-span-6  w-full rounded-lg  flex justify-center items-center flex-col ">
-                  <ul className="space-y-5 list-disc p-5">
-                    <li className="text-xl">Live car-free</li>
-                    <li className="text-xl">Battery electric car</li>
-                    <li className="text-xl">
-                      One less long-haul flight per year
-                    </li>
-                    <li className="text-xl">Public transport</li>
-                    <li className="text-xl">Improved cooking equipment</li>
-                  </ul>
-                </div>
+              <div className="grid grid-cols-12 place-items-center px-5 gap-2 w-full min-h-[400px] ">
+               <div className="col-span-4 w-full relative h-[150px]">
+                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/car.jpg" fill alt="slider img"/>
+               </div> 
+               <div className="col-span-4 w-full relative h-[150px]">
+                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/battry.jpg" fill alt="slider img"/>
+               </div>
+
+               <div className="col-span-4 w-full relative h-[150px]">
+                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/airplain.jpg" fill alt="slider img"/>
+               </div>
+
+
+               <div className="col-span-4 w-full relative h-[150px]">
+                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/public.jpg" fill alt="slider img"/>
+               </div>
+
+                  <div className="col-span-4 w-full relative h-[150px]">
+                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/cooking.jpg" fill alt="slider img"/>
+               </div>
               </div>
             </SwiperSlide>
           </Swiper>

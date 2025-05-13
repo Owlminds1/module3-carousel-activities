@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
@@ -12,7 +12,11 @@ export default function Slide() {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
   const videoRef = useRef<HTMLVideoElement | null>(null);
-
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
+  }, []);
   const handleNext = () => {
     if (lastSlide >= QustionData.length - 1) {
     }
@@ -25,9 +29,6 @@ export default function Slide() {
   };
 
   const handleChange = (swipe: SwiperClass) => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-    }
     setLastSlide(swipe.activeIndex);
   };
 
@@ -50,10 +51,10 @@ export default function Slide() {
             <SwiperSlide>
               <div className="  min-h-[300px] p-5 flex justify-center items-center flex-col gap-5">
                 <video
-                  ref={videoRef}
-                  src="/C21Images/ytVdo.mp4"
+                  src="/C21Images/withOutSound.mp4"
                   autoPlay
                   muted
+                  playsInline
                   className=" w-[700px] rounded-lg shadow-lg"
                 />
               </div>
@@ -71,6 +72,7 @@ export default function Slide() {
             <SwiperSlide>
               <div className="  min-h-[300px] p-5 flex justify-center items-center flex-col gap-5">
                 <video
+                  ref={videoRef}
                   src="/C21Images/ytVdo.mp4"
                   controls
                   autoPlay

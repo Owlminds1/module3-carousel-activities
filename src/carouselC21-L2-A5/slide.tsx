@@ -43,7 +43,7 @@ export default function Slide({ setIsFirstScreen }: myProps) {
         <h1 className="text-center text-4xl font-bold  text-black">
           Pause and tone
         </h1>
-        <h5 className="text-xl font-medium text-center py-4 text-black">Make sure that each chunk gives out a certain aspect of the entire information – who/what/why/where/when/how. Some of these chunks can be combined if the information is related.</h5>
+        <h5 className="text-xl font-medium text-center py-4 text-black">Make sure that each chunk gives out a certain aspect of the entire information – <strong>who/what/why/where/when/how</strong>. Some of these chunks can be combined if the information is related.</h5>
         
         <div className="w-full  border-2 p-2  bg-violet-100 rounded-lg min-h-[300px]">
           <Swiper
