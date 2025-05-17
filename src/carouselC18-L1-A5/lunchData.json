@@ -1,42 +1,51 @@
 [
     {
      "fruitsImg":"/C17Images/veggies/carrot.jpg",
-     "name":"Carrot",
-     "value":3 
+     "name":"Carrot (3)",
+     "value":3 ,
+       "dropVal":"lunch" 
     },
     {
         "fruitsImg":"/C17Images/veggies/potatoes.jpg",
-        "name":"Potatoes" ,
-         "value":3   
+        "name":"Potatoes (3)" ,
+         "value":3 ,
+           "dropVal":"lunch"   
     }  ,
     {
         "fruitsImg":"/C17Images/veggies/zucchini.jpg",
-        "name":"zucchini" ,
-         "value":2   
+        "name":"zucchini (2)" ,
+         "value":2,
+           "dropVal":"lunch"    
     } ,
     {
         "fruitsImg":"/C17Images/veggies/beans.jpg",
-        "name":"Green Beans"   ,
-        "value":2 
+        "name":"Green Beans (2)"   ,
+        "value":2 ,
+                   "dropVal":"lunch"    
+
     } ,
     {
         "fruitsImg":"/C17Images/veggies/tomato.jpg",
-        "name":"Tomato"  ,
-         "value":2 
+        "name":"Tomato (2)"  ,
+         "value":2,
+           "dropVal":"lunch"  
     } ,
     {
         "fruitsImg":"/C17Images/veggies/eggplant.png",
-        "name":"Eggplant"  ,
-         "value":3 
+        "name":"Eggplant (3)"  ,
+         "value":3 ,
+           "dropVal":"lunch" 
     } ,
     {
         "fruitsImg":"/C17Images/veggies/leek.jpg",
-        "name":"Leek" , 
-        "value":2   
+        "name":"Leek (2)" , 
+        "value":2,
+          "dropVal":"lunch"    
     } ,
     {
         "fruitsImg":"/C17Images/veggies/pepper.jpg",
-        "name":"Pepper" ,
-        "value":4  
+        "name":"Pepper (4)" ,
+        "value":4 ,
+          "dropVal":"lunch"  
     } 
 ]

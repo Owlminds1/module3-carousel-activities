@@ -1,45 +1,53 @@
 [
     {
      "fruitsImg":"/C17Images/veggies/tomato.jpg",
-     "name":"Tomato"  ,
-     "value":2 
+     "name":"Tomato (2)"  ,
+     "value":2 ,
+       "dropVal":"dinner" 
     },
     {
         "fruitsImg":"/C18Images/dinner/lettuce.jpg",
-        "name":"Lettuce" ,
-         "value":3   
+        "name":"Lettuce (3)" ,
+         "value":3 ,
+           "dropVal":"dinner"   
     }  ,
     
     {
         "fruitsImg":"/C18Images/dinner/radish.jpg",
-        "name":"Radish" ,
-         "value":2  
+        "name":"Radish (2)" ,
+         "value":2 ,
+           "dropVal":"dinner"  
     } ,
    
     {
         "fruitsImg":"/C18Images/dinner/pumpkin.jpg",
-        "name":"Pumpkin"  ,
-         "value":3 
+        "name":"Pumpkin (3)"  ,
+         "value":3 ,
+           "dropVal":"dinner" 
     } ,
     {
         "fruitsImg":"/C18Images/dinner/eggs.jpg",
-        "name":"Eggs"   ,
-        "value":2 
+        "name":"Eggs (2)"   ,
+        "value":2 ,
+          "dropVal":"dinner" 
     } ,
     {
         "fruitsImg":"/C18Images/dinner/choklate.jpg",
-        "name":"Chocolate"  ,
-         "value":4  
+        "name":"Chocolate (4)"  ,
+         "value":4 ,
+           "dropVal":"dinner"  
     } ,
     {
         "fruitsImg":"/C18Images/dinner/cheese.png",
-        "name":"Cheese" ,
-         "value":3   
+        "name":"Cheese (3)" ,
+         "value":3,
+           "dropVal":"dinner"    
     } ,
     {
         "fruitsImg":"/C18Images/dinner/cookies.jpg",
-        "name":"Cookies" , 
-        "value":4   
+        "name":"Cookies (4)" , 
+        "value":4 ,
+          "dropVal":"dinner"   
     } 
    
 ]

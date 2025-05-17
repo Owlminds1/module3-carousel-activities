@@ -27,9 +27,10 @@ const Slide = () => {
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[800px]">
-        <h1 className="text-center text-4xl font-bold py-4 text-black">
-          Alternative responses.
+        <h1 className="text-center text-4xl font-bold  text-black">
+          Alternative responses
         </h1>
+        <p className="text-2xl text-black text-center py-4  ">Think of all those acts of kindness that made you want to pay it forward! Revise your reactions.</p>
         <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[200px]">
           <Swiper
             slidesPerView={1}

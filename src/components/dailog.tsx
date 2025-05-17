@@ -1,7 +1,6 @@
 import React from 'react'
 import {
     AlertDialog,
-    AlertDialogCancel,
     AlertDialogContent,
     AlertDialogDescription,
     AlertDialogFooter,
@@ -27,7 +26,9 @@ const Dailog = ({val,open,setOpen}:myProps) => {
       </AlertDialogDescription>
     </AlertDialogHeader>
     <AlertDialogFooter>
-      <AlertDialogCancel className='cursor-pointer'>Cancel</AlertDialogCancel>
+     <div className='text-center w-full pt-8'>
+      <button onClick={()=>setOpen(false)} className='bg-white cursor-pointer text-black px-3 py-1 rounded-md text-lg font-bold  '>Cancel</button>
+     </div>
     </AlertDialogFooter>
   </AlertDialogContent>
 </AlertDialog>

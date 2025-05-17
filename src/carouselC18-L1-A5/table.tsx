@@ -1,54 +1,32 @@
 import React from "react";
 type myProps = {
-  fruitsCal: number;
-  vaggeisCal: number;
-  mealCal: number;
   countCal: number;
-
+  itemArray: { name: string }[];
 };
-const Table = ({ mealCal, vaggeisCal, fruitsCal ,countCal}: myProps) => {
+const Table = ({ itemArray }: myProps) => {
+  console.log("you purchase", itemArray);
   return (
-    <div className="bg-white min-h-screen flex p-5  flex-col items-center justify-center gap-3">
- <h4 className="text-3xl text-center font-bold text-black">Meal plan</h4>
-        <div className="grid grid-cols-12 w-[800px] gap-3 gap-y-4 border border-black rounded-lg p-5 bg-violet-100 place-items-center ">
-            <div className="col-span-4 w-full">
-                <h2 className="text-white py-2 rounded-lg bg-blue-500 text-center">Time</h2>
-            </div>
-            <div className="col-span-8 w-full">
-            <h2 className="text-white py-2 rounded-lg bg-blue-500 text-center">{`Bucks`}</h2>
+    <div className="bg-white min-h-screen flex p-5  flex-col items-center justify-start gap-10">
+      <h4 className="text-3xl text-center font-bold text-black">Meal plan</h4>
+   <div className="grid grid-cols-12 w-full place-items-center">
+      <div className="col-span-4 w-full flex justify-center item-center gap-2 flex-wrap border border-black p-2 rounded-lg ">
+        {
+            itemArray.map((item,index)=>(
+                <h4 className="bg-violet-800 text-white px-10 py-2 rounded-lg" key={index}>{item.name}</h4>
+            ))
+        }
+     </div>
 
-            </div>
-            <div className="col-span-4 w-full">
-                <h2 className="text-white py-2 rounded-lg bg-slate-600 text-center">Breakfast</h2>
-            </div>
-            <div className="col-span-8 w-full">
-            <h2 className="text-white py-2 rounded-lg bg-slate-600 text-center">{fruitsCal}</h2>
-
-            </div>
-            <div className="col-span-4 w-full">
-                <h2 className="text-white py-2 rounded-lg bg-slate-500 text-center">Lunch</h2>
-            </div>
-            <div className="col-span-8 w-full">
-            <h2 className="text-white py-2 rounded-lg bg-slate-500 text-center">{vaggeisCal}</h2>
-
-            </div>
-            <div className="col-span-4 w-full">
-                <h2 className="text-white py-2 rounded-lg bg-slate-600 text-center">Dinner</h2>
-            </div>
-            <div className="col-span-8 w-full">
-            <h2 className="text-white py-2 rounded-lg bg-slate-600 text-center">{mealCal}</h2>
-
-            </div>
-            
-            <div className="col-span-4 w-full">
-                <h2 className="text-white py-2 rounded-lg bg-black text-center">Total </h2>
-            </div>
-            <div className="col-span-8 w-full">
-            <h2 className="text-white py-2 rounded-lg bg-black text-center">{countCal}</h2>
-
-            </div>
+     <div className="col-span-8 w-full  ">
+        <div className="grid grid-cols-12">
+            {
+                
+            }
+            <div className="col-span-6"></div>
         </div>
-       
+      
+     </div>
+   </div>
     </div>
   );
 };

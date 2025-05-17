@@ -1,0 +1,288 @@
+[
+    {
+        "fruitsImg": "/C18Images/Breakfast/banana.jpg",
+        "name": "Banana",
+        "subName": "Banana (5)",
+        "value": 5,
+        "dropVal": "breackFast"
+    },
+    {
+        "fruitsImg": "/C18Images/Breakfast/strawberry.jpg",
+        "name": "Strawberry",
+        "subName": "Strawberry (5)",
+        "value": 5,
+        "dropVal": "breackFast"
+    },
+    {
+        "fruitsImg": "/C18Images/Breakfast/raspberry.jpg",
+        "name": "Raspberry",
+        "subName": "Raspberry (5)",
+        "value": 5,
+        "dropVal": "breackFast"
+    },
+    {
+        "fruitsImg": "/C18Images/Breakfast/apple.jpg",
+        "name": "Apple",
+        "subName": "Apple (5)",
+        "value": 5,
+        "dropVal": "breackFast"
+    },
+    {
+        "fruitsImg": "/C18Images/Breakfast/pear.jpg",
+        "name": "Pear",
+        "subName": "Pear (5)",
+        "value": 5,
+        "dropVal": "breackFast"
+    },
+    {
+        "fruitsImg": "/C18Images/Breakfast/water_melon.jpg",
+        "name": "Water Melon",
+        "subName": "Water Melon (5)",
+        "value": 5,
+        "dropVal": "breackFast"
+    },
+    {
+        "fruitsImg": "/C18Images/Breakfast/orange.jpg",
+        "name": "Orange",
+        "subName": "Orange (5)",
+        "value": 5,
+        "dropVal": "breackFast"
+    },
+    {
+        "fruitsImg": "/C18Images/Breakfast/peach.jpg",
+        "name": "Peach",
+        "subName": "Peach (5)",
+        "value": 5,
+        "dropVal": "breackFast"
+    },
+    {
+        "fruitsImg": "/C17Images/veggies/carrot.jpg",
+        "name": "Carrot",
+        "subName": "Carrot (3)",
+        "value": 3,
+        "dropVal": "lunch"
+    },
+    {
+        "fruitsImg": "/C17Images/veggies/potatoes.jpg",
+        "name": "Potatoes",
+        "subName": "Potatoes (3)",
+        "value": 3,
+        "dropVal": "lunch"
+    },
+    {
+        "fruitsImg": "/C17Images/veggies/zucchini.jpg",
+        "name": "Zucchini",
+        "subName": "Zucchini (2)",
+        "value": 2,
+        "dropVal": "lunch"
+    },
+    {
+        "fruitsImg": "/C17Images/veggies/beans.jpg",
+        "name": "Green Beans",
+        "subName": "Green Beans (2)",
+        "value": 2,
+        "dropVal": "lunch"
+    },
+    {
+        "fruitsImg": "/C17Images/veggies/eggplant.png",
+        "name": "Eggplant",
+        "subName": "Eggplant (3)",
+        "value": 3,
+        "dropVal": "lunch"
+    },
+    {
+        "fruitsImg": "/C17Images/veggies/leek.jpg",
+        "name": "Leek",
+        "subName": "Leek (2)",
+        "value": 2,
+        "dropVal": "lunch"
+    },
+    {
+        "fruitsImg": "/C17Images/veggies/pepper.jpg",
+        "name": "Pepper",
+        "subName": "Pepper (4)",
+        "value": 4,
+        "dropVal": "lunch"
+    },
+    {
+        "fruitsImg": "/C17Images/veggies/tomato.jpg",
+        "name": "Tomato",
+        "subName": "Tomato (2)",
+        "value": 2,
+        "dropVal": "dinner"
+    },
+    {
+        "fruitsImg": "/C18Images/dinner/lettuce.jpg",
+        "name": "Lettuce",
+        "subName": "Lettuce (3)",
+        "value": 3,
+        "dropVal": "dinner"
+    },
+    {
+        "fruitsImg": "/C18Images/dinner/radish.jpg",
+        "name": "Radish",
+        "subName": "Radish (2)",
+        "value": 2,
+        "dropVal": "dinner"
+    },
+    {
+        "fruitsImg": "/C18Images/dinner/pumpkin.jpg",
+        "name": "Pumpkin",
+        "subName": "Pumpkin (3)",
+        "value": 3,
+        "dropVal": "dinner"
+    },
+    {
+        "fruitsImg": "/C18Images/dinner/eggs.jpg",
+        "name": "Eggs",
+        "subName": "Eggs (2)",
+        "value": 2,
+        "dropVal": "dinner"
+    },
+    {
+        "fruitsImg": "/C18Images/dinner/choklate.jpg",
+        "name": "Chocolate",
+        "subName": "Chocolate (4)",
+        "value": 4,
+        "dropVal": "dinner"
+    },
+    {
+        "fruitsImg": "/C18Images/dinner/cheese.png",
+        "name": "Cheese",
+        "subName": "Cheese (3)",
+        "value": 3,
+        "dropVal": "dinner"
+    },
+    {
+        "fruitsImg": "/C18Images/dinner/cookies.jpg",
+        "name": "Cookies",
+        "subName": "Cookies (4)",
+        "value": 4,
+        "dropVal": "dinner"
+    }, 
+    
+    {
+        "fruitsImg": "/C18Images/meal/cereals.jpg",
+        "name": "Cereals",
+        "subName": "Cereals (3)",
+        "value": 3,
+        "dropVal": "meal"
+    },
+     {
+        "fruitsImg": "/C18Images/meal/burgur.jpg",
+        "name": "Burger",
+        "subName": "Burger (3)",
+        "value": 3,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/french-fries.jpg",
+        "name": "French Fries",
+        "subName": "French Fries (2)",
+        "value": 2,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/pizza.jpg",
+        "name": "Pizza",
+        "subName": "Pizza (4)",
+        "value": 4,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/sandwich.jpg",
+        "name": "Sandwich",
+        "subName": "Sandwich (3)",
+        "value": 3,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/pasta.jpg",
+        "name": "Pasta",
+        "subName": "Pasta (2)",
+        "value": 2,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/salad.jpg",
+        "name": "Salad",
+        "subName": "Salad (4)",
+        "value": 4,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/lolipop.jpg",
+        "name": "Lolipop",
+        "subName": "Lolipop (2)",
+        "value": 2,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/chicken.jpg",
+        "name": "Checken",
+        "subName": "Checken (5)",
+        "value": 5,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/YOGHURT.jpg",
+        "name": "Yoghurt",
+        "subName": "Yoghurt (3)",
+        "value": 3,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/candy.jpg",
+        "name": "Candy",
+        "subName": "Candy (5)",
+        "value": 5,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/milk.jpg",
+        "name": "Milk",
+        "subName": "Milk (3)",
+        "value": 3,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/ORANGE_JUICE.jpg",
+        "name": "Juice",
+        "subName": "Juice (3)",
+        "value": 3,
+        "dropVal": "meal"
+    },
+    
+    {
+        "fruitsImg": "/C18Images/meal/peas.jpg",
+        "name": "Peas",
+        "subName": "Peas (1)",
+        "value": 1,
+        "dropVal": "meal"
+    }, 
+    
+    {
+        "fruitsImg": "/C18Images/meal/bread.jpg",
+        "name": "Bread",
+        "subName": "Bread (4)",
+        "value": 4,
+        "dropVal": "meal"
+    },  {
+        "fruitsImg": "/C18Images/meal/water.jpg",
+        "name": "Water",
+        "subName": "Water (1)",
+        "value": 1,
+        "dropVal": "meal"
+    }
+]
