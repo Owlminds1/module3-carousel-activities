@@ -79,6 +79,11 @@
     {
         "link": "C18-L1-A5",
         "activity": "Meal plan"
+    }, 
+    
+    {
+        "link": "C18-L1-A5-V2",
+        "activity": "Meal plan"
     },
     {
         "link": "C18-L2-A0",

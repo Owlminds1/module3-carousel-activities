@@ -185,7 +185,7 @@
     },
     
     {
-        "fruitsImg": "/C18Images/meal/pizza.jpg",
+        "fruitsImg": "/C18Images/meal/PIZZA.jpg",
         "name": "Pizza",
         "subName": "Pizza (4)",
         "value": 4,
@@ -201,7 +201,7 @@
     },
     
     {
-        "fruitsImg": "/C18Images/meal/pasta.jpg",
+        "fruitsImg": "/C18Images/meal/PASTA.jpg",
         "name": "Pasta",
         "subName": "Pasta (2)",
         "value": 2,
@@ -209,7 +209,7 @@
     },
     
     {
-        "fruitsImg": "/C18Images/meal/salad.jpg",
+        "fruitsImg": "/C18Images/meal/SALAD.jpg",
         "name": "Salad",
         "subName": "Salad (4)",
         "value": 4,
@@ -218,24 +218,24 @@
     
     {
         "fruitsImg": "/C18Images/meal/lolipop.jpg",
-        "name": "Lolipop",
-        "subName": "Lolipop (2)",
+        "name": "Lollipop",
+        "subName": "Lollipop (2)",
         "value": 2,
         "dropVal": "meal"
     },
     
     {
         "fruitsImg": "/C18Images/meal/chicken.jpg",
-        "name": "Checken",
-        "subName": "Checken (5)",
+        "name": "Chicken",
+        "subName": "Chicken (5)",
         "value": 5,
         "dropVal": "meal"
     },
     
     {
         "fruitsImg": "/C18Images/meal/YOGHURT.jpg",
-        "name": "Yoghurt",
-        "subName": "Yoghurt (3)",
+        "name": "Yogurt",
+        "subName": "Yogurt (3)",
         "value": 3,
         "dropVal": "meal"
     },

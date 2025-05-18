@@ -1,13 +1,13 @@
 [
     {
-        "val":"Breakfast"
+        "val":"breackFast"
     },
     
     {
-        "val":"Lunch"
+        "val":"lunch"
     },
     
     {
-        "val":"Dinner"
+        "val":"dinner"
     }
 ]
