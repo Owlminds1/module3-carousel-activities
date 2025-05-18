@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { BsCartDashFill } from "react-icons/bs";
 import { MdOutlineDeleteForever } from "react-icons/md";
 import Dailog from "@/components/dailog";
+import { FaCircleCheck } from "react-icons/fa6";
+
 
 
 type myProps = {
@@ -89,7 +91,7 @@ const ShopingCart = ({
               <div
                 className={`col-span-4 rounded-lg overflow-hidden  ${
                   selectedIFruite.includes(findex)
-                    ? "border-2  border-green-800 rounded-lg"
+                    ? "border-2  border-black rounded-lg"
                     : ""
                 } `}
                 key={findex}
@@ -103,6 +105,11 @@ const ShopingCart = ({
                     fill
                     alt="fruits imgs"
                   />
+                  <h3 className={`absolute top-1 text-2xl right-1  ${
+                  selectedIFruite.includes(findex)
+                    ? "block"
+                    : "hidden"
+                }  `}><FaCircleCheck/></h3>
                   <h6
                     onClick={() =>
                       handleBreckFast(
@@ -133,12 +140,12 @@ const ShopingCart = ({
             <div className="border  border-gray-400 w-full  p-5  rounded-lg">
               <div className=" flex flex-col  justify-center items-center gap-2  ">
                 <h3 className="text-black text-2xl text-left w-full">
-                  Total Bucks - 50
+                   Total Budget - 50 Bucks
                 </h3>
 
                 <h3 className="text-black text-2xl text-left w-full">
                   {" "}
-                  Total costs of items - {countCal}
+                  Bucks Spent - {countCal}
                 </h3>
                 <h3 className="text-black text-2xl text-left  w-full">
                   Remaining Bucks - {remainingBucks}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   AlertDialog,
   AlertDialogContent,
@@ -14,8 +14,12 @@ type myProps = {
   setOpen: (value: boolean) => void;
 };
 
-
 const Welldone = ({ open, setOpen }: myProps) => {
+  const [sound, setSound] = useState<HTMLAudioElement>();
+  useEffect(() => {
+    setSound(new Audio("/sound/crowd.mp3"));
+  }, []);
+  sound?.play();
   return (
     <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogContent className="flex justify-center items-center  w-[450px]">

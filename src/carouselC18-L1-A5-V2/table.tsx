@@ -51,7 +51,7 @@ const Table = ({ itemArray}: myProps) => {
     <div className="bg-white min-h-screen flex p-5  flex-col items-center justify-start gap-10">
       <h4 className="text-3xl text-center font-bold text-black">Meal Plan</h4>
       <div className="grid grid-cols-12 gap-2 w-full place-items-start">
-        <div className="col-span-4 w-full  flex justify-center item-center gap-2 flex-wrap border border-black p-2 rounded-lg ">
+        <div className={`${filter.length == 0 ? "hidden" :"block"} col-span-4 w-full  flex justify-center item-center gap-2 flex-wrap border border-black p-2 rounded-lg`}>
           {filter.map((item, index) => (
             <div
               draggable
@@ -74,7 +74,7 @@ const Table = ({ itemArray}: myProps) => {
           ))}
         </div>
 
-        <div className="col-span-8 w-full">
+        <div className={`${filter.length == 0 ? "col-span-12" :"col-span-8"}  w-full`}>
           <div className="grid grid-cols-12 gap-1  place-items-center">
             {dropData.map((item, index) => (
               <div
@@ -83,7 +83,7 @@ const Table = ({ itemArray}: myProps) => {
                 onDragOver={(e) => e.preventDefault()}
                 className={` 
                   col-span-4
-                 rounded-lg w-full min-h-[310px] border border-black`}
+                 rounded-lg w-full min-h-[420px] border border-black`}
               >
                 <h1 className="text-black text-center font-bold text-xl border-b border-black  p-1">
                   {item.val}
