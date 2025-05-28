@@ -48,16 +48,11 @@ const Footprint = ({ setIsFirstScreen }: myProps) => {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             <SwiperSlide>
-              <div className="grid grid-cols-12 place-items-center gap-2 w-full h-full">
-                <div className="col-span-12  w-full rounded-lg  flex justify-center items-center flex-col ">
-                  <Image
-                    src="/C20Images/Activity_2B.JPG"
-                    width={400}
-                    height={100}
-                    alt="footprint image"
-                  />
+          <div className="flex justify-center items-center ">
+                <iframe width="800" height="400" src="https://www.youtube.com/embed/a9yO-K8mwL0?si=fjd0vfMsKTegetdS" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+             
                 </div>
-              </div>
+
             </SwiperSlide>
             <SwiperSlide>
               <div className="grid grid-cols-12 place-items-center px-5 gap-2 w-full min-h-[400px] ">

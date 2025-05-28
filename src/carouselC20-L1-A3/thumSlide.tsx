@@ -80,7 +80,7 @@ const ThumSlide = ({ setIsFirstScreen }: myProps) => {
               <SwiperSlide key={index}>
                 <div className="grid grid-cols-12 place-items-center gap-10 w-full">
                   <div className="col-span-12 flex justify-center items-center flex-col gap-5 ">
-                    <span className="text-black text-center text-5xl ">
+                    <span className="text-black text-center text-4xl ">
                       {item.qustion}
                     </span>
                     <textarea

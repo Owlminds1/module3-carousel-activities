@@ -14,7 +14,7 @@ const Start = ({ setIsFirstScreen }: myProps) => {
       <StartBtn
         value="Start"
         setIsFirstScreen={setIsFirstScreen}
-        screenVal="VedioSlide"
+        screenVal="footprint"
       />
     </div>
   );

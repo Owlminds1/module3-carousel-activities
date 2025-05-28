@@ -98,7 +98,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
                   alt="slide img"
                 />
                 <Image
-                  src="/C23Images/quadchart.jpg"
+                  src="/C23Images/passive-agressive-quadrant.png"
                   width={500}
                   height={100}
                   alt="slide img"

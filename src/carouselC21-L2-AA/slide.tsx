@@ -34,11 +34,11 @@ export default function Slide() {
 
   return (
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3 p-5">
-      <div className="w-[980px]  ">
+      <div className="w-[900px]">
         <h1 className="text-center text-4xl font-bold py-4 text-black">
           Decode Nonverbal communication
         </h1>
-        <div className="w-full  border-2 p-2  bg-violet-100 rounded-lg min-h-[300px]">
+        <div className=" border-2 p-2  bg-violet-100 rounded-lg ">
           <Swiper
             slidesPerView={1}
             loop={false}
@@ -49,13 +49,13 @@ export default function Slide() {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             <SwiperSlide>
-              <div className="  min-h-[300px] p-5 flex justify-center items-center flex-col gap-5">
+              <div className=" w-full  min-h-[450px] flex justify-center items-center flex-col">
                 <video
                   src="/C21Images/withOutSound.mp4"
                   autoPlay
                   muted
                   playsInline
-                  className=" w-[700px] rounded-lg shadow-lg"
+                  className=" w-[700px] object-center rounded-lg shadow-lg"
                 />
               </div>
             </SwiperSlide>

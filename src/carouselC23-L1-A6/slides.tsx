@@ -7,41 +7,43 @@ import "swiper/css";
 import "swiper/css/navigation";
 import masterList from "@/carouselC23-L1-A6/dragData.json";
 import dropData from "@/carouselC23-L1-A6/dropData.json";
+const Confetti = dynamic(() => import("react-confetti"), {
+  ssr: false,
+});
+import Welldone from "@/components/wellDone";
+import { useWindowSize } from "react-use";
+import dynamic from "next/dynamic";
 
 type dragType = {
   text: string;
   val: string;
 };
 
-type myProps = {
-  setIsFirstScreen: (value: string) => void;
-};
 
-const SlideStart = ({ setIsFirstScreen }: myProps) => {
+const SlideStart = () => {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
-
   const [dropItems, setDropItems] = useState<{ [key: number]: string[] }>([]);
   const [shuffle, setShuffle] = useState(masterList);
   const [filter, setFilter] = useState(shuffle);
-  const [show,setShow]=useState(true)
+  const [show, setShow] = useState(true);
+  const [open, setOpen] = useState(false);
+  const { width, height } = useWindowSize();
 
   const handleNext = () => {
-    if (lastSlide == 1) {
-      setIsFirstScreen("resulte");
-    }
+      setShow(false);
     swiperRef.current?.slideNext();
   };
 
   const handlePrev = () => {
+     setShow(true);
     if (lastSlide > 0) {
       swiperRef.current?.slidePrev();
     }
   };
 
   const handleChange = (swiper: SwiperClass) => {
-     
-    setShow(false)
+
     setLastSlide(swiper.activeIndex);
   };
 
@@ -67,7 +69,7 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
       setFilter(updateFilter);
       if (updateFilter.length == 0) {
         setTimeout(() => {
-     setShow(true)
+          setOpen(true);
         }, 300);
       }
     }
@@ -75,7 +77,7 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
 
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
-      <div className="w-[950px]">
+      <div className="w-[980px]">
         <h1 className="text-center text-4xl py-4 text-black">
           {lastSlide == 0
             ? "Be assertive "
@@ -109,9 +111,9 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="grid grid-cols-12 place-items-center gap-2">
+              <div className="grid grid-cols-12  gap-2">
                 <div className="col-span-4 w-full">
-                  <div className="h-[450px]  border border-black rounded-lg overflow-y-auto p-1">
+                  <div className="  border border-black rounded-lg overflow-y-auto p-1">
                     {filter.map((item, index) => (
                       <h3
                         key={index}
@@ -124,7 +126,7 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
                     ))}
                   </div>
                 </div>
-                <div className="col-span-8 w-full h-[500px] overflow-y-auto">
+                <div className="col-span-8 w-full ">
                   <div className="grid grid-cols-12 w-full place-items-center gap-1">
                     {dropData.map((item, index) => (
                       <div
@@ -150,6 +152,19 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
               </div>
             </SwiperSlide>
           </Swiper>
+          {open ? (
+            <>
+              <Welldone setOpen={setOpen} open={open} />
+
+              <Confetti
+                width={width}
+                height={height}
+                className={` w-full h-full `}
+              />
+            </>
+          ) : (
+            ""
+          )}
         </div>
 
         {/* Navigation Buttons */}
@@ -171,7 +186,7 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
 
           <div
             className={`${
-              lastSlide < 2  && show
+              lastSlide < 2 && show
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90`}

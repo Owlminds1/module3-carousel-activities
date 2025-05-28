@@ -5,6 +5,7 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import VideoRecorder from "./recourdVedio";
 
 const SlideStart = () => {
   const swiperRef = useRef<SwiperClass | null>(null);
@@ -142,7 +143,7 @@ const SlideStart = () => {
                     className="text-4xl text-black font-medium"
                     htmlFor="step2"
                   >
-                    Record the video{" "}
+                  <VideoRecorder/>
                   </label>
                 </div>
               

@@ -142,7 +142,7 @@ export default function FindObjectSlide() {
             {bonusQuestions.map((question, index) => (
               <SwiperSlide key={`bonus-${index}`}>
                 <div className="min-h-[400px] flex justify-center items-center">
-                  <h4 className="text-4xl font-bold text-black text-center">
+                  <h4 className="text-3xl font-semibold text-black text-center">
                     {question}
                   </h4>
                 </div>

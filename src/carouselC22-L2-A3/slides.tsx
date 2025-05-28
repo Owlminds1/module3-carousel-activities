@@ -18,8 +18,8 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
   const [lastSlide, setLastSlide] = useState<number>(0);
   const [answers, setAnswers] = useState<Record<number, boolean | null>>({});
   const [showSol, setShowSol] = useState(false);
-  const [activeIndex,setActiveIndex]=useState<number>()
-  
+const [selectedOptions, setSelectedOptions] = useState<Record<number, string>>({});
+
 
   const handleNext = () => {
     if (lastSlide < 4) {
@@ -39,11 +39,12 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
     setLastSlide(swiper.activeIndex);
     setShowSol(false);
   };
-  const handleCheck = (value: string, ans: string, index: number) => {
-setActiveIndex(index)
-    const correct = value === ans;
-    setAnswers((prev) => ({ ...prev, [index]: correct }));
-  };
+ const handleCheck = (userChoice: string, correctValue: string, index: number) => {
+  const correct = userChoice === correctValue;
+  setAnswers((prev) => ({ ...prev, [index]: correct }));
+  setSelectedOptions((prev) => ({ ...prev, [index]: userChoice }));
+};
+
 
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-start items-center flex-col gap-5">
@@ -84,14 +85,13 @@ setActiveIndex(index)
                         <ul className="list-disc ">
                           <li
                             className={`${
-                              showSol ==true ?
-                              answers[index] === true
-                                ? "text-green-600"
-                                : answers[index] === false
-                                ? "text-red-600"
+                              showSol == true
+                                ? answers[index] === true
+                                  ? "text-green-600"
+                                  : answers[index] === false
+                                  ? "text-red-600"
+                                  : ""
                                 : ""
-                                : ""
-
                             } text-left text-xl min-w-[300px]`}
                           >
                             {item.text}
@@ -104,10 +104,9 @@ setActiveIndex(index)
                             handleCheck("healthy", item.value, index)
                           }
                           className={`${
-                            
-                            activeIndex == index ?
-                            
-                            "border-2 border-black":""}  text-white cursor-pointer bg-violet-900 rounded-lg px-5 py-2`}
+                           selectedOptions[index] === "healthy" ? "border-2 border-black" : ""
+
+                          }  text-white cursor-pointer bg-violet-700 rounded-lg px-5 py-2`}
                         >
                           Healthy
                         </button>
@@ -115,7 +114,9 @@ setActiveIndex(index)
                           onClick={() =>
                             handleCheck("unhealthy", item.value, index)
                           }
-                          className="text-white cursor-pointer bg-violet-900 rounded-lg px-5 py-2"
+                          className={`${
+                           selectedOptions[index] === "unhealthy" ? "border-2 border-black" : ""
+                          }  text-white cursor-pointer bg-violet-700 rounded-lg px-5 py-2`}
                         >
                           Unhealthy
                         </button>
@@ -155,12 +156,12 @@ setActiveIndex(index)
                 </h4>
                 <div className="flex justify-center item-center p-2">
                   <ul className="list-disc space-y-5 ">
-                    <li className="text-3xl">Running</li>
-                    <li className="text-3xl">Stretching</li>
-                    <li className="text-3xl">Stretching</li>
-                    <li className="text-3xl">Breathing</li>
-                    <li className="text-3xl">Cycling</li>
-                    <li className="text-3xl">Walking</li>
+                    <li className="text-2xl">Running</li>
+                    <li className="text-2xl">Stretching</li>
+                    <li className="text-2xl">Stretching</li>
+                    <li className="text-2xl">Breathing</li>
+                    <li className="text-2xl">Cycling</li>
+                    <li className="text-2xl">Walking</li>
                   </ul>
                 </div>
               </div>
@@ -171,13 +172,15 @@ setActiveIndex(index)
                 <h4 className="text-black text-4xl font-bold text-center ">
                   Sleep
                 </h4>
-                <p className="text-2xl text-center text-black">
-                  Stay away from the screen at least an hour before sleep and
-                  after an hour of waking up.
-                </p>
-                <h3 className="text-black text-3xl font-bold text-center">
-                  Sleep on time for up to 8 hours.
-                </h3>
+                <div className="flex justify-center item-center p-2">
+                  <ul className="list-disc space-y-5 p-5 w-2/4 ">
+                    <li className="text-2xl">  Stay away from the screen at least an hour before sleep and
+                  after an hour of waking up.</li>
+                    <li className="text-2xl"> Sleep on time for up to 8 hours.</li>
+                   
+                  </ul>
+                </div>
+             
               </div>
             </SwiperSlide>
 
@@ -204,10 +207,12 @@ setActiveIndex(index)
                         <ul className="list-disc ">
                           <li
                             className={`${
-                              answers[index] === true
-                                ? "text-green-600"
-                                : answers[index] === false
-                                ? "text-red-600"
+                              showSol == true
+                                ? answers[index] === true
+                                  ? "text-green-600"
+                                  : answers[index] === false
+                                  ? "text-red-600"
+                                  : ""
                                 : ""
                             } text-left text-xl min-w-[300px]`}
                           >
@@ -220,7 +225,9 @@ setActiveIndex(index)
                           onClick={() =>
                             handleCheck("creative", item.value, index)
                           }
-                          className="text-white cursor-pointer bg-violet-900 rounded-lg px-5 py-2"
+                          className={`${
+                           selectedOptions[index] === "creative" ? "border-2 border-black" : ""
+                          }  text-white cursor-pointer bg-violet-700 rounded-lg px-5 py-2`}
                         >
                           Creative
                         </button>
@@ -228,7 +235,9 @@ setActiveIndex(index)
                           onClick={() =>
                             handleCheck("creative-Not", item.value, index)
                           }
-                          className="text-white cursor-pointer bg-violet-900 rounded-lg px-5 py-2"
+                          className={`${
+                           selectedOptions[index] === "creative-Not" ? "border-2 border-black" : ""
+                          }  text-white cursor-pointer bg-violet-700 rounded-lg px-5 py-2`}
                         >
                           Not Creative
                         </button>
@@ -264,7 +273,7 @@ setActiveIndex(index)
             <SwiperSlide>
               <div className="flex justify-center min-h-[500px] item-center flex-col gap-8">
                 <h4 className="text-black text-4xl font-bold text-center ">
-                  Motivational  <br />  entertainment & Interaction
+                  Motivational <br /> entertainment & Interaction
                 </h4>
                 <p className="text-3xl text-center text-black">
                   Motivational books, talks, films as well as conversations with

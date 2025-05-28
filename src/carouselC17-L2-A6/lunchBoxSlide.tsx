@@ -66,7 +66,7 @@ const LunchBoxSlide = ({
       <h4 className="py-5 text-3xl text-center font-bold text-black">
         Lunchbox planner
       </h4>
-      <div className="grid grid-cols-12 w-full ">
+      <div className="grid grid-cols-12 w-full gap-4 ">
         <div className="col-span-6 flex flex-col gap-3">
           {/* ====================fruits data ===================== */}
 

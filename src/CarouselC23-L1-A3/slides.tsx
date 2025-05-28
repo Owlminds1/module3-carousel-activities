@@ -18,7 +18,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   const [isCorrect, setIsCorrect] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number | null>();
 
-  const [showBtn, setShowbtn] = useState(true);
+  const [showBtn, setShowbtn] = useState(false);
 
   const [wrongAudio, setWrongAudio] = useState<HTMLAudioElement | null>(null);
   const [correctAudio, setCorrectAudio] = useState<HTMLAudioElement | null>(
