@@ -9,26 +9,27 @@ import masterList from "@/carouselC23-L2-A3/dragData.json";
 import dropData from "@/carouselC23-L2-A3/dropData.json";
 import Image from "next/image";
 import Link from "next/link";
+import Welldone from "@/components/wellDone";
 
 type dragType = {
   text: string;
   val: string;
 };
 
-type myProps = {
-  setIsFirstScreen: (value: string) => void;
-};
 
-const SlideStart = ({ setIsFirstScreen }: myProps) => {
+
+const SlideStart = () => {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
 
   const [dropItems, setDropItems] = useState<{ [key: number]: string[] }>([]);
   const [shuffle, setShuffle] = useState(masterList);
   const [filter, setFilter] = useState(shuffle);
+  const [open,setOpen]=useState(false)
 
   const handleNext = () => {
     swiperRef.current?.slideNext();
+   
   };
 
   const handlePrev = () => {
@@ -39,6 +40,7 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
 
   const handleChange = (swiper: SwiperClass) => {
     setLastSlide(swiper.activeIndex);
+     window.scrollTo(0,0)
   };
 
   const handleDragStart = (e: React.DragEvent, item: dragType) => {
@@ -63,7 +65,7 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
       setFilter(updateFilter);
       if (updateFilter.length == 0) {
         setTimeout(() => {
-         setIsFirstScreen("resulte")
+          setOpen(true)
         }, 300);
       }
     }
@@ -75,7 +77,9 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
         <h1 className="text-center text-4xl py-4 text-black">
           {lastSlide == 0
             ? "Types of Behaviour"
-            :lastSlide == 1? "Drag each statement to the correct category." :""}
+            : lastSlide == 1
+            ? "Drag each statement to the correct category."
+            : ""}
         </h1>
 
         <div className="w-full border-2 min-h-[200px] justify-center items-center p-2 bg-violet-100 rounded-lg">
@@ -90,40 +94,57 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
           >
             <SwiperSlide>
               <div className=" w-full flex gap-10 justify-center items-center flex-col  min-h-[400px]">
-               
-               <Image src="/C23Images/5-communication.png" width={900} height={100} alt="slider img"/>
-                             </div>
-            </SwiperSlide>
-
-             <SwiperSlide>
-              <div className=" w-full flex gap-10 justify-center items-center flex-col  min-h-[400px]">
-               
-               <Image src="/C23Images/passive-agressive-quadrant.png" className="rounded-lg" width={500} height={100} alt="slider img"/>
-               <Link href="https://nickwignall.com/assertiveness/" className="text-sm">https://nickwignall.com/assertiveness/</Link>
+                <Image
+                  src="/C23Images/5-communication.png"
+                  width={900}
+                  height={100}
+                  alt="slider img"
+                />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="grid grid-cols-12 place-items-center gap-10">
+              <div className=" w-full flex gap-10 justify-center items-center flex-col  min-h-[400px]">
+                <Image
+                  src="/C23Images/passive-agressive-quadrant.png"
+                  className="rounded-lg"
+                  width={500}
+                  height={100}
+                  alt="slider img"
+                />
+                <Link
+                  href="https://nickwignall.com/assertiveness/"
+                  className="text-sm"
+                >
+                  https://nickwignall.com/assertiveness/
+                </Link>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="grid grid-cols-12 gap-10">
                 <div className="col-span-12">
-                  <h3 className="text-xl text-black text-center ">Differentiate between assertive behavior and those that show passive, manipulative, aggressive or passive-aggressive behaviour.
-</h3>
+                  <h3 className="text-xl text-black text-center ">
+                    Differentiate between assertive behavior and those that show
+                    passive, manipulative, aggressive or passive-aggressive
+                    behaviour.
+                  </h3>
                 </div>
                 <div className="col-span-4 w-full">
-                  <div className="h-[450px]  border border-black rounded-lg overflow-y-auto p-1">
+                  <div className="  border border-black rounded-lg overflow-y-auto p-1">
                     {filter.map((item, index) => (
                       <h3
                         key={index}
                         draggable
                         onDragStart={(e) => handleDragStart(e, item)}
-                        className="text-black text-center text-lg border mt-1 active:cursor-grabbing hover:cursor-grab border-black rounded-lg p-2 "
+                        className="text-black text-center text-md border mt-1 active:cursor-grabbing hover:cursor-grab shadow-lg  rounded-lg p-2 "
                       >
                         {item.text}
                       </h3>
                     ))}
                   </div>
                 </div>
-                <div className="col-span-8 w-full h-[500px] overflow-y-auto">
+                <div className="col-span-8 w-full ">
                   <div className="grid grid-cols-12 w-full place-items-center gap-1">
                     {dropData.map((item, index) => (
                       <div
@@ -184,6 +205,7 @@ const SlideStart = ({ setIsFirstScreen }: myProps) => {
           </div>
         </div>
       </div>
+      <Welldone open={open} setOpen={setOpen}/>
     </div>
   );
 };

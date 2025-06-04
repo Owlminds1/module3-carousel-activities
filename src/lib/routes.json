@@ -50,6 +50,9 @@
     {
         "link": "C17-L3-A1",
         "activity": "Ask AI"
+    },{
+        "link": "C17-L3-A2",
+        "activity": "Critical thinking and Planning"
     },
     {
         "link": "C17-L3-A3",
@@ -294,6 +297,11 @@
     {
         "link": "C23-L2-A2",
         "activity": "How to say no"
+    },
+    
+    {
+        "link": "C23-L2-A3",
+        "activity": "Be assertive"
     },
     
     {

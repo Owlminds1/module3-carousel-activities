@@ -1,0 +1,26 @@
+[
+    {
+        "text":"When the teacher hands out the grades, Timothee with the lowest mark throws his peers’ crayons without saying any word.",
+        "val":"Passive-aggressive"
+    },
+    
+    {
+        "text":"Richard interrupts the queue using his loud voice, but when peers start complaining, he stares at them and then pushes.",
+        "val":"Aggressive"
+    },
+    
+    {
+        "text":"Pinto practices in the school choir, but when the instructor shouts at him, he stays quiet and later cries alone..",
+        "val":"Passive"
+    },
+    
+    {
+        "text":"Gina’s friend tells her that she’d only go to the function if she wears Gina’s prettiest dress.",
+        "val":"Manipulative"
+    },
+    
+    {
+        "text":"Ponty and Roberta ask all students whether they prefer long lunches or extra time for classes, and listen and note all responses on the board.",
+        "val":"Assertive"
+    } 
+]
