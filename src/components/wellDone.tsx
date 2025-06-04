@@ -19,7 +19,11 @@ const Welldone = ({ open, setOpen }: myProps) => {
   useEffect(() => {
     setSound(new Audio("/sound/crowd.mp3"));
   }, []);
-  sound?.play();
+  if(open){
+    sound?.play();
+  }else{
+    sound?.pause()
+  }
   return (
     <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogContent className="flex justify-center items-center  w-[450px]">

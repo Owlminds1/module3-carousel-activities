@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import SecoundSlide from "./secoundSlide";
 import ThirdSlide from "./thirdSlide";
+import FourthSlide from "./fourthslide";
 
 
 const Slide = () => {
@@ -51,6 +52,11 @@ const Slide = () => {
             {/* ========================== ThirdSlide ================= */}
              <SwiperSlide>
            <ThirdSlide/>
+            </SwiperSlide>
+            
+             {/* ========================== fourthSlide ================= */}
+             <SwiperSlide>
+           <FourthSlide/>
             </SwiperSlide>
           </Swiper>
         </div>

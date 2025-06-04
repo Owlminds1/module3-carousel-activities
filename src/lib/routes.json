@@ -52,7 +52,7 @@
         "activity": "Ask AI"
     },
     {
-        "link": "C17-L3-A2",
+        "link": "C17-L3-A3",
         "activity": "Read with understanding"
     },
     
@@ -74,7 +74,7 @@
     },
     {
         "link": "C18-L1-A4",
-        "activity": "Green light, Red light"
+        "activity": "Healthy or Unhealthy"
     },
     {
         "link": "C18-L1-A5",
@@ -92,6 +92,11 @@
     {
         "link": "C18-L2-A1",
         "activity": "Sequencing"
+    },
+    
+    {
+        "link": "C18-L2-A2A",
+        "activity": "Make time for sports practice"
     },
     {
         "link": "C18-L2-A2B",

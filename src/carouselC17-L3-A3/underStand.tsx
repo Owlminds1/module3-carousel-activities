@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
-import SlideData from "@/carouselC17-L3-A2/slideData.json";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import "swiper/css/navigation";
@@ -14,8 +13,7 @@ const UnderStandSlide = () => {
   const [timer, setTimer] = useState(30);
 
   const handleNext = () => {
-    if (lastSlide == SlideData.length - 1) {
-    }
+   
     swiperRef.current?.slideNext();
   };
 
@@ -26,7 +24,7 @@ const UnderStandSlide = () => {
 
   const handleChange = (swipe: SwiperClass) => {
     setLastSlide(swipe.activeIndex);
-    if (lastSlide == SlideData.length - 1) return;
+
     //  setIsFirstScreen("result");
     setShowSugge(false);
     // setTimer(10);
@@ -138,7 +136,7 @@ const UnderStandSlide = () => {
 
           <div
             className={` ${
-              lastSlide < SlideData.length
+              lastSlide < 1
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90 
@@ -146,7 +144,7 @@ const UnderStandSlide = () => {
           >
             <FaArrowRight
               className={`${
-                lastSlide < SlideData.length ? "block" : "hidden"
+                lastSlide <1 ? "block" : "hidden"
               } text-[40px]  cursor-pointer text-black `}
               onClick={handleNext}
             />

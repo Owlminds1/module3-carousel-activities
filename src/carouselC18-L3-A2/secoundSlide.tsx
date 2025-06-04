@@ -81,15 +81,16 @@ const SecoundSlide = () => {
               {item.qValue}
             </span>
 
-            {dropItem[index]?.map((i, index) => (
-              <span
-                className="text-sm bg-violet-900 text-white px-2 py-1 rounded mt-1 block"
-                key={index}
-               
-              >
-                {i}
-              </span>
-            ))}
+         <div className="flex flex-wrap justify-center gap-1 w-[200px]">
+                {dropItem[index]?.map((i, index) => (
+                  <span
+                    className="text-sm bg-violet-900 text-white px-2 py-1 rounded mt-1 block"
+                    key={index}
+                  >
+                    {i}
+                  </span>
+                ))}
+              </div>
           </div>
         ))}
       </div>

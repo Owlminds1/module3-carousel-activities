@@ -6,14 +6,7 @@
     {
         "qValue": "Can-wait-CONS",
         "name":"Can wait (CONS)"
-    },
-    {
-        "qValue": "Can-be-skipped-PROS",
-        "name":"Can be skipped (PROS)"
-    },
-    {
-        "qValue": "Can-be-skipped-CONS",
-        "name":"Can be skipped (CONS)"
     }
+   
   
 ]

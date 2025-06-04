@@ -9,10 +9,12 @@ import ThirdSlide from "./thirdSlide";
 import FourthSlide from "./fourthSlide";
 import FivethSlide from "./fivthSlide";
 import SixthSlide from "./sixthSlide";
+import Image from "next/image";
 
 const Slide = () => {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
+  const [show, setShow] = useState(false);
 
   const handleNext = () => {
     swiperRef.current?.slideNext();
@@ -25,12 +27,13 @@ const Slide = () => {
 
   const handleChange = (swiper: SwiperClass) => {
     setLastSlide(swiper.activeIndex);
+    setShow(false);
   };
 
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[900px]">
-        <h1 className="text-center text-4xl font-bold py-4 text-black">
+        <h1 className="text-center text-2xl font-bold py-4 text-black">
           Make time for sports practice
         </h1>
         <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[200px]">
@@ -43,42 +46,52 @@ const Slide = () => {
             onSlideChange={handleChange}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {/* ========================== SecoundSlide ================= */}
             <SwiperSlide>
-            <div className=" min-h-[450px]  p-5 flex justify-center items-center ">
-                <ul className="list-decimal text-black p-8 space-y-5">
-                  <li className="text-black text-2xl">
-                    Group tasks that are independent or interdependent.
-                  </li>
-                  <li className="text-black text-2xl">
-                    Categorize tasks as weekly or weekend.
-                  </li>
-                  <li className="text-black text-2xl">
-                    Identify tasks that can wait and tasks that can be skipped.
-                  </li>
-                  <li className="text-black text-2xl">
-                    Establish the pros and cons of doing or not doing each task
-                    that is in the category “can wait” and “can be skipped”
-                  </li>
-                </ul>
+              <div className="flex justify-center items-center flex-col gap-2">
+                <Image
+                  className="rounded-lg shadow-lg"
+                  src="/C18Images/Remy_Afternoons_and_Evenings.png"
+                  width={600}
+                  height={100}
+                  alt="Remy_Afternoons_and_Evenings"
+                />
+                <Image
+                  className="rounded-lg shadow-lg"
+                  src="/C18Images/Remy_Mornings.png"
+                  width={600}
+                  height={100}
+                  alt="Remy_Mornings"
+                />
               </div>
             </SwiperSlide>
             {/* ========================== ThirdSlide ================= */}
             <SwiperSlide>
-              <ThirdSlide />
+              <ThirdSlide
+                setShow={setShow}
+                show={show}
+                handleNext={handleNext}
+              />
             </SwiperSlide>
-              {/* ========================== FourthSlide ================= */}
+            {/* ========================== FourthSlide ================= */}
             <SwiperSlide>
-              <FourthSlide />
-            </SwiperSlide> 
+              <FourthSlide
+                setShow={setShow}
+                show={show}
+                handleNext={handleNext}
+              />
+            </SwiperSlide>
             {/* ========================== FivethSlide ================= */}
             <SwiperSlide>
-              <FivethSlide />
+              <FivethSlide
+                setShow={setShow}
+                show={show}
+                handleNext={handleNext}
+              />
             </SwiperSlide>
-            
-             {/* ========================== SixthSlide ================= */}
+
+            {/* ========================== SixthSlide ================= */}
             <SwiperSlide>
-              <SixthSlide />
+              <SixthSlide setShow={setShow} show={show} />
             </SwiperSlide>
           </Swiper>
         </div>
@@ -99,16 +112,15 @@ const Slide = () => {
           </div>
 
           <div
-            className={`${
-              lastSlide < 4
-                ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
-                : ""
-            } hover:scale-90`}
+            className={`${lastSlide == 0 ? "block" : "hidden"}
+                         
+                                border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400
+                              
+                            hover:scale-90 
+                                    `}
           >
             <FaArrowRight
-              className={`${
-                lastSlide < 4 ? "block" : "hidden"
-              } text-[40px] cursor-pointer text-black`}
+              className={` text-[40px]  cursor-pointer text-black `}
               onClick={handleNext}
             />
           </div>

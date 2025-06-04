@@ -1,0 +1,11 @@
+[
+    {
+        "qValue": "independent",
+        "name":"independent"
+    },
+    {
+        "qValue": "interdependent",
+        "name":"interdependent"
+    }
+   
+]

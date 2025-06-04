@@ -1,14 +1,17 @@
 import React, { useState } from "react";
-import DefAndDelData from "@/carouselC18-L3-A2/defNdelData.json";
-import ProAndConsData from "@/carouselC18-L3-A2/ProNConsList.json";
+
+import fourthDropData from "@/carouselC18-L3-A2/indandindepr.json";
+import indandindeprData from "@/carouselC18-L3-A2/fourthDropData.json";
+import Welldone from "@/components/wellDone";
 
 type DragItem = {
   text: string;
   val: string;
 };
-const ThirdSlide = () => {
+const FourthSlide = () => {
+  const [open,setOpen]=useState(false)
   const [dropItem, setDropItem] = useState<{ [key: number]: string[] }>({});
-  const [filterData, setFilterData] = useState(ProAndConsData);
+  const [filterData, setFilterData] = useState(fourthDropData);
 
   const handleDrag = (e: React.DragEvent, dragData: DragItem) => {
     e.dataTransfer.setData("dragItem", JSON.stringify(dragData));
@@ -16,6 +19,7 @@ const ThirdSlide = () => {
 
   const handleDrop = (e: React.DragEvent, index: number, qValue: string) => {
     const dropData = JSON.parse(e.dataTransfer.getData("dragItem"));
+    const filterUpdate = filterData.filter((i) => i.text != dropData.text)
 
     if (dropData.val === qValue) {
       setDropItem((prev) => ({
@@ -24,21 +28,24 @@ const ThirdSlide = () => {
           ? [...prev[index], dropData.text]
           : [dropData.text],
       }));
-      setFilterData((item) => item.filter((i) => i.text != dropData.text));
+      setFilterData(filterUpdate);
+      if(filterUpdate.length == 0){
+        setTimeout(()=>{
+setOpen(true)
+        },300)
+      }
     }
-
-  
   };
   return (
     <div className="flex justify-start items-center gap-10 flex-col">
       <div className="flex justify-center items-center flex-col gap-3 min-h-[100px]">
         <p className="text-black text-xl text-center">
-          Sort the Pros and Cons for ‘DELETE’ tasks and ‘DEFER’ tasks
+          Are these tasks independent or interdependent?
         </p>
       </div>
 
       <div className="grid grid-cols-12 place-items-center gap-1 w-full">
-        <div className="col-span-4 w-full flex justify-center items-start gap-1 flex-wrap">
+        <div className="col-span-4 w-full flex justify-center item-center gap-1 flex-wrap">
           {filterData.map((item, index) => (
             <button
               draggable
@@ -50,34 +57,35 @@ const ThirdSlide = () => {
             </button>
           ))}
         </div>
-        <div className="col-span-8 w-full flex justify-center items-center flex-wrap gap-2">
-          {DefAndDelData.map((item, index) => (
+        <div className="col-span-8 w-full flex justify-center items-start flex-wrap gap-2">
+          {indandindeprData.map((item, index) => (
             <div
               onDragOver={(e) => e.preventDefault()}
               onDrop={(e) => handleDrop(e, index, item.qValue)}
               key={index}
-              className="min-h-[200px] flex justify-start flex-col items-center   min-w-[200px] rounded-lg border border-black "
+              className="min-h-[200px] flex justify-start flex-col items-center w-full rounded-lg border border-black "
             >
               <span className="text-center text-lg text-black">
                 {item.name}
               </span>
 
-              <div className="flex flex-wrap justify-center gap-1 w-[200px]">
-                {dropItem[index]?.map((i, index) => (
-                  <span
-                    className="text-sm bg-violet-900 text-white px-2 py-1 rounded mt-1 block"
-                    key={index}
-                  >
-                    {i}
-                  </span>
-                ))}
-              </div>
+             <div className="flex flex-wrap justify-center gap-1 w-full">
+               {dropItem[index]?.map((i, index) => (
+                <span
+                  className="text-sm bg-violet-900 text-white px-2 py-1 rounded mt-1 block"
+                  key={index}
+                >
+                  {i}
+                </span>
+              ))}
+             </div>
             </div>
           ))}
         </div>
       </div>
+      <Welldone open={open} setOpen={setOpen}/>
     </div>
   );
 };
 
-export default ThirdSlide;
+export default FourthSlide;

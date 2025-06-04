@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Start from "./start";
 import UnderStandSlide from "./underStand";
 
-const CarouselC17L3A2 = () => {
+const CarouselC17L3A3 = () => {
   const [isFirstScreen, setIsFirstScreen] = useState("start");
 
   return (
@@ -14,4 +14,4 @@ const CarouselC17L3A2 = () => {
   );
 };
 
-export default CarouselC17L3A2;
+export default CarouselC17L3A3;
