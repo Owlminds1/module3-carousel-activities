@@ -232,3 +232,6 @@ const FourthSlide = ({ handleNext, setShow, show }: SlideProps) => {
 };
 
 export default FourthSlide;
+
+
+
