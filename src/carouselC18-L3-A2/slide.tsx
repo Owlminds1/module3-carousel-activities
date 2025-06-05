@@ -6,26 +6,30 @@ import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import ThirdSlide from "./thirdSlide";
-import FourthSlide from "./fourthSlide";
+
 import FivethSlide from "./fivthSlide";
 import SixthSlide from "./sixthSlide";
 import Image from "next/image";
 import SeventhSlide from "./seventhSlide";
+import FourthSlide from "./fourthSlide";
 
-const Slide = ({setIsFirstScreen}:{setIsFirstScreen:(val:string)=>void}) => {
+const Slide = ({
+  setIsFirstScreen,
+}: {
+  setIsFirstScreen: (val: string) => void;
+}) => {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
   const [show, setShow] = useState(false);
 
   const handleNext = () => {
-  if (lastSlide >= 5) {
-    setIsFirstScreen("resulte");
-    return;
-  }
+    if (lastSlide >= 5) {
+      setIsFirstScreen("resulte");
+      return;
+    }
 
-  swiperRef.current?.slideNext();
-};
-
+    swiperRef.current?.slideNext();
+  };
 
   const handlePrev = () => {
     if (lastSlide === 0) return;
@@ -49,7 +53,9 @@ const Slide = ({setIsFirstScreen}:{setIsFirstScreen:(val:string)=>void}) => {
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[950px]">
         <h1 className="text-center text-2xl font-bold py-4 text-black">
-         {lastSlide > 3 ? "Rescheduling problem":"Make time for sports practice"} 
+          {lastSlide > 3
+            ? "Rescheduling problem"
+            : "Make time for sports practice"}
         </h1>
         <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[200px]">
           <Swiper
