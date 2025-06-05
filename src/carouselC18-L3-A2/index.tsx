@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Start from './start';
 import Slide from './slide';
+import Resulte from './Resulte';
 
 const CarouselC18L3A2 = () => {
    const [isFirstScreen, setIsFirstScreen] = useState("start");
@@ -9,7 +10,8 @@ const CarouselC18L3A2 = () => {
          return (
            <>
              {isFirstScreen == "start" && <Start setIsFirstScreen={setIsFirstScreen} />}
-             {isFirstScreen == "FirstSlide" && <Slide  />}
+             {isFirstScreen == "FirstSlide" && <Slide  setIsFirstScreen={setIsFirstScreen} />}
+             {isFirstScreen == "resulte" && <Resulte  />}
           
            </>
          );

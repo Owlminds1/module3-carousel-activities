@@ -4,10 +4,12 @@
     },
     {
         "qValue": "DECIDE"
-    },
+    } ,
+    
     {
         "qValue": "DEFER"
     },
+    
     {
         "qValue": "DELETE"
     }

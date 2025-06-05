@@ -1,62 +1,59 @@
 [
     {
         "text": "relaxation",
-        "val": "PROS-del"
+        "val": "Delete-PROS"
     },
     {
         "text": "breather",
-        "val": "PROS-del"
+        "val": "Delete-PROS"
     },
     {
         "text": "release",
-        "val": "PROS-del"
+       "val": "Delete-PROS"
     },
     {
         "text": "meeting people",
-        "val": "PROS-def"
+        "val": "Defer-CONS"
     },
     {
         "text": "procrastination",
-        "val": "CONS-del"
+         "val": "Delete-CONS"
     },
     {
         "text": "lethargy",
-        "val": "CONS-del"
+        "val": "Delete-CONS"
     },
     {
         "text": "stress",
-        "val": "CONS-del"
+       "val": "Delete-CONS"
     },
     {
         "text": "fatigue",
-      "val": "CONS-del"
+      "val": "Delete-CONS"
     },
     {
         "text": "freedom",
-        "val": "PROS-def"
-    },
-    {
-        "text": "TV",
-        "val": "PROS-def"
+        "val": "Defer-PROS"
     },
     {
         "text": "empty mind",
-        "val": "PROS-def"
+        "val": "Defer-PROS"
     },
     {
         "text": "engaging in hobbies",
-         "val": "PROS-def"
+          "val": "Defer-PROS"
     },
     {
         "text": "procrastination",
-        "val": "CONS-def"
+         "val": "Defer-CONS"
     },
     {
         "text": "screen time",
-        "val": "CONS-def"
-    },
+         "val": "Defer-CONS"
+    } ,
+    
     {
         "text": "not useful",
-         "val": "CONS-def"
+         "val": "Defer-CONS"
     }
 ]

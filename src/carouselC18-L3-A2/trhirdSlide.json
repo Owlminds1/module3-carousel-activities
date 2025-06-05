@@ -1,85 +1,70 @@
 [
     {
         "text": "Social Time",
-        "val":"independent"
+        "val": "DEFER"
     },
-    
     {
         "text": "School",
-        "val":"independent"
+        "val": "DO"
     },
     {
         "text": "Homework completion",
-        "val":"independent"
+       "val": "DECIDE"
     },
     {
         "text": "Video games",
-        "val":"independent"
+        "val": "DELETE"
     },
-    
     {
         "text": "Swimming",
-        "val":"independent"
+         "val": "DECIDE"
     },
-    
     {
         "text": "Sleep",
-        "val":"independent"
+       "val": "DO"
     },
-    
     {
         "text": "Football Practice",
-        "val":"independent"
+       "val": "DECIDE"
     },
-    
     {
         "text": "Meals",
-        "val":"independent"
+      "val": "DO"
     },
-
     {
         "text": "Outdoors",
-        "val":"independent"
+        "val": "DEFER"
     },
-    
     {
         "text": "TV",
-        "val":"independent"
-    } ,
-    
+        "val": "DELETE"
+    },
     {
         "text": "Getting ready",
-        "val":"independent"
+          "val": "DO"
     },
-    
     {
         "text": "piano practise",
-        "val":"independent"
+         "val": "DECIDE"
     },
-    
     {
         "text": "Tutoring",
-        "val":"independent"
+        "val": "DO"
     },
-    
     {
         "text": "Commute",
-        "val":"independent"
+         "val": "DO"
     },
-    
     {
         "text": "Week prep",
-        "val":"independent"
+         "val": "DECIDE"
     },
-    
-    {
+     {
         "text": "Personal time",
-        "val":"independent"
+         "val": "DECIDE"
     },
-    
     {
         "text": "Leisure",
-        "val":"independent"
+         "val": "DEFER"
     }
-   
 ]
