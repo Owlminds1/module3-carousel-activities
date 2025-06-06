@@ -3,13 +3,12 @@ import React, { useState } from "react";
 import Start from "./start";
 import Table from "./table";
 import ShopingCart from "./shopingCart";
-interface myTypes {
-  name: string;
-}
+import MealData from "@/carouselC18-L1-A5/mealData.json";
+
 const CarouselC18L1A5 = () => {
   const [isFirstScreen, setIsFirstScreen] = useState("start");
   const [countCal, setCountCal] = useState(0);
-  const [itemArray, setItemArray] = useState<myTypes[]>([]);
+  const [itemArray, setItemArray] = useState<typeof MealData>([]);
 
   return (
     <>
@@ -20,18 +19,15 @@ const CarouselC18L1A5 = () => {
         <ShopingCart
           setItemArray={setItemArray}
           setIsFirstScreen={setIsFirstScreen}
-       
           countCal={countCal}
           setCountCal={setCountCal}
+          itemArray={itemArray}
         />
       )}
       {isFirstScreen == "table" && (
-        <Table
-          itemArray={itemArray}
-
-          countCal={countCal}
-        />
+        <Table itemArray={itemArray} setIsFirstScreen={setIsFirstScreen}/>
       )}
+      
     </>
   );
 };

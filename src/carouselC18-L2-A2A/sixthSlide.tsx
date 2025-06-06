@@ -85,7 +85,7 @@ const SixthSlide = ({ setShow, show }: SlideProps) => {
             <div className="col-span-4 w-full border border-black flex justify-center items-center flex-col gap-1">
               <h3 className="w-full text-center text-lg font-bold">Can wait</h3>
               <h4 className="text-md w-full text-center  font-normal">
-                (social time/outdoor/video games)
+                (Social Time/Outdoor/Video Games)
               </h4>
             </div>
             {QuadurantsData.map((item) => (
@@ -117,7 +117,7 @@ const SixthSlide = ({ setShow, show }: SlideProps) => {
                 Can be skipped
               </h3>
               <h4 className="text-md w-full text-center  font-normal">
-                (personal time/ leisure time/ TV)
+                (Personal Time/ Leisure Time/ TV)
               </h4>
             </div>
             {QuadurantsData2.map((item) => (

@@ -1,13 +1,9 @@
 [
     {
-        "val":"breackFast"
+        "val":"Healthy"
     },
     
     {
-        "val":"lunch"
-    },
-    
-    {
-        "val":"dinner"
+        "val":"Unhealthy"
     }
 ]

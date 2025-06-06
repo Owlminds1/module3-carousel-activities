@@ -1,0 +1,171 @@
+[
+    {
+        "fruitsImg": "/C18Images/meal_plan/apple.jpg",
+        "name": "Apples",
+        "subName": "Apples (6)",
+        "value": 6,
+        "dropVal": "Healthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/BREAD.png",
+        "name": "Bread",
+        "subName": "Bread (2)",
+        "value": 2,
+        "dropVal": "Healthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/beans.png",
+        "name": "Beans",
+        "subName": "Beans (2)",
+        "value": 2,
+        "dropVal": "Healthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/burger-patty.png",
+        "name": "Burger Patty",
+        "subName": "Burger Patty (5)",
+        "value": 5,
+        "dropVal": "Unhealthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/butter.png",
+        "name": "Butter",
+        "subName": "Butter (3)",
+        "value": 3,
+        "dropVal": "Healthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/cereal.png",
+        "name": "Cereal",
+        "subName": "Cereal (3)",
+        "value": 3,
+        "dropVal": "Healthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/cheese.png",
+        "name": "Cheese",
+        "subName": "Cheese (3)",
+        "value": 3,
+        "dropVal": "Unhealthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/chips.png",
+        "name": "Chips",
+        "subName": "Chips (4)",
+        "value": 4,
+        "dropVal": "Unhealthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/choklate.jpg",
+        "name": "Chocolate",
+        "subName": "Chocolate (4)",
+        "value": 3,
+        "dropVal": "Unhealthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/cookies.png",
+        "name": "Cookies",
+        "subName": "Cookies (3)",
+        "value": 3,
+        "dropVal": "Unhealthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/CORN-DOG.png",
+        "name": "Corn Dog",
+        "subName": "Corn Dog (2)",
+        "value": 2,
+        "dropVal": "Unhealthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/eggs.png",
+        "name": "Eggs",
+        "subName": "Eggs (5)",
+        "value": 5,
+        "dropVal": "Healthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/FRIES.png",
+        "name": "French Fries",
+        "subName": "French Fries (5)",
+        "value": 5,
+        "dropVal": "Unhealthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/jam.png",
+        "name": "Jam",
+        "subName": "Jam (6)",
+        "value": 6,
+        "dropVal": "Unhealthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/ORANGE_JUICE.jpg",
+        "name": "Juice",
+        "subName": "Juice (7)",
+        "value": 7,
+        "dropVal": "Unhealthy"
+    },
+    {
+         "fruitsImg": "/C18Images/meal_plan/Ketchup.jpg",
+        "name": "Ketchup",
+        "subName": "Ketchup (3)",
+        "value": 2,
+        "dropVal": "Unhealthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/kiwi.png",
+        "name": "Kiwi",
+        "subName": "Kiwi (5)",
+        "value": 3,
+        "dropVal": "Healthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/milk.png",
+        "name": "Milk",
+        "subName": "Milk (2)",
+        "value": 2,
+        "dropVal": "Healthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/pasta.png",
+        "name": "Pasta",
+        "subName": "Pasta (3)",
+        "value": 3,
+        "dropVal": "Healthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/rice.jpg",
+        "name": "Rice",
+        "subName": "Rice (4)",
+        "value": 4,
+        "dropVal": "Healthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/soda-can.png",
+        "name": "Soda Cans",
+        "subName": "Soda Cans (6)",
+        "value": 6,
+        "dropVal": "Unhealthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/Strawberries.png",
+        "name": "Strawberries",
+        "subName": "Strawberries (5)",
+        "value": 5,
+        "dropVal": "Healthy"
+    },
+    {
+        "fruitsImg": "/C18Images/meal_plan/watermelon.png",
+        "name": "Watermelon",
+        "subName": "Watermelon (2)",
+        "value": 2,
+        "dropVal": "Healthy"
+    }, 
+    
+    {
+        "fruitsImg": "/C18Images/meal_plan/yogurt.png",
+        "name": "Yogurt",
+        "subName": "Yogurt (1)",
+        "value": 1,
+        "dropVal": "Healthy"
+    }
+]

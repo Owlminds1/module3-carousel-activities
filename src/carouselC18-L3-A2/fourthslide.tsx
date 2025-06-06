@@ -93,7 +93,7 @@ const FourthSlide = ({ handleNext, setShow, show }: SlideProps) => {
             <div className="col-span-4 w-full border border-black flex justify-center items-center flex-col gap-1">
               <h3 className="w-full text-center text-lg font-bold">Delete</h3>
               <h4 className="text-md w-full text-center  font-normal">
-                (video games, TV)
+                (Video Games, TV)
               </h4>
             </div>
             {QuadurantsData.map((item) => (
@@ -125,7 +125,7 @@ const FourthSlide = ({ handleNext, setShow, show }: SlideProps) => {
                Defer 
               </h3>
               <h4 className="text-md w-full text-center  font-normal">
-                (Social time/ leisure time/ Outdoor)
+                (Social Time/ Leisure Time/ Outdoor)
               </h4>
             </div>
             {QuadurantsData2.map((item) => (
