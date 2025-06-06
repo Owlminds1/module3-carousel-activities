@@ -25,7 +25,7 @@ const SixthSlide = ({ setShow, show }: SlideProps) => {
         </ul>
         
         :
-        <button onClick={()=>setShow(true)} className="text-white cursor-pointer bg-violet-900 px-5 py-2 rounded-lg ">submit</button>}
+        <button onClick={()=>setShow(true)} className="text-white cursor-pointer bg-violet-900 px-5 py-2 rounded-lg ">Submit</button>}
         </div>
       </div>
     </div>

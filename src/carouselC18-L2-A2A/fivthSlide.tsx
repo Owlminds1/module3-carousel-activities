@@ -110,12 +110,12 @@ const FivethSlide = ({handleNext,setShow,show}:SlideProps) => {
       show ?
           <>
             <div className="col-span-6 flex justify-center items-center flex-col w-full bg-violet-200  p-2">
-              <h3 className="font-bold text-xl ">Can wait</h3>
+              <h3 className="font-bold text-xl ">Can Wait</h3>
               <div className="flex justify-center items-start">
                 <ul className="list-disc  p-5">
-                  <li className="text-lg text-black">social time</li>
-                  <li className="text-lg text-black">outdoor</li>
-                  <li className="text-lg text-black">video games</li>
+                  <li className="text-lg text-black">Social Time</li>
+                  <li className="text-lg text-black">Outdoor</li>
+                  <li className="text-lg text-black">Video Games</li>
                  
                 </ul>
                 
@@ -123,11 +123,11 @@ const FivethSlide = ({handleNext,setShow,show}:SlideProps) => {
             </div>
     
             <div className="col-span-6 flex justify-center items-center flex-col w-full bg-violet-200 p-2 ">
-              <h3 className="font-bold text-xl ">Can be skipped</h3>
+              <h3 className="font-bold text-xl ">Can be Skipped</h3>
               <div className="flex justify-center items-start">
                 <ul className="list-disc  p-5">
-                  <li className="text-lg text-black">personal time</li>
-                  <li className="text-lg text-black">leisure time</li>
+                  <li className="text-lg text-black">Personal Time</li>
+                  <li className="text-lg text-black">Leisure Time</li>
                   <li className="text-lg text-black">TV</li>
                 </ul>
                

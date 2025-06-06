@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
@@ -29,15 +29,23 @@ const Slide = () => {
     setLastSlide(swiper.activeIndex);
     setShow(false);
   };
+    useEffect(() => {
+      if (show) {
+        setTimeout(() => {
+          swiperRef.current?.updateAutoHeight();
+        }, 100);
+      }
+    }, [show]);
 
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[900px]">
         <h1 className="text-center text-2xl font-bold py-4 text-black">
-          Make time for sports practice
+       Make Time For Sports Practice
         </h1>
         <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[200px]">
           <Swiper
+           autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}

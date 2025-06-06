@@ -157,46 +157,46 @@ const SixthSlide = ({ setShow, show }: SlideProps) => {
         {show ? (
           <>
             <div className="col-span-6 flex justify-center items-center flex-col w-full bg-violet-200  p-2">
-              <h3 className="font-bold text-xl ">Can wait</h3>
+              <h3 className="font-bold text-xl ">Can Wait</h3>
               <div className="flex justify-center items-start gap-10 ">
                 <div className="pt-5">
                   <span className="font-medium w-full">PROS:</span>
                   <ul className="list-disc">
-                    <li className="text-lg text-black">relaxation</li>
-                    <li className="text-lg text-black">breather</li>
-                    <li className="text-lg text-black">release</li>
-                    <li className="text-lg text-black">being active</li>
+                    <li className="text-lg text-black">Relaxation</li>
+                    <li className="text-lg text-black">Breather</li>
+                    <li className="text-lg text-black">Release</li>
+                    <li className="text-lg text-black">Being Active</li>
                   </ul>
                 </div>
                 <div className="pt-5">
                   <span className="font-medium w-full">CONS:</span>
                   <ul className="list-disc">
-                    <li className="text-lg text-black">procrastination</li>
-                    <li className="text-lg text-black">lethargy</li>
-                    <li className="text-lg text-black">stress</li>
-                    <li className="text-lg text-black">fatigue</li>
+                    <li className="text-lg text-black">Procrastination</li>
+                    <li className="text-lg text-black">Lethargy</li>
+                    <li className="text-lg text-black">Stress</li>
+                    <li className="text-lg text-black">Fatigue</li>
                   </ul>
                 </div>
               </div>
             </div>
 
             <div className="col-span-6 flex justify-center items-center flex-col w-full bg-violet-200  p-2">
-              <h3 className="font-bold text-xl ">Can be skipped</h3>
+              <h3 className="font-bold text-xl ">Can be Skipped</h3>
               <div className="flex justify-center items-start gap-10 ">
                 <div className="pt-5">
                   <span className="font-medium w-full">PROS:</span>
                   <ul className="list-disc">
-                    <li className="text-lg text-black">freedom</li>
-                    <li className="text-lg text-black">empty mind</li>
-                    <li className="text-lg text-black">engaging in hobbies</li>
+                    <li className="text-lg text-black">Freedom</li>
+                    <li className="text-lg text-black">Empty Mind</li>
+                    <li className="text-lg text-black">Engaging in Hobbies</li>
                   </ul>
                 </div>
                 <div className="pt-5">
                   <span className="font-medium w-full">CONS:</span>
                   <ul className="list-disc">
-                    <li className="text-lg text-black">procrastination</li>
-                    <li className="text-lg text-black">screen time</li>
-                    <li className="text-lg text-black">not useful</li>
+                    <li className="text-lg text-black">Procrastination</li>
+                    <li className="text-lg text-black">Screen Time</li>
+                    <li className="text-lg text-black">Not Useful</li>
                   </ul>
                 </div>
               </div>

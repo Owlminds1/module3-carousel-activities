@@ -54,8 +54,8 @@ const Slide = ({
       <div className="w-[950px]">
         <h1 className="text-center text-2xl font-bold py-4 text-black">
           {lastSlide > 3
-            ? "Rescheduling problem"
-            : "Make time for sports practice"}
+            ? "Rescheduling Problem"
+            : "Make Time For Sports Practice"}
         </h1>
         <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[200px]">
           <Swiper

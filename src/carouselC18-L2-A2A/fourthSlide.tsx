@@ -129,7 +129,7 @@ const FourthSlide = ({ handleNext, setShow, show }: SlideProps) => {
                 <ul className="list-disc  p-5">
                   <li className="text-lg text-black">Leisure</li>
                   <li className="text-lg text-black">Social Time</li>
-                  <li className="text-lg text-black">HW completion</li>
+                  <li className="text-lg text-black">Homework Completion</li>
                   <li className="text-lg text-black">Outdoor</li>
                   <li className="text-lg text-black">Meals</li>
                 </ul>
