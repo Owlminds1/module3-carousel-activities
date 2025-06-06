@@ -11,7 +11,7 @@ import FivethSlide from "./fivthSlide";
 import SixthSlide from "./sixthSlide";
 import Image from "next/image";
 import SeventhSlide from "./seventhSlide";
-import FourthSlide from "./fourthSlide";
+import FourthSlide from "./fourthslide";
 
 const Slide = ({
   setIsFirstScreen,
