@@ -1,6 +1,6 @@
 [
     {
-        "fruitsImg": "/C18Images/meal_plan/apple.jpg",
+        "fruitsImg": "/C18Images/meal_plan/apples.png",
         "name": "Apples",
         "subName": "Apples (6)",
         "value": 6,
@@ -56,7 +56,7 @@
         "dropVal": "Unhealthy"
     },
     {
-        "fruitsImg": "/C18Images/meal_plan/choklate.jpg",
+        "fruitsImg": "/C18Images/meal_plan/chocolate.png",
         "name": "Chocolate",
         "subName": "Chocolate (4)",
         "value": 3,
@@ -84,7 +84,7 @@
         "dropVal": "Healthy"
     },
     {
-        "fruitsImg": "/C18Images/meal_plan/FRIES.png",
+        "fruitsImg": "/C18Images/meal_plan/french-fries.png",
         "name": "French Fries",
         "subName": "French Fries (5)",
         "value": 5,
@@ -98,14 +98,14 @@
         "dropVal": "Unhealthy"
     },
     {
-        "fruitsImg": "/C18Images/meal_plan/ORANGE_JUICE.jpg",
+        "fruitsImg": "/C18Images/meal_plan/juice.png",
         "name": "Juice",
         "subName": "Juice (7)",
         "value": 7,
         "dropVal": "Unhealthy"
     },
     {
-         "fruitsImg": "/C18Images/meal_plan/Ketchup.jpg",
+         "fruitsImg": "/C18Images/meal_plan/ketchup.png",
         "name": "Ketchup",
         "subName": "Ketchup (3)",
         "value": 2,
@@ -133,7 +133,7 @@
         "dropVal": "Healthy"
     },
     {
-        "fruitsImg": "/C18Images/meal_plan/rice.jpg",
+        "fruitsImg": "/C18Images/meal_plan/rice.png",
         "name": "Rice",
         "subName": "Rice (4)",
         "value": 4,
