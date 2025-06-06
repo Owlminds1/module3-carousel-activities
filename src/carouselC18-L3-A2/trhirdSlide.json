@@ -8,11 +8,11 @@
         "val": "DO"
     },
     {
-        "text": "Homework completion",
+        "text": "Homework Completion",
        "val": "DECIDE"
     },
     {
-        "text": "Video games",
+        "text": "Video Games",
         "val": "DELETE"
     },
     {
@@ -40,11 +40,11 @@
         "val": "DELETE"
     },
     {
-        "text": "Getting ready",
+        "text": "Getting Ready",
           "val": "DO"
     },
     {
-        "text": "piano practise",
+        "text": "Piano Practise",
          "val": "DECIDE"
     },
     {
@@ -56,11 +56,11 @@
          "val": "DO"
     },
     {
-        "text": "Week prep",
+        "text": "Week Prep",
          "val": "DECIDE"
     },
      {
-        "text": "Personal time",
+        "text": "Personal Time",
          "val": "DECIDE"
     },
     {

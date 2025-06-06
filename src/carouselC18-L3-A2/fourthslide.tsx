@@ -182,19 +182,19 @@ const FourthSlide = ({ handleNext, setShow, show }: SlideProps) => {
                 <div className="pt-5">
                   <span className="font-medium w-full">PROS:</span>
                   <ul className="list-disc">
-                    <li className="text-lg text-black">relaxation</li>
-                    <li className="text-lg text-black">breather</li>
-                    <li className="text-lg text-black">release</li>
+                    <li className="text-lg text-black">Relaxation</li>
+                    <li className="text-lg text-black">Breather</li>
+                    <li className="text-lg text-black">Release</li>
                    
                   </ul>
                 </div>
                 <div className="pt-5">
                   <span className="font-medium w-full">CONS:</span>
                   <ul className="list-disc">
-                    <li className="text-lg text-black">procrastination</li>
-                    <li className="text-lg text-black">lethargy</li>
-                    <li className="text-lg text-black">stress</li>
-                    <li className="text-lg text-black">fatigue</li>
+                    <li className="text-lg text-black">Procrastination</li>
+                    <li className="text-lg text-black">Lethargy</li>
+                    <li className="text-lg text-black">Stress</li>
+                    <li className="text-lg text-black">Fatigue</li>
                   </ul>
                 </div>
               </div>
@@ -206,18 +206,18 @@ const FourthSlide = ({ handleNext, setShow, show }: SlideProps) => {
                 <div className="pt-5">
                   <span className="font-medium w-full">PROS:</span>
                   <ul className="list-disc">
-                    <li className="text-lg text-black">freedom</li>
-                    <li className="text-lg text-black">empty mind</li>
-                    <li className="text-lg text-black">engaging in hobbies</li>
-                    <li className="text-lg text-black">meeting people</li>
+                    <li className="text-lg text-black">Freedom</li>
+                    <li className="text-lg text-black">Empty Mind</li>
+                    <li className="text-lg text-black">Engaging in Hobbies</li>
+                    <li className="text-lg text-black">Meeting People</li>
                   </ul>
                 </div>
                 <div className="pt-5">
                   <span className="font-medium w-full">CONS:</span>
                   <ul className="list-disc">
-                    <li className="text-lg text-black">procrastination</li>
-                    <li className="text-lg text-black">screen time</li>
-                    <li className="text-lg text-black">not useful</li>
+                    <li className="text-lg text-black">Procrastination</li>
+                    <li className="text-lg text-black">Screen Time</li>
+                    <li className="text-lg text-black">Not Useful</li>
                   </ul>
                 </div>
               </div>

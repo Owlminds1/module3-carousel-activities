@@ -1,59 +1,59 @@
 [
     {
-        "text": "relaxation",
+        "text": "Relaxation",
         "val": "Delete-PROS"
     },
     {
-        "text": "breather",
+        "text": "Breather",
         "val": "Delete-PROS"
     },
     {
-        "text": "release",
+        "text": "Release",
        "val": "Delete-PROS"
     },
     {
-        "text": "meeting people",
+        "text": "Meeting People",
         "val": "Defer-CONS"
     },
     {
-        "text": "procrastination",
+        "text": "Procrastination",
          "val": "Delete-CONS"
     },
     {
-        "text": "lethargy",
+        "text": "Lethargy",
         "val": "Delete-CONS"
     },
     {
-        "text": "stress",
+        "text": "Stress",
        "val": "Delete-CONS"
     },
     {
-        "text": "fatigue",
+        "text": "Fatigue",
       "val": "Delete-CONS"
     },
     {
-        "text": "freedom",
+        "text": "Freedom",
         "val": "Defer-PROS"
     },
     {
-        "text": "empty mind",
+        "text": "Empty Mind",
         "val": "Defer-PROS"
     },
     {
-        "text": "engaging in hobbies",
+        "text": "Engaging in Hobbies",
           "val": "Defer-PROS"
     },
     {
-        "text": "procrastination",
+        "text": "Procrastination ",
          "val": "Defer-CONS"
     },
     {
-        "text": "screen time",
+        "text": "Screen Time",
          "val": "Defer-CONS"
     } ,
     
     {
-        "text": "not useful",
+        "text": "Not Useful",
          "val": "Defer-CONS"
     }
 ]

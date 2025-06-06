@@ -1,59 +1,59 @@
 [
     {
-        "text": "relaxation",
+        "text": "Relaxation",
         "val": "Can-wait-PROS"
     },
     {
-        "text": "procrastination",
+        "text": "Procrastination",
         "val": "Can-wait-CONS"
     },
     {
-        "text": "freedom",
+        "text": "Freedom",
         "val": "Can-be-skipped-PROS"
     },
    
     
     
     {
-        "text": "breather",
+        "text": "Breather",
         "val": "Can-wait-PROS"
     },
     {
-        "text": "lethargy",
+        "text": "Lethargy",
         "val": "Can-wait-CONS"
     },
     {
-        "text": "empty mind",
+        "text": "Empty Mind",
         "val": "Can-be-skipped-PROS"
     },
     {
-        "text": "screen time",
+        "text": "Screen Time",
         "val": "Can-be-skipped-CONS"
     },
 
 
     {
-        "text": "release",
+        "text": "Release",
         "val": "Can-wait-PROS"
     },
     {
-        "text": "stress",
+        "text": "Stress",
         "val": "Can-wait-CONS"
     },
     {
-        "text": "engaging in hobbies",
+        "text": "Engaging in Hobbies",
         "val": "Can-be-skipped-PROS"
     },
     {
-        "text": "not useful",
+        "text": "Not Useful",
         "val": "Can-be-skipped-CONS"
     },
     {
-        "text": "being active",
+        "text": "Being Active",
         "val": "Can-wait-PROS"
     },
     {
-        "text": "fatigue",
+        "text": "Fatigue",
         "val": "Can-wait-CONS"
     }
     

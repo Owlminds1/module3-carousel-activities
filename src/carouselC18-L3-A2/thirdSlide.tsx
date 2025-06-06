@@ -166,7 +166,7 @@ const ThirdSlide = ({ handleNext, setShow, show }: SlideProps) => {
               <h3 className="font-bold text-xl ">DECIDE</h3>
               <div className="flex justify-center items-start">
                 <ul className="list-disc  p-5">
-                  <li className="text-md text-black">HW completion</li>
+                  <li className="text-md text-black">Homework Completion</li>
                   <li className="text-md text-black">Swimming</li>
                   <li className="text-md text-black">Football Practice</li>
                 </ul>

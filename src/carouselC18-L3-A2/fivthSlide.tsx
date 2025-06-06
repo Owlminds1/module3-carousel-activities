@@ -123,7 +123,7 @@ const FivethSlide = ({ handleNext, setShow, show }: SlideProps) => {
         {show ? (
           <>
             <div className="col-span-12 flex justify-center items-center flex-col w-full bg-violet-200  p-2">
-              <h3 className="font-bold text-xl ">independent</h3>
+              <h3 className="font-bold text-xl ">Independent</h3>
               <div className="flex justify-center items-start">
                 <ul className="list-disc  p-5">
                   <li className="text-lg text-black">Social Time</li>
@@ -138,12 +138,12 @@ const FivethSlide = ({ handleNext, setShow, show }: SlideProps) => {
                 </ul>
                  <ul className="list-disc  p-5">
                   <li className="text-lg text-black">TV</li>
-                  <li className="text-lg text-black">Getting ready</li>
-                  <li className="text-lg text-black">piano practise</li>
+                  <li className="text-lg text-black">Getting Ready</li>
+                  <li className="text-lg text-black">Piano Practise</li>
                   <li className="text-lg text-black">Tutoring</li>
                   <li className="text-lg text-black">Commute</li>
-                  <li className="text-lg text-black">Week prep</li>
-                  <li className="text-lg text-black">Personal time</li>
+                  <li className="text-lg text-black">Week Prep</li>
+                  <li className="text-lg text-black">Personal Time</li>
                   <li className="text-lg text-black">Leisure</li>
                 </ul>
               </div>
