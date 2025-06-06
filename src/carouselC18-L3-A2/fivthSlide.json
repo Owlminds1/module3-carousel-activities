@@ -1,6 +1,6 @@
 [
     {
-        "text": "social time",
+        "text": "Social Time",
         "val": "independent"
     },
     {
@@ -8,11 +8,11 @@
        "val": "independent"
     },
     {
-        "text": "Homework completion",
+        "text": "Homework Completion",
        "val": "independent"
     },
     {
-        "text": "Video games",
+        "text": "Video Games",
       "val": "independent"
     },
     {
@@ -45,12 +45,12 @@
     },
     
     {
-        "text": "Getting ready",
+        "text": "Getting Ready",
        "val": "independent"
     },
     
     {
-        "text": "piano practise",
+        "text": "Piano Practise",
        "val": "independent"
     },
     
@@ -69,7 +69,7 @@
        "val": "independent"
     },
     {
-        "text": " Personal time",
+        "text": "Personal Time",
        "val": "independent"
     },
     
