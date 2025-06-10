@@ -117,6 +117,11 @@
     {
         "link": "C19-L1-A2",
         "activity": "Apply RULER"
+    }, 
+    
+    {
+        "link": "C19-L1-A3",
+        "activity": "Mood Meter"
     },
     {
         "link": "C19-L1-A4",
