@@ -1,0 +1,16 @@
+[
+    {
+        "positionY":"300px",
+        "positionX":"90px",
+        "text":"I am angry when…",
+        "rotate":360
+        
+    },
+    {
+        "positionY":"300px",
+        "positionX":"360px",
+        "text":"I am kind when…",
+        "rotate":360
+
+    }
+]
