@@ -1,0 +1,120 @@
+[
+    {
+        "title":"Assertive",
+        "Assertive": [
+            {
+                "name": "Luna",
+                "talk":" I believe that what’s polite for some may not be polite for others"
+            },
+             {
+                "name": "Samantha",
+                "talk":" I understand that but there are common standards of polite behavior"
+            },
+            
+            {
+                "name": "Luna",
+                "talk":" What if students don’t say thank you for doing something nice? What would you do?"
+            } ,
+            {
+                "name": "Samantha",
+                "talk":"I do not have the role of surveying what every student might say. But if I notice that, I would note it and inform the instructor."
+            },
+            {
+                "name": "Luna",
+                "talk":"Many students don’t even tidy up after their lunch and others always have to take responsibility for their indecent behavior."
+            }
+        ]
+    },
+    {
+        "title":"Rapport",
+        "Assertive": [
+            {
+                "name": "Samantha",
+                "talk":" I play basketball so I have seen a lot of impolite behavior on the field. But I don’t think scolding is the right way to tackle it. "
+            },
+             {
+                "name": "Luna",
+                "talk":"I agree. Getting others to act differently requires a lot of patience."
+            },
+            
+            {
+                "name": "Samantha",
+                "talk":" exactly. Sometimes it may not be possible that everybody changes. That’s why we have guidelines to protect all students"
+            } 
+        ]
+    },
+      {
+        "title":"Empathy",
+        "Assertive": [
+            {
+                "name": "Luna",
+                "talk":"  I have been on the other side too. I’d suggest starting a reward system."
+            },
+             {
+                "name": "Samantha",
+                "talk":"Thanks for understanding. I’d be happy to hear your suggestions."
+            },
+            
+            {
+                "name": "Luna",
+                "talk":"We can reduce instances of impolite behavior by rewarding polite behavior"
+            },
+            
+            {
+                "name": "Samantha",
+                "talk":" Absolutely! That way all students can see how it feels like to be kind!"
+            } 
+        ]
+    },
+    
+    {
+        "title":"Flexible",
+        "Assertive": [
+            {
+                "name": "Luna",
+                "talk":" exactly. Will you be taking note of all the students who behave politely?"
+            },
+             {
+                "name": "Samantha",
+                "talk":" Well, I can do that, but we can all do it together. Whenever any student notices polite behavior, they can nominate those students by writing on the notice board."
+            }
+        ]
+    },
+
+     {
+        "title":"Intuition",
+        "Assertive": [
+            {
+                "name": "Luna",
+                "talk":" perfect! Will we be starting this right away? And how can we adjust this to keeping the classroom tidy?"
+            },
+             {
+                "name": "Samantha",
+                "talk":"oh, I am in discussions with our instructor about that. I don’t have an answer at the moment. But when I bring it up, we can discuss that with other students."
+            }
+        ]
+    },
+
+     {
+        "title":"Trust",
+        "Assertive": [
+            {
+                "name": "Luna",
+                "talk":"Great! I hope it works! I am sure you will do a good job of implementing it."
+            },
+             {
+                "name": "Samantha",
+                "talk":"I hope so too. We will have to try and see."
+            },
+            {
+                "name": "Luna",
+                "talk":"Thank you for your efforts to bring change. I believe in you!"
+            },
+              {
+                "name": "Samantha",
+                "talk":" thank you for your efforts too and for believing in me!"
+            }
+        ]
+    }
+   
+]
