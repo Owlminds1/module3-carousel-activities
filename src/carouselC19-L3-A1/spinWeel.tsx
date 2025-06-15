@@ -10,11 +10,9 @@ const SpinWeel = () => {
   const [isSpinning, setIsSpinning] = useState(false);
   const [alrtMssg, setAlrtMssg] = useState("");
   const [open, setOpen] = useState(false);
-  const [textSpin,setTextSpin]=useState(false)
 
   const handleSpeenStart = () => {
   if (isSpinning) return;
-  setTextSpin(false);
   setIsSpinning(true);
 
   const randomDeg = Math.floor(Math.random() * 360);
@@ -40,7 +38,6 @@ const SpinWeel = () => {
     setAlrtMssg(selectedText); // ye alert/dailog me dikhayega
     setOpen(true);
     setIsSpinning(false);
-    setTextSpin(true);
   }, 5000);
 };
 
@@ -51,6 +48,7 @@ const SpinWeel = () => {
       <h3 className="font-bold  text-center text-black text-4xl ">
         Spin the wheel
       </h3>
+      <p className="text-lg text-black pt-2">Rotate the wheel and speak about a situation based on the prompt you land on</p>
       <div className="relative">
         {/* Arrow */}
         <div className="arrow absolute top-1/2 right-[-15px] flex justify-center items-center text-black text-[30px] z-10">
@@ -72,7 +70,7 @@ const SpinWeel = () => {
             transform: `rotate(${rotationAngle}deg)`,
             transition: isSpinning ? "transform 5s ease-out" : "none",
           }}
-          className="relative overflow-hidden min-h-[650px] min-w-[650px]  rounded-full flex justify-center items-center"
+          className="relative overflow-hidden min-h-[650px]  min-w-[650px]  rounded-full flex justify-center items-center"
         >
           <Image src="/C18Images/oneHalfSpin.png" fill alt="spin image" />
           {spinData.map((item, index) => (
@@ -87,7 +85,7 @@ const SpinWeel = () => {
               }}
               className="text-black text-xl font-bold  w-[200px] text-center"
             >
-              {  textSpin ? item.text :""}
+              {   item.text }
             </span>
           ))}
         </div>
