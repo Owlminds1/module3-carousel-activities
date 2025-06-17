@@ -21,7 +21,6 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   const [correctAudio, setCorrectAudio] = useState<HTMLAudioElement | null>(
     null
   );
-  const [checkBtn, setCheckBtn] = useState<boolean | null>(null);
  
   const [shuffel,setShuffle]=useState(SlideData)
   
@@ -44,7 +43,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   }, []);
 
   const handleChange = (swipe: SwiperClass) => {
-    setCheckBtn(null);
+  
     setShowbtn(false);
     setImageIndex(null);
     setLastSlide(swipe.activeIndex);
@@ -53,7 +52,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   };
 
   const handleCheckImage = (index: number, correct: string, value: string) => {
-    setCheckBtn(true);
+   
     setImageIndex(index);
     if (correct === value) {
       // alert("dsfdsfdsf");
@@ -69,7 +68,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
         <h1 className="text-center text-2xl font-bold py-4 text-black">
        Visual Differentiation Activity
         </h1>
-        <p className="text-center">{`Carefully examine the set of four objects and try to identify the one that stands out due to differences in its characteristics.Once you've found it, circle the different object.`}</p>
+        <p className="text-center">{`Carefully examine the set of four objects and try to identify the one that stands out due to differences in its characteristics. Once you've found it, Select the different object.`}</p>
         <Swiper
           className="border-2 p-2 bg-violet-100 rounded-lg min-h-[200px] "
           slidesPerView={1}
@@ -110,36 +109,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
                     />
                   ))}
                 </div>
-                {checkBtn === null ? (
-                  ""
-                ) : checkBtn ? (
-                  <button
-                    onClick={() => setCheckBtn(false)}
-                    className="text-white bg-violet-900 px-8 py-2 rounded-lg hover:bg-violet-950 transition-all duration-300 cursor-pointer"
-                  >
-                    Check
-                  </button>
-                ) : !checkBtn ? (
-                  <div className="flex justify-center items-center gap-3  p-2 ">
-                    {item.imgs.map((i, imgIndex) => (
-                      <Image
-                        key={imgIndex}
-                        className={`
-  border border-black rounded 
-  ${item.correct === i.img ? " ring-4 ring-green-500" : "ring-4 ring-red-500"}
- 
-  
-`}
-                        src={i.img}
-                        width={80}
-                        height={80}
-                        alt="Pcs Image"
-                      />
-                    ))}
-                  </div>
-                ) : (
-                  ""
-                )}
+              
               </div>
             </SwiperSlide>
           ))}
