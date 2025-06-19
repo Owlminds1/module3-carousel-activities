@@ -57,23 +57,23 @@ const Footprint = ({ setIsFirstScreen }: myProps) => {
             <SwiperSlide>
               <div className="grid grid-cols-12 place-items-center px-5 gap-2 w-full min-h-[400px] ">
                <div className="col-span-4 w-full relative h-[150px]">
-                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/car.jpg" fill alt="slider img"/>
+                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/car.JPG" fill alt="slider img"/>
                </div> 
                <div className="col-span-4 w-full relative h-[150px]">
-                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/battry.jpg" fill alt="slider img"/>
+                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/battry.JPG" fill alt="slider img"/>
                </div>
 
                <div className="col-span-4 w-full relative h-[150px]">
-                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/airplain.jpg" fill alt="slider img"/>
+                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/airplain.JPG" fill alt="slider img"/>
                </div>
 
 
                <div className="col-span-4 w-full relative h-[150px]">
-                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/public.jpg" fill alt="slider img"/>
+                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/public.JPG" fill alt="slider img"/>
                </div>
 
                   <div className="col-span-4 w-full relative h-[150px]">
-                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/cooking.jpg" fill alt="slider img"/>
+                <Image className="rounded-lg shadow-sm shadow-black object-contain" src="/C20Images/cooking.JPG" fill alt="slider img"/>
                </div>
               </div>
             </SwiperSlide>
