@@ -32,17 +32,17 @@ const ThirdSlide = ({ handleNext, setShow, show }: SlideProps) => {
     const dropData = JSON.parse(e.dataTransfer.getData("dragItem"));
     const updateFilter = filterData.filter((i) => i.text !== dropData.text);
 
+    setDropItem((prev) => ({
+      ...prev,
+      [index]: prev[index]
+        ? [...prev[index], dropData.text]
+        : [dropData.text],
+    }));
+    setFilterData(updateFilter);
+    if (updateFilter.length === 0) {
+      setNextShow(true);
+    }
     if (dropData.val === qValue) {
-      setDropItem((prev) => ({
-        ...prev,
-        [index]: prev[index]
-          ? [...prev[index], dropData.text]
-          : [dropData.text],
-      }));
-      setFilterData(updateFilter);
-      if (updateFilter.length === 0) {
-        setNextShow(true);
-      }
     }
   };
   return (

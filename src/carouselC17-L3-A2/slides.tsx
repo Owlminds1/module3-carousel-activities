@@ -181,10 +181,10 @@ const SlideStart = () => {
                 <div className=" flex justify-center items-center">
                   <Link
                     className="text-2xl text-blue-600"
-                    href="https://wdh7gv.csb.app/"
+                    href="https://module1-leadership-activities.vercel.app/L3/C6/Activity-3a"
                     target="blank"
                   >
-                    https://wdh7gv.csb.app/
+                    https://module1-leadership-activities.vercel.app/L3/C6/Activity-3a
                   </Link>
                 </div>
               </div>

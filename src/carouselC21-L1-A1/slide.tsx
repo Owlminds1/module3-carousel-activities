@@ -6,13 +6,11 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import { Swiper as SwiperClass } from "swiper";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { FaHandPointDown } from "react-icons/fa";
 
 export default function Slide() {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [lastSlide, setLastSlide] = useState<number>(0);
 
-  const [hidePointer, setHidePointer] = useState(false);
   const handleNext = () => {
     swiperRef.current?.slideNext();
   };
@@ -23,21 +21,8 @@ export default function Slide() {
   };
 
   const handleChange = (swipe: SwiperClass) => {
-    setHidePointer(true);
-    if (swipe.activeIndex == 0) {
-      setHidePointer(false);
-    }
     setLastSlide(swipe.activeIndex);
-  };
-
-  const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
-    const scrollTrack = e.currentTarget.scrollTop;
-    // console.log("asdasd", scrollTrack);
-    if (scrollTrack > 80) {
-      setHidePointer(true);
-    } else {
-      setHidePointer(false);
-    }
+    swiperRef.current?.updateAutoHeight();
   };
 
   return (
@@ -46,27 +31,27 @@ export default function Slide() {
         <h1 className="text-center text-4xl font-bold py-4 text-black">
           HEAR framework
         </h1>
-          <Swiper
-            slidesPerView={1}
-            loop={false}
-            autoplay={false}
-            allowTouchMove={false}
-            modules={[Navigation]}
-            onSlideChange={handleChange}
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-          >
-            <SwiperSlide>
-              <div className="overflow-y-scroll  bg-violet-100 rounded-lg h-[400px]" onScroll={(e) => handleScroll(e)}>
-
+        <Swiper
+          autoHeight={true}
+          slidesPerView={1}
+          loop={false}
+          autoplay={false}
+          allowTouchMove={false}
+          modules={[Navigation]}
+          onSlideChange={handleChange}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+        >
+          <SwiperSlide>
+            <div className=" bg-violet-100 rounded-lg">
               <div className="grid relative grid-cols-12 place-items-center gap-1 w-full min-h-[300px] ">
-                <div
+                {/* <div
                   className={`${
                     hidePointer ? "hidden" : "block"
                   } absolute top-73 right-30  animate-bounce flex justify-center items-center flex-col`}
                 >
                   <h2 className="text-lg">Scroll for more...</h2>
                   <FaHandPointDown className="text-[50px]" />
-                </div>
+                </div> */}
                 <div className="col-span-12 w-full border border-[#00000078] rounded-lg p-2 min-h-[200px] flex gap-5 justify-center items-center flex-col  ">
                   <h4 className="text-2xl text-black ">
                     {" "}
@@ -114,88 +99,88 @@ export default function Slide() {
                   </div>
                 </div>
               </div>
-              </div>
-            </SwiperSlide>
+            </div>
+          </SwiperSlide>
 
-            <SwiperSlide>
-              <div className="grid grid-cols-12 min-h-[400px] place-items-center gap-1 w-full ">
-                <div className="col-span-12  border border-[#00000078] rounded-lg p-2 min-h-[300px] flex gap-8 justify-start items-center flex-col ">
-                  <h4 className="text-2xl text-center text-black ">
-                    This is when two people speak but don’t listen at all. This
-                    occurs when we talk over one another!
-                  </h4>
+          <SwiperSlide>
+            <div className="grid grid-cols-12 min-h-[400px] place-items-center gap-1 w-full ">
+              <div className="col-span-12  border border-[#00000078] rounded-lg p-2 min-h-[300px] flex gap-8 justify-start items-center flex-col ">
+                <h4 className="text-2xl text-center text-black ">
+                  This is when two people speak but don’t listen at all. This
+                  occurs when we talk over one another!
+                </h4>
 
-                  <div className=" py-5 relative  pr-[300px] ">
-                    <span className="absolute min-h-[80px] top-0 left-0  w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-10 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-20 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-30 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-40 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-50 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-60 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                  </div>
+                <div className=" py-5 relative  pr-[300px] ">
+                  <span className="absolute min-h-[80px] top-0 left-0  w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-10 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-20 w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-30 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-40 w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-50 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-60 w-[50px] border border-black rounded-b-full border-t-0 "></span>
                 </div>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="grid grid-cols-12 min-h-[400px] place-items-center gap-1 w-full">
-                <div className="col-span-12  border border-[#00000078] rounded-lg p-2 min-h-[300px] flex gap-8 justify-start items-center flex-col ">
-                  <h4 className="text-2xl text-black  ">
-                    This is when two people speak but don’t listen very well
-                  </h4>
-                  <div className=" py-5 relative  pr-[400px] ">
-                    <span className="absolute min-h-[80px] top-0 left-0  w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-15 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-30 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-45 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-60 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-75 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-90 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                  </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="grid grid-cols-12 min-h-[400px] place-items-center gap-1 w-full">
+              <div className="col-span-12  border border-[#00000078] rounded-lg p-2 min-h-[300px] flex gap-8 justify-start items-center flex-col ">
+                <h4 className="text-2xl text-black  ">
+                  This is when two people speak but don’t listen very well
+                </h4>
+                <div className=" py-5 relative  pr-[400px] ">
+                  <span className="absolute min-h-[80px] top-0 left-0  w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-15 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-30 w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-45 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-60 w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-75 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-90 w-[50px] border border-black rounded-b-full border-t-0 "></span>
                 </div>
               </div>
-            </SwiperSlide>
+            </div>
+          </SwiperSlide>
 
-            <SwiperSlide>
-              <div className="grid grid-cols-12 min-h-[400px] place-items-center gap-1 w-full">
-                <div className="col-span-12  border border-[#00000078] rounded-lg p-2 min-h-[300px] flex gap-8 justify-start items-center flex-col ">
-                  <h4 className="text-2xl text-black  ">
-                    This is when two people speak and listen but only to speak
-                    again
-                  </h4>
-                  <div className=" py-5 relative  pr-[500px] ">
-                    <span className="absolute min-h-[80px] top-0 left-0  w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-20 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-40 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-60 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-80 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-100 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-120 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                  </div>
+          <SwiperSlide>
+            <div className="grid grid-cols-12 min-h-[400px] place-items-center gap-1 w-full">
+              <div className="col-span-12  border border-[#00000078] rounded-lg p-2 min-h-[300px] flex gap-8 justify-start items-center flex-col ">
+                <h4 className="text-2xl text-black  ">
+                  This is when two people speak and listen but only to speak
+                  again
+                </h4>
+                <div className=" py-5 relative  pr-[500px] ">
+                  <span className="absolute min-h-[80px] top-0 left-0  w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-20 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-40 w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-60 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-80 w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-100 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-120 w-[50px] border border-black rounded-b-full border-t-0 "></span>
                 </div>
               </div>
-            </SwiperSlide>
+            </div>
+          </SwiperSlide>
 
-            <SwiperSlide>
-              <div className="grid grid-cols-12 min-h-[400px] place-items-center gap-1 w-full">
-                <div className="col-span-12  border border-[#00000078] rounded-lg p-2 min-h-[300px] flex gap-8 justify-start items-center flex-col ">
-                  <h4 className="text-2xl text-black  ">
-                    This is when two people speak and listen by giving space in
-                    the conversation.
-                  </h4>
-                  <div className=" py-5 relative  pr-[600px] ">
-                    <span className="absolute min-h-[80px] top-0 left-0  w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-25 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-50 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-75 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-100 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-125 w-[50px] border border-black rounded-t-full border-b-0 "></span>
-                    <span className="absolute min-h-[80px] top-0 left-150 w-[50px] border border-black rounded-b-full border-t-0 "></span>
-                  </div>
+          <SwiperSlide>
+            <div className="grid grid-cols-12 min-h-[400px] place-items-center gap-1 w-full">
+              <div className="col-span-12  border border-[#00000078] rounded-lg p-2 min-h-[300px] flex gap-8 justify-start items-center flex-col ">
+                <h4 className="text-2xl text-black  ">
+                  This is when two people speak and listen by giving space in
+                  the conversation.
+                </h4>
+                <div className=" py-5 relative  pr-[600px] ">
+                  <span className="absolute min-h-[80px] top-0 left-0  w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-25 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-50 w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-75 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-100 w-[50px] border border-black rounded-b-full border-t-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-125 w-[50px] border border-black rounded-t-full border-b-0 "></span>
+                  <span className="absolute min-h-[80px] top-0 left-150 w-[50px] border border-black rounded-b-full border-t-0 "></span>
                 </div>
               </div>
-            </SwiperSlide>
-          </Swiper>
+            </div>
+          </SwiperSlide>
+        </Swiper>
 
         <div className="w-full flex justify-between items-center mt-5">
           <div
