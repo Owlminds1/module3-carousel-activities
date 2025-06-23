@@ -5,7 +5,7 @@ const LastSlide = () => {
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[900px]">
         <h1 className="text-center text-4xl font-bold py-4 text-black">
-          Moments of Happiness
+          Mood Meter
         </h1>
 
         <div className="border-2 flex justify-center items-center p-2 bg-violet-100 rounded-lg min-h-[200px] ">
