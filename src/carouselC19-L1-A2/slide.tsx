@@ -24,6 +24,7 @@ export default function Slide({ setIsFirstScreen }: SlideProps) {
   const [isAnswerCorrect, setIsAnswerCorrect] = useState<boolean | null>(null);
 
   const [showBtn, setShowbtn] = useState(false);
+  const [shuffle,setShuffle]=useState(ansData)
 
   const handleNext = () => {
     if (lastSlide == SlideData.length - 1) {
@@ -41,6 +42,7 @@ export default function Slide({ setIsFirstScreen }: SlideProps) {
   useEffect(() => {
     setCorrectAudio(new Audio("/sound/correct.mp3"));
     setWrongAudio(new Audio("/sound/wrong_buzzer.mp3"));
+    setShuffle((prev)=>prev.sort(()=>Math.random() - 0.5))
   }, []);
 
   const handleChange = (swipe: SwiperClass) => {
@@ -94,7 +96,7 @@ export default function Slide({ setIsFirstScreen }: SlideProps) {
                 </div>
 
                 <div className="col-span-6 relative w-full flex justify-center items-center gap-2 flex-col ">
-                  {ansData.map((item, index) => (
+                  {shuffle.map((item, index) => (
                     <button
                       key={index}
                       onClick={() => handleCheck(item.val, index)}
