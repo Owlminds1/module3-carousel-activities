@@ -33,13 +33,13 @@ const SlideStart = () => {
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[950px]">
-        <h1 className="text-center text-2xl py-4 text-black">
-          Pugh matrix to Decide
+        <h1 className="text-center font-bold text-2xl py-4 text-black">
+          Pugh Matrix to Decide
         </h1>
 
         <div className="w-full border-2 min-h-[200px] justify-center items-center p-2 bg-violet-100 rounded-lg">
           <Swiper
-          autoHeight={true}
+            autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}
@@ -174,19 +174,19 @@ const SlideStart = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="min-h-[500px] flex justify-center items-center gap-4 flex-col">
+              <div className="min-h-[300px] flex justify-center items-center gap-4 flex-col">
                 <h4 className="text-black text-2xl ">
-                  Apply Pugh Matrix to decide what sports to pursue
-                </h4>
-                <div className=" flex justify-center items-center">
+                  Apply{" "}
                   <Link
-                    className="text-2xl text-blue-600"
+                    className="font-medium text-blue-600"
                     href="https://module1-leadership-activities.vercel.app/L3/C6/Activity-3a"
                     target="blank"
                   >
-                    https://module1-leadership-activities.vercel.app/L3/C6/Activity-3a
-                  </Link>
-                </div>
+                    Pugh Matrix
+                  </Link>{" "}
+                  to decide what sports to pursue
+                </h4>
+                <div className=" flex justify-center items-center"></div>
               </div>
             </SwiperSlide>
           </Swiper>
