@@ -182,9 +182,9 @@ const SlideStart = () => {
                     href="https://module1-leadership-activities.vercel.app/L3/C6/Activity-3a"
                     target="blank"
                   >
-                    Pugh Matrix
-                  </Link>{" "}
-                  to decide what sports to pursue
+                    Pugh Matrix {""} 
+                  </Link>
+                   to Decide What Sports to Pursue
                 </h4>
                 <div className=" flex justify-center items-center"></div>
               </div>
