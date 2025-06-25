@@ -10,7 +10,7 @@ const SecoundScreen = ({item,show,setShow}:myProps) => {
 
 
   return (
-    <div className='grid grid-cols-12 h-[450px] overflow-y-scroll  w-full place-items-center p-3'>
+    <div className='grid grid-cols-12  w-full place-items-center p-3'>
         <div className="col-span-6 w-full">
             <div className="grid grid-cols-12 gap-1 w-full place-items-center"  >
                 {

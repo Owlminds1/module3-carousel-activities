@@ -41,6 +41,7 @@ const SlideStart = () => {
   const handleChange = (swiper: SwiperClass) => {
     setLastSlide(swiper.activeIndex);
      window.scrollTo(0,0)
+     swiper.updateAutoHeight()
   };
 
   const handleDragStart = (e: React.DragEvent, item: dragType) => {
@@ -84,6 +85,7 @@ const SlideStart = () => {
 
         <div className="w-full border-2 min-h-[200px] justify-center items-center p-2 bg-violet-100 rounded-lg">
           <Swiper
+          autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}
@@ -191,14 +193,14 @@ const SlideStart = () => {
 
           <div
             className={`${
-              lastSlide < 3
+              lastSlide < 2
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90`}
           >
             <FaArrowRight
               className={`${
-                lastSlide < 3 ? "block" : "hidden"
+                lastSlide < 2 ? "block" : "hidden"
               } text-[40px] cursor-pointer text-black`}
               onClick={handleNext}
             />

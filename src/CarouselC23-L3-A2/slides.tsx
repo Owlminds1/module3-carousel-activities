@@ -52,6 +52,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     } else {
       setShowbtn(false);
     }
+    swipe.updateAutoHeight()
 
     setActiveIndex(null);
     setLastSlide(swipe.activeIndex);
@@ -81,6 +82,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
         </h1>
        
           <Swiper
+          autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}

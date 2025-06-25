@@ -33,18 +33,20 @@ export default function Slide() {
 
       setShow(false)
     }
+    swipe.updateAutoHeight()
   };
 
   return (
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
       <div className="w-[980px]  ">
-        <h1 className="text-center text-4xl font-bold py-4 text-black">
+        <h1 className="text-center text-3xl font-bold py-4 text-black">
           {lastSlide == 0
             ? "Let’s learn how we can be assertive"
             
             : "Convert the following situations into ones of the AREFIT qualities."}
         </h1>
         <Swiper
+        autoHeight={true}
           className="border-2 p-2 bg-violet-100 rounded-lg min-h-[200px] "
           slidesPerView={1}
           loop={false}

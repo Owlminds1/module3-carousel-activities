@@ -9,7 +9,7 @@ const ThirdScreen = () => {
   };
 
   return (
-    <div className="h-[450px] overflow-y-scroll flex justify-start items-center flex-col p-5 gap-5">
+    <div className=" flex justify-start items-center flex-col p-5 gap-5">
       <h4 className="text-3xl text-black ">
         {" "}
         How to tell others what we want respectfully?

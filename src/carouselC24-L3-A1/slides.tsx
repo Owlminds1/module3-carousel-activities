@@ -26,18 +26,20 @@ const SlideStart = () => {
 
   const handleChange = (swiper: SwiperClass) => {
     setLastSlide(swiper.activeIndex);
+    swiper.updateAutoHeight()
   };
 
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[800px]">
-        <h1 className="text-center text-4xl py-4 text-black">
+        <h1 className="text-center font-bold text-3xl py-4 text-black">
           Revise Decision Making Skills
         </h1>
 
         {/* Fixed Height Outer Wrapper */}
-        <div className="w-full border-2 h-[400px] bg-violet-100 rounded-lg">
+        <div className="w-full border-2 p-5 bg-violet-100 rounded-lg">
           <Swiper
+          autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}
@@ -49,7 +51,7 @@ const SlideStart = () => {
           >
             {/* Slide 1 */}
             <SwiperSlide>
-              <div className="h-full overflow-y-auto p-5 flex items-center flex-col gap-9">
+              <div className="h-full p-5 flex items-center flex-col gap-9">
                 <h2 className="text-center text-2xl text-black">
                   Decide activities to do for the awareness campaign: Protecting
                   planet earth

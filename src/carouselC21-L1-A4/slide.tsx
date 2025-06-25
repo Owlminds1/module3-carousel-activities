@@ -22,6 +22,7 @@ export default function Slide() {
 
   const handleChange = (swipe: SwiperClass) => {
     setLastSlide(swipe.activeIndex);
+    swipe.updateAutoHeight()
 
     //  setIsFirstScreen("result");
   };
@@ -38,6 +39,7 @@ export default function Slide() {
         </h1>
         <div className="w-full  border-2 p-2  bg-violet-100 rounded-lg min-h-[300px]">
           <Swiper
+          autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}
@@ -47,7 +49,7 @@ export default function Slide() {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             <SwiperSlide>
-              <div className="min-h-[300px] flex justify-center items-center">
+              <div className=" flex justify-center items-center">
                 <ul className="list-disc space-y-4 p-5 ">
                   <li className="text-black  text-2xl ">
                     Use a lot of verbs like play and adjectives like sweet.
@@ -72,7 +74,7 @@ export default function Slide() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="grid grid-cols-12 min-h-[300px] gap-10 place-items-center">
+              <div className="grid grid-cols-12  gap-10 place-items-center">
                 <div className="col-span-12 p-2">
                   <span className="text-2xl bg-violet-900 text-white px-5 py-1 rounded-lg ">Tell a story about one of the two places using the word pool in five minutes!</span>
                 </div>

@@ -24,15 +24,17 @@ export default function Slide() {
 
   const handleChange = (swipe: SwiperClass) => {
     setLastSlide(swipe.activeIndex);
+    swipe.updateAutoHeight()
   };
 
   return (
-    <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
+    <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3 p-5">
       <div className="w-[900px]  ">
         <h1 className="text-center text-4xl font-bold py-4 text-black">
         Assertive Communication: A-R-E-F-I-T 
         </h1>
         <Swiper
+        autoHeight={true}
           className="border-2 p-2 bg-violet-100 rounded-lg min-h-[200px] "
           slidesPerView={1}
           loop={false}

@@ -45,6 +45,7 @@ const SlideStart = () => {
   const handleChange = (swiper: SwiperClass) => {
 
     setLastSlide(swiper.activeIndex);
+    swiper.updateAutoHeight()
   };
 
   const handleDragStart = (e: React.DragEvent, item: dragType) => {
@@ -86,6 +87,7 @@ const SlideStart = () => {
 
         <div className="w-full border-2 min-h-[200px] justify-center items-center p-2 bg-violet-100 rounded-lg">
           <Swiper
+          autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}
@@ -113,7 +115,7 @@ const SlideStart = () => {
             <SwiperSlide>
               <div className="grid grid-cols-12  gap-2">
                 <div className="col-span-4 w-full">
-                  <div className="  border border-black rounded-lg overflow-y-auto p-1">
+                  <div className="  border border-black rounded-lg  p-1">
                     {filter.map((item, index) => (
                       <h3
                         key={index}
@@ -134,7 +136,7 @@ const SlideStart = () => {
                         onDrop={(e) => handleDrop(e, item.name, index)}
                         onDragOver={(e) => e.preventDefault()}
                         style={{ backgroundColor: item.bg }}
-                        className="col-span-6 p-2 rounded-lg  w-full min-h-[200px] min-w-[150px] flex justify-start items-center flex-col bg-amber-300"
+                        className="col-span-6 p-2 rounded-lg  w-full min-h-[270px] min-w-[150px] flex justify-start items-center flex-col bg-amber-300"
                       >
                         <span className="text-xl font-bold">{item.name}</span>
                         {dropItems[index]?.map((item, index) => (

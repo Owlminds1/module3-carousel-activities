@@ -78,8 +78,8 @@ export default function EmotionSlide() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="grid grid-cols-12 gap-5  w-full place-items-center">
-                 <div className="col-span-4 w-full h-[400px] overflow-y-scroll flex justify-center items-center gap-1 min-w-full rounded-lg p-5 flex-wrap  bg-violet-400">
+              <div className="grid grid-cols-12 gap-5  w-full ">
+                 <div className="col-span-4 w-full  flex justify-center items-center gap-1 min-w-full rounded-lg p-5 flex-wrap  bg-violet-400">
            
                 {filterData.map((item, index) => (
                     <h2 
@@ -100,7 +100,7 @@ export default function EmotionSlide() {
                       onDragOver={(e) => e.preventDefault()}
                       onDrop={(e) => handleDrop(e, index, item.QuadVal)}
                       key={index}
-                      className={`${item.bg}   rounded-lg col-span-6 overflow-y-scroll h-[250px] min-h-[250px] w-full flex justify-start gap-1 items-center flex-col`}
+                      className={`${item.bg}   rounded-lg col-span-6  h-[250px] min-h-[250px] w-full flex justify-start gap-1 items-center flex-col`}
                     >
                       <h2 className="text-xl text-black font-bold">
                         {item.QuadVal}

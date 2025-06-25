@@ -30,6 +30,7 @@ const SlideStart = () => {
 
   const handleChange = (swiper: SwiperClass) => {
     setLastSlide(swiper.activeIndex);
+    swiper.updateAutoHeight()
   };
 
   return (
@@ -39,6 +40,7 @@ const SlideStart = () => {
 
         <div className="mt-4 bg-violet-200 p-4 rounded-lg min-h-[400px]">
           <Swiper
+          autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}

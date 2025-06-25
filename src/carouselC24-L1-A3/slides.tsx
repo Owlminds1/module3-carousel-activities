@@ -37,6 +37,7 @@ const SlideStart = ({setIsFirstScreen}:myProps) => {
   const handleChange = (swiper: SwiperClass) => {
     setLastSlide(swiper.activeIndex);
     setShow(false);
+    swiper.updateAutoHeight()
   };
   const handleDragStart = (e: React.DragEvent, item: dragType) => {
     e.dataTransfer.setData("drag", JSON.stringify(item));
@@ -65,12 +66,13 @@ const SlideStart = ({setIsFirstScreen}:myProps) => {
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
       <div className="w-[980px]">
-        <h1 className="text-center text-3xl  py-4 text-black">
+        <h1 className="text-center font-bold text-3xl  py-4 text-black">
           Know, Feel, Do
         </h1>
 
         <div className="mt-4 bg-violet-200 p-4 rounded-lg min-h-[100px]">
           <Swiper
+          autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}
@@ -80,7 +82,7 @@ const SlideStart = ({setIsFirstScreen}:myProps) => {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             <SwiperSlide>
-              <div className="min-h-[500px] p-5 flex justify-center items-center flex-col gap-10">
+              <div className="min-h-[300px] p-5 flex justify-center items-center flex-col gap-10">
                 <h5 className="text-4xl font-bold text-center text-black">
                   What do we know about critical thinking and planning?
                 </h5>
@@ -102,7 +104,7 @@ const SlideStart = ({setIsFirstScreen}:myProps) => {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="h-[500px] overflow-y-scroll p-5 flex justify-start items-center flex-col gap-5">
+              <div className="  p-5 flex justify-start items-center flex-col gap-5">
                 <h5 className="text-3xl font-bold text-center text-black">
                   What do we know about critical thinking and planning?
                 </h5>
@@ -125,7 +127,7 @@ const SlideStart = ({setIsFirstScreen}:myProps) => {
                       </li>
                     </ul>
 
-                    <div className="h-[300px] overflow-y-scroll p-1 ">
+                    <div className="h-[400px] overflow-y-scroll p-1 ">
                       {filter.map((item, index) => (
                         <h3
                           key={index}
@@ -145,7 +147,7 @@ const SlideStart = ({setIsFirstScreen}:myProps) => {
                           onDrop={(e) => handleDrop(e, index, item.value)}
                           onDragOver={(e) => e.preventDefault()}
                           key={index}
-                          className={`${index == 2 ?"col-span-12":""} col-span-6 w-full border-t-0 min-h-[200px] rounded-lg border border-black flex justify-start items-center flex-col gap-2 p-1`}
+                          className={`${index == 2 ?"col-span-12":""} col-span-6 w-full border-t-0 min-h-[290px] rounded-lg border border-black flex justify-start items-center flex-col gap-2 p-1`}
                         >
                           <span className="text-center w-full text-white font-bold bg-violet-900 px-5 py-1 rounded-lg ">
                             {item.value}

@@ -36,6 +36,7 @@ export default function FirstScreen() {
   const handleChange = (swipe: SwiperClass) => {
     setLastSlide(swipe.activeIndex);
     setShowbtn(swipe.activeIndex !== 0); // agar 0 nahi hai toh showBtn true
+    swipe.updateAutoHeight()
   };
   
 
@@ -72,6 +73,7 @@ export default function FirstScreen() {
             : ""}
         </h1>
         <Swiper
+        autoHeight={true}
           className="border-2 p-2 bg-violet-100 rounded-lg min-h-[200px] "
           slidesPerView={1}
           loop={false}
