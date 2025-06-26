@@ -184,7 +184,7 @@ const SlideStart = () => {
                   >
                     Pugh Matrix {""} 
                   </Link>
-                   to Decide What Sports to Pursue
+                   to decide what sports to pursue
                 </h4>
                 <div className=" flex justify-center items-center"></div>
               </div>
