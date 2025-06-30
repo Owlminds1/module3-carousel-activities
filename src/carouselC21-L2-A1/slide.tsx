@@ -6,6 +6,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import { Swiper as SwiperClass } from "swiper";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import SlideData from "@/carouselC21-L2-A1/slideData.json";
 
 export default function Slide() {
   const swiperRef = useRef<SwiperClass | null>(null);
@@ -22,7 +23,7 @@ export default function Slide() {
 
   const handleChange = (swipe: SwiperClass) => {
     setLastSlide(swipe.activeIndex);
-
+    swipe.updateAutoHeight();
     //  setIsFirstScreen("result");
   };
 
@@ -30,10 +31,11 @@ export default function Slide() {
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3 p-5">
       <div className="w-[980px]  ">
         <h1 className="text-center text-4xl font-bold py-4 text-black">
-        What Communication is not?
+          What Communication is not?
         </h1>
-        <div className="w-full  border-2 p-2  bg-violet-100 rounded-lg min-h-[300px]">
+        <div className="w-full  border-2 p-2  bg-violet-100 rounded-lg ">
           <Swiper
+            autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}
@@ -43,21 +45,28 @@ export default function Slide() {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             <SwiperSlide>
-              <div className="min-h-[300px]  p-5 flex justify-center items-center ">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/gCfzeONu3Mo?si=JQVou4vwbcE--U7a" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <div className="  p-5 flex justify-center items-center ">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/gCfzeONu3Mo?si=JQVou4vwbcE--U7a"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
               </div>
             </SwiperSlide>
 
-
-            <SwiperSlide>
-            <div className="  min-h-[300px] flex justify-center items-center flex-col gap-3">
-              <h3 className="text-2xl  text-black min-w-[820px] text-left ">Q.1 When do people miscommunicate?</h3>
-              <h3 className="text-2xl text-black  min-w-[820px] text-left">Q.2 How is human communication described in one word?</h3>
-              <h3 className="text-2xl text-black  min-w-[820px] text-left">Q.3 What’s different about the transactional model vs the transmission model?</h3>
-              <h3 className="text-2xl text-black min-w-[820px] text-left ">Q.4 How can we be effective communicators or prevent miscommunication?</h3>
-            </div>
-            </SwiperSlide>
-           
+            {SlideData.map((slide, index) => (
+              <SwiperSlide key={index}>
+                <div className="min-h-[200px] flex justify-center items-center flex-col gap-3 ">
+                  <h3 className="text-2xl text-black  text-center">
+                    {slide.Question}
+                  </h3>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
 
@@ -80,7 +89,7 @@ export default function Slide() {
 
           <div
             className={` ${
-              lastSlide < 1
+              lastSlide < SlideData.length
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90 
@@ -88,7 +97,7 @@ export default function Slide() {
           >
             <FaArrowRight
               className={`${
-                lastSlide < 1 ? "block" : "hidden"
+                lastSlide < SlideData.length ? "block" : "hidden"
               } text-[40px]  cursor-pointer text-black `}
               onClick={handleNext}
             />

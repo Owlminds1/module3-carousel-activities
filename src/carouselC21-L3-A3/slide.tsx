@@ -144,7 +144,7 @@ const Slide = ({setIsFirstScreen}:myProps) => {
                       How does she play with her friends?
                     </li>
                     <li className="text-black text-lg">
-                      She plays with her friends
+                      What does she and her friends do?
                     </li>
                   </ul>
                 </div>
