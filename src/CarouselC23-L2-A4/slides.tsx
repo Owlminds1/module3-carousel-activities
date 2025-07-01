@@ -38,9 +38,10 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     swiperRef.current?.slidePrev();
   };
 
-  const arryShuffle = [...SlideData].sort(() => Math.random() - 0.5);
-
+  
   useEffect(() => {
+    const arryShuffle = [...SlideData].sort(() => Math.random() - 0.5);
+    setSuffeleArry(arryShuffle);
     setWrongAudio(new Audio("/sound/wrong_buzzer.mp3"));
     setCorrectAudio(new Audio("/sound/correct.mp3"));
   }, []);
@@ -48,7 +49,6 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
   const handleChange = (swipe: SwiperClass) => {
     setShowbtn(false);
     setSuggeShow(false)
-    setSuffeleArry(arryShuffle);
     setActiveIndex(null);
     setLastSlide(swipe.activeIndex);
     if (lastSlide == SlideData.length - 1) return;
