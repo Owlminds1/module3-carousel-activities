@@ -70,7 +70,7 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
       <div className="w-[900px]  ">
         <h1 className="text-center text-3xl font-bold py-4 text-black">
-       identify if it is assertive, passive or aggressive or passive aggressive.
+       Identify if it is assertive, passive or aggressive or passive aggressive.
         </h1>
 
         <Swiper
