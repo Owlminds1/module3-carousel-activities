@@ -38,21 +38,16 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     swiperRef.current?.slidePrev();
   };
 
-
-    const arryShuffle = [...SlideData].sort(() => Math.random() - 0.5);
-    
-
-
-  useEffect(() => {
-
   
+  useEffect(() => {
+    const arryShuffle = [...SlideData].sort(() => Math.random() - 0.5);
+    setSuffeleArry(arryShuffle);
     setWrongAudio(new Audio("/sound/wrong_buzzer.mp3"));
     setCorrectAudio(new Audio("/sound/correct.mp3"));
   }, []);
 
   const handleChange = (swipe: SwiperClass) => {
     setShowbtn(false);
-     setSuffeleArry(arryShuffle);
     setActiveIndex(null);
     setLastSlide(swipe.activeIndex);
     if (lastSlide == SlideData.length - 1) return;
@@ -64,12 +59,11 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
     if (value === suffeleArry[lastSlide].value) {
       setIsCorrect(true);
       setShowbtn(true);
-      correctAudio?.play()
+      correctAudio?.play();
     } else {
       setIsCorrect(false);
       wrongAudio?.play();
     }
-   
   };
   return (
     <div className="bg-white min-h-screen flex  flex-col items-center justify-center gap-3">
@@ -106,12 +100,11 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
                       {item.text}
                     </h4>
                     <div className="flex justify-center items-center gap-6">
-                      {item.ans.map(
-                        (option, index) => (
-                          <button
-                            onClick={() => handleCheck(option.opt1, index)}
-                            key={index}
-                            className={`
+                      {item.ans.map((option, index) => (
+                        <button
+                          onClick={() => handleCheck(option.opt1, index)}
+                          key={index}
+                          className={`
                             ${
                               activeIndex == index
                                 ? isCorrect == true
@@ -121,11 +114,10 @@ export default function SlideStart({ setIsFirstScreen }: SlideProps) {
                             }
                             
                              px-10 py-3  rounded-lg text-white cursor-pointer active:scale-90 active:shadow-md active:shadow-black transition-all duration-200`}
-                          >
-                            {option.opt1}
-                          </button>
-                        )
-                      )}
+                        >
+                          {option.opt1}
+                        </button>
+                      ))}
                     </div>
                   </div>
                 </SwiperSlide>
