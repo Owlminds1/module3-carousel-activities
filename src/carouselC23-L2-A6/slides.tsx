@@ -13,7 +13,6 @@ import { FaCircleCheck } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import Confetti from "react-confetti";
 
-
 import CorrectData from "./correctData";
 import { useWindowSize } from "react-use";
 
@@ -22,7 +21,7 @@ const SlideStart = () => {
   const [lastSlide, setLastSlide] = useState<number>(0);
   const [correct, setCorrect] = useState<boolean | null>(null);
   const [show, setShow] = useState(false);
-  const {width,height}= useWindowSize()
+  const { width, height } = useWindowSize();
 
   const handleNext = () => {
     swiperRef.current?.slideNext();
@@ -82,7 +81,6 @@ const SlideStart = () => {
             {AssertiveTalk.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="w-full flex flex-col gap-5  p-3 rounded-lg">
-                  
                   <div className=" w-full relative ">
                     <CategoryMenu
                       dropMenuData={dropMenuData}
@@ -94,15 +92,13 @@ const SlideStart = () => {
                         }
                       }}
                     />
-                 {correct === true ? (
-  <FaCircleCheck className="absolute top-0 right-0 text-3xl" />
-) : correct === false ? (
-  <div className="absolute top-0 right-0 bg-black rounded-full w-8 h-8 p-1 flex justify-center items-center">
-    <RxCross2 className="text-xl text-white font-bold" />
-  </div>
-) : null}
-
-
+                    {correct === true ? (
+                      <FaCircleCheck className="absolute top-0 right-0 text-3xl" />
+                    ) : correct === false ? (
+                      <div className="absolute top-0 right-0 bg-black rounded-full w-8 h-8 p-1 flex justify-center items-center">
+                        <RxCross2 className="text-xl text-white font-bold" />
+                      </div>
+                    ) : null}
                   </div>
                   <div>
                     {item.Assertive.map((dialogue, index) => (
@@ -136,21 +132,22 @@ const SlideStart = () => {
                   </div>
                   <hr />
                   <div className="">
-                    {show ? (
-                      <CorrectData />
-                    ) : (
-                      <div className="w-full text-center">
-                        <button
-                          onClick={() => setShow(true)}
-                          className="text-white cursor-pointer bg-violet-900 px-8 py-2 rounded-lg"
-                        >
-                          Check
-                        </button>
-                      </div>
-                    )}
-                  </div>
+  {show ? (
+    <CorrectData data={item} /> // Show correct data of current slide always
+  ) : (
+    <div className="w-full text-center">
+      <button
+        onClick={() => setShow(true)}
+        className="text-white cursor-pointer bg-violet-900 px-8 py-2 rounded-lg"
+      >
+        Check
+      </button>
+    </div>
+  )}
+</div>
+
                 </div>
-                {correct ? <Confetti width={width} height={height}/> :"" }
+                {correct ? <Confetti width={width} height={height} /> : ""}
               </SwiperSlide>
             ))}
           </Swiper>
