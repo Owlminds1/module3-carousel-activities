@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import dragData from "@/carouselC24-L1-A1/dragData.json";
 import dropData from "@/carouselC24-L1-A1/dropData.json";
 type dragDataType = {
@@ -15,6 +15,12 @@ const SecoundSlide = ({ setShow }: myProps) => {
   const [shuffle, setShuffle] = useState(dragData);
   const [filter, setFilter] = useState(shuffle);
 
+  useEffect(() => {
+    const  Shuffled = [...filter].sort(() => Math.random() - 0.5);
+    setShuffle(Shuffled);
+    setFilter(Shuffled);
+  }, []);
+
   const handleDragStart = (e: React.DragEvent, item: dragDataType) => {
     e.dataTransfer.setData("drag", JSON.stringify(item));
   };
@@ -22,9 +28,7 @@ const SecoundSlide = ({ setShow }: myProps) => {
     const dropItem = JSON.parse(e.dataTransfer.getData("drag"));
 
     if (dropVal === dropItem.val) {
-      const Shuffled = [...filter].sort(() => Math.random() - 0.5);
-      setShuffle(Shuffled);
-      const updatedFilter = Shuffled.filter(
+      const updatedFilter = shuffle.filter(
         (item) => item.name !== dropItem.name
       );
 
@@ -47,7 +51,7 @@ const SecoundSlide = ({ setShow }: myProps) => {
   };
 
   return (
-    <div className="grid grid-cols-12 w-full place-items-center gap-2 px-5">
+    <div className="grid grid-cols-12 w-full  gap-2 px-5">
       <div className="col-span-4 h-[400px] overflow-y-auto border border-gray-400 rounded-lg">
         <div className="flex flex-col items-center gap-2 p-5">
           {filter.map((item, index) => (
@@ -72,7 +76,7 @@ const SecoundSlide = ({ setShow }: myProps) => {
               <div
                 onDragOver={(e) => e.preventDefault()}
                 onDrop={(e) => handleDrop(e, item.value, index)}
-                className="min-h-[300px] border-t-0 rounded-lg border border-black flex justify-start p-1 gap-1 items-center flex-col"
+                className="min-h-[350px] border-t-0 rounded-lg border border-black flex justify-start p-1 gap-1 items-center flex-col"
               >
                 {dropItems[index]?.map((item, index) => (
                   <span

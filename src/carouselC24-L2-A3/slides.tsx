@@ -5,6 +5,7 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import VideoRecorder from "./recourdVedio";
 
 
 
@@ -130,6 +131,9 @@ const SlideStart = () => {
                 </div>
               </div>
             </SwiperSlide>
+            <SwiperSlide>
+              <VideoRecorder/>
+            </SwiperSlide>
           </Swiper>
         </div>
 
@@ -152,14 +156,14 @@ const SlideStart = () => {
 
           <div
             className={`${
-              lastSlide < 1 && show
+              lastSlide < 2 && show
                 ? "border border-black rounded-full p-3 shadow-inner shadow-[#000000b9] bg-yellow-400"
                 : ""
             } hover:scale-90`}
           >
             <FaArrowRight
               className={`${
-                lastSlide < 1 && show ? "block" : "hidden"
+                lastSlide < 2 && show ? "block" : "hidden"
               } text-[40px] cursor-pointer text-black`}
               onClick={handleNext}
             />
