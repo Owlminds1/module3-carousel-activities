@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
@@ -39,16 +39,21 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
     setShowSol(false);
   };
 
+  useEffect(()=>{
+swiperRef.current?.updateAutoHeight()
+  },[showSol])
+
   return (
     <div className="min-h-screen bg-[#F8FCFA] p-5 flex justify-center items-center flex-col gap-5">
-      <div className="w-[800px]">
+      <div className="w-[80%]">
         <h1 className="text-center text-2xl py-4 text-black">
           Fill out each situation by selecting the correct option to show one of
           the 7Cs of resilience.
         </h1>
 
-        <div ref={perent} className={`mt-4 bg-violet-200 p-4 rounded-lg h-[400px] ${lastSlide > 6 ? "overflow-y-scroll":"overflow-hidden"}`}>
+        <div ref={perent} className={`mt-4 bg-violet-200  rounded-lg p-5 ${lastSlide > 6 ? "overflow-y-scroll":"overflow-hidden"}`}>
           <Swiper
+          autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}
@@ -58,7 +63,7 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             <SwiperSlide>
-              <div className="flex justify-center items-center flex-col gap-5">
+              <div className="flex justify-center items-center flex-col gap-8">
                 <h3 className="text-black text-3xl font-bold">Confident</h3>
 
                 <div className="text-xl text-black  text-center">
@@ -98,7 +103,7 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
                 ) : (
                   <div className="text-2xl text-black  text-center bg-violet-100 p-4 rounded-lg">
                     Raphael <u>fell</u> during football. When his parents
-                    suggested that he <u>rest</u> he did, but <u>continued</u>{" "}
+                    suggested that he <u>rests</u> he did, but <u>continued</u>{" "}
                     to play football the next day.
                   </div>
                 )}
@@ -153,11 +158,11 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
                     placeholder="write here.."
                     type="text"
                     className="text-center w-[100px] outline-none border-b border-black"
-                  /> <span className="font-bold">(talking/silent)</span>when Ringo <input
+                  /> <span className="font-bold">(talking/silent)</span> when Ringo <input
                   placeholder="write here.."
                   type="text"
                   className="text-center w-[100px] outline-none border-b border-black"
-                /> <span className="font-bold">(cried/shouted) </span>t him for taking his pencil without asking, and quietly <input
+                /> <span className="font-bold">(cried/shouted) </span> at him for taking his pencil without asking, and quietly <input
                 placeholder="write here.."
                 type="text"
                 className="text-center w-[100px] outline-none border-b border-black"
@@ -315,7 +320,7 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
                     </button>
                   </div>
                 ) : (
-                  <div className="text-2xl text-black  text-center bg-violet-100 p-4 rounded-lg">
+                  <div className="text-2xl  text-black  text-center bg-violet-100 p-4 rounded-lg">
              Theo was <u>bullied</u> by a peer but when he came to <u>apologize</u>, Theo <u>welcomed</u> him with open arms.
                   </div>
                 )}
@@ -345,7 +350,11 @@ const SlideStart = ({ setIsFirstScreen }: MyProps) => {
                     placeholder="write here.."
                     type="text"
                     className="text-center w-[100px] outline-none border-b border-black"
-                  />. I’m glad that I’m you because your ________made me feel connected and confident. You also have such great coping skills because <input
+                  />. I’m glad that I’m you because your <input
+                    placeholder="write here.."
+                    type="text"
+                    className="text-center w-[100px] outline-none border-b border-black"
+                  /> made me feel connected and confident. You also have such great coping skills because <input
                     placeholder="write here.."
                     type="text"
                     className="text-center w-[100px] outline-none border-b border-black"

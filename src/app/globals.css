@@ -315,3 +315,4 @@ input[type="range"].custom-slider::-moz-range-thumb {
   background: var(--thumb-color, #000);
   border: 2px solid black;
 }
+
