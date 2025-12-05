@@ -55,6 +55,7 @@ const [selectedOptions, setSelectedOptions] = useState<Record<number, string>>({
 
         <div className="mt-4 bg-violet-200 p-4 rounded-lg min-h-[100px]">
           <Swiper
+          autoHeight={true}
             slidesPerView={1}
             loop={false}
             autoplay={false}
@@ -150,7 +151,7 @@ const [selectedOptions, setSelectedOptions] = useState<Record<number, string>>({
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="flex justify-center item-center min-h-[500px] flex-col gap-3">
+              <div className="flex justify-center item-center p-3 flex-col gap-3">
                 <h4 className="text-black text-4xl font-bold text-center ">
                   Exercise
                 </h4>
@@ -158,7 +159,7 @@ const [selectedOptions, setSelectedOptions] = useState<Record<number, string>>({
                   <ul className="list-disc space-y-5 ">
                     <li className="text-2xl">Running</li>
                     <li className="text-2xl">Stretching</li>
-                    <li className="text-2xl">Stretching</li>
+                    <li className="text-2xl">Playing Sports</li>
                     <li className="text-2xl">Breathing</li>
                     <li className="text-2xl">Cycling</li>
                     <li className="text-2xl">Walking</li>
@@ -168,7 +169,7 @@ const [selectedOptions, setSelectedOptions] = useState<Record<number, string>>({
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="flex justify-center min-h-[500px] item-center flex-col gap-3">
+              <div className="flex justify-center p-5 item-center flex-col gap-3">
                 <h4 className="text-black text-4xl font-bold text-center ">
                   Sleep
                 </h4>
@@ -271,7 +272,7 @@ const [selectedOptions, setSelectedOptions] = useState<Record<number, string>>({
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="flex justify-center min-h-[500px] item-center flex-col gap-8">
+              <div className="flex justify-center p-5  item-center flex-col gap-8">
                 <h4 className="text-black text-4xl font-bold text-center ">
                   Motivational <br /> entertainment & Interaction
                 </h4>
