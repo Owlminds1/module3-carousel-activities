@@ -11,7 +11,7 @@ import FivethSlide from "./fivthSlide";
 import SixthSlide from "./sixthSlide";
 import Image from "next/image";
 import SeventhSlide from "./seventhSlide";
-import FourthSlide from "./fourthSlide";
+import SlideFourth from "./slideFour";
 
 
 const Slide = ({
@@ -97,7 +97,7 @@ const Slide = ({
             </SwiperSlide>
             {/* ========================== FourthSlide ================= */}
             <SwiperSlide>
-              <FourthSlide
+              <SlideFourth
                 setShow={setShow}
                 show={show}
                 handleNext={handleNext}

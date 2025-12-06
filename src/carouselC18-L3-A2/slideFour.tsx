@@ -12,7 +12,7 @@ type DragItem = {
   text: string;
   val: string;
 };
-const FourthSlide = ({ handleNext, setShow, show }: SlideProps) => {
+const SlideFourth = ({ handleNext, setShow, show }: SlideProps) => {
    const [dropItem, setDropItem] = useState<{ [key: string]: string[] }>({});
   const [shuffle, setShuffle] = useState(FourthSlideData);
   const [filterData, setFilterData] = useState(shuffle);
@@ -231,7 +231,7 @@ const FourthSlide = ({ handleNext, setShow, show }: SlideProps) => {
   );
 };
 
-export default FourthSlide;
+export default SlideFourth;
 
 
 
