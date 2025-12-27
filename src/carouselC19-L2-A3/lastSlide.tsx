@@ -16,7 +16,7 @@ const LastSlide = () => {
             </li>
             <li className="text-black text-xl  ">
               Our own self-worth - how we feel about ourselves - makes us feel a
-              certain way towards others. towards others.
+              certain way towards others.
             </li>
             <li className="text-black text-xl  ">
               All of us have different personalities, moods, feelings,
