@@ -11,6 +11,9 @@ const SpinWeel = () => {
   const [alrtMssg, setAlrtMssg] = useState("");
   const [open, setOpen] = useState(false);
 
+  const POINTER_ANGLE = 180; // 👈 THIS IS THE KEY
+
+
   const handleSpeenStart = () => {
   if (isSpinning) return;
   setIsSpinning(true);
@@ -21,24 +24,29 @@ const SpinWeel = () => {
 
   setRotationAngle(newRotation);
 
-  setTimeout(() => {
-    const segmentAngle = 360 / spinData.length;
-    const finalAngle = newRotation % 360;
+ setTimeout(() => {
+  const finalAngle = newRotation % 360;
 
-    // angle ka adjustment kar rahe hain
-    const correctedAngle = (360 - finalAngle + segmentAngle * 1.5) % 360;
+  // wheel rotation ko pointer ke perspective se normalize
+  const normalizedAngle = (360 - finalAngle) % 360;
 
-    // Ye index nikal raha hai jis side pointer gira
-    const selectedIndex =
-      Math.round(correctedAngle / segmentAngle) % spinData.length;
+  let selectedIndex;
 
-    // Ab us side ka actual text le rahe hain spinData se
-    const selectedText = spinData[selectedIndex].text;
+  // LEFT half → RED → ANGRY
+  if (normalizedAngle >= 90 && normalizedAngle < 270) {
+    selectedIndex = 0; // 👈 ANGRY
+  } 
+  // RIGHT half → YELLOW → KIND
+  else {
+    selectedIndex = 1; // 👈 KIND
+  }
 
-    setAlrtMssg(selectedText); // ye alert/dailog me dikhayega
-    setOpen(true);
-    setIsSpinning(false);
-  }, 5000);
+  setAlrtMssg(spinData[selectedIndex].text);
+  setOpen(true);
+  setIsSpinning(false);
+}, 5000);
+
+
 };
 
 
